@@ -1,0 +1,13 @@
+PODS:
+  - Alamofire (3.0.0)
+  - REFrostedViewController (2.4.8)
+
+DEPENDENCIES:
+  - Alamofire (~> 3.0)
+  - REFrostedViewController
+
+SPEC CHECKSUMS:
+  Alamofire: b61782387f81bcc538a0284cf2bb5d7995cd0a80
+  REFrostedViewController: a893b4979ba1f200c547aef9ff4c3fd5a18f5923
+
+COCOAPODS: 0.38.2
