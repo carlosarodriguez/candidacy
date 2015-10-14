@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B22338061BCDF79000119944 /* iTunesArtwork@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B22338051BCDF79000119944 /* iTunesArtwork@2x.png */; settings = {ASSET_TAGS = (); }; };
 		DB6FE9E91BCB046700E6C38C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB6FE9E81BCB046700E6C38C /* AppDelegate.swift */; };
 		DB6FE9EB1BCB046700E6C38C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB6FE9EA1BCB046700E6C38C /* ViewController.swift */; };
 		DB6FE9EE1BCB046700E6C38C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DB6FE9EC1BCB046700E6C38C /* Main.storyboard */; };
@@ -39,6 +40,7 @@
 		576CE8A8F4496B41F2CA199D /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AA4CB47D97D1DD27434CCF42 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		B22338041BCDF31A00119944 /* Candidacy-BridgingHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Candidacy-BridgingHeader.h"; sourceTree = "<group>"; };
+		B22338051BCDF79000119944 /* iTunesArtwork@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "iTunesArtwork@2x.png"; path = "Graphics/candidacylogo/ios/iTunesArtwork@2x.png"; sourceTree = "<group>"; };
 		DB6FE9E51BCB046700E6C38C /* Candidacy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Candidacy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DB6FE9E81BCB046700E6C38C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DB6FE9EA1BCB046700E6C38C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -93,6 +95,7 @@
 			isa = PBXGroup;
 			children = (
 				B22338041BCDF31A00119944 /* Candidacy-BridgingHeader.h */,
+				B22338051BCDF79000119944 /* iTunesArtwork@2x.png */,
 				DB6FE9E71BCB046700E6C38C /* Candidacy */,
 				DB6FE9FC1BCB046700E6C38C /* CandidacyTests */,
 				DB6FEA071BCB046700E6C38C /* CandidacyUITests */,
@@ -260,6 +263,7 @@
 				DB6FE9F31BCB046700E6C38C /* LaunchScreen.storyboard in Resources */,
 				DB6FE9F01BCB046700E6C38C /* Assets.xcassets in Resources */,
 				DB6FE9EE1BCB046700E6C38C /* Main.storyboard in Resources */,
+				B22338061BCDF79000119944 /* iTunesArtwork@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
