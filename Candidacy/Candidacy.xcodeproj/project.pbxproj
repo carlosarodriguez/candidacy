@@ -8,8 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		B22338061BCDF79000119944 /* iTunesArtwork@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B22338051BCDF79000119944 /* iTunesArtwork@2x.png */; settings = {ASSET_TAGS = (); }; };
+		DB0469441BD0B24E00F0A53F /* NavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB0469431BD0B24E00F0A53F /* NavigationController.swift */; settings = {ASSET_TAGS = (); }; };
 		DB6FE9E91BCB046700E6C38C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB6FE9E81BCB046700E6C38C /* AppDelegate.swift */; };
-		DB6FE9EB1BCB046700E6C38C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB6FE9EA1BCB046700E6C38C /* ViewController.swift */; };
+		DB6FE9EB1BCB046700E6C38C /* NewsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB6FE9EA1BCB046700E6C38C /* NewsViewController.swift */; };
 		DB6FE9EE1BCB046700E6C38C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DB6FE9EC1BCB046700E6C38C /* Main.storyboard */; };
 		DB6FE9F01BCB046700E6C38C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DB6FE9EF1BCB046700E6C38C /* Assets.xcassets */; };
 		DB6FE9F31BCB046700E6C38C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DB6FE9F11BCB046700E6C38C /* LaunchScreen.storyboard */; };
@@ -41,9 +42,10 @@
 		AA4CB47D97D1DD27434CCF42 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		B22338041BCDF31A00119944 /* Candidacy-BridgingHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Candidacy-BridgingHeader.h"; sourceTree = "<group>"; };
 		B22338051BCDF79000119944 /* iTunesArtwork@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "iTunesArtwork@2x.png"; path = "Graphics/candidacylogo/ios/iTunesArtwork@2x.png"; sourceTree = "<group>"; };
+		DB0469431BD0B24E00F0A53F /* NavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigationController.swift; sourceTree = "<group>"; };
 		DB6FE9E51BCB046700E6C38C /* Candidacy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Candidacy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DB6FE9E81BCB046700E6C38C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		DB6FE9EA1BCB046700E6C38C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		DB6FE9EA1BCB046700E6C38C /* NewsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsViewController.swift; sourceTree = "<group>"; };
 		DB6FE9ED1BCB046700E6C38C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		DB6FE9EF1BCB046700E6C38C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DB6FE9F21BCB046700E6C38C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -119,8 +121,9 @@
 			isa = PBXGroup;
 			children = (
 				DB6FE9E81BCB046700E6C38C /* AppDelegate.swift */,
-				DB6FE9EA1BCB046700E6C38C /* ViewController.swift */,
+				DB6FE9EA1BCB046700E6C38C /* NewsViewController.swift */,
 				DB6FE9EC1BCB046700E6C38C /* Main.storyboard */,
+				DB0469431BD0B24E00F0A53F /* NavigationController.swift */,
 				DB6FE9EF1BCB046700E6C38C /* Assets.xcassets */,
 				DB6FE9F11BCB046700E6C38C /* LaunchScreen.storyboard */,
 				DB6FE9F41BCB046700E6C38C /* Info.plist */,
@@ -336,7 +339,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DB6FE9EB1BCB046700E6C38C /* ViewController.swift in Sources */,
+				DB6FE9EB1BCB046700E6C38C /* NewsViewController.swift in Sources */,
+				DB0469441BD0B24E00F0A53F /* NavigationController.swift in Sources */,
 				DB6FE9E91BCB046700E6C38C /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

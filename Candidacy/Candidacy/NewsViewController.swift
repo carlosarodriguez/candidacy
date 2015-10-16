@@ -10,7 +10,7 @@ import UIKit
 import REFrostedViewController
 
 
-class ViewController: UIViewController {
+class NewsViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
