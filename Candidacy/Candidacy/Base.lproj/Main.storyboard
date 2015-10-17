@@ -38,10 +38,10 @@
             </objects>
             <point key="canvasLocation" x="1349.5" y="361.5"/>
         </scene>
-        <!--View Controller-->
+        <!--Candidates View Controller-->
         <scene sceneID="qxl-mc-jpY">
             <objects>
-                <viewController id="crx-oi-iLV" sceneMemberID="viewController">
+                <viewController title="Candidates View Controller" id="crx-oi-iLV" customClass="CandidatesViewController" customModule="Candidacy" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Jjj-7I-ElQ"/>
                         <viewControllerLayoutGuide type="bottom" id="0GV-xS-9Ss"/>
@@ -49,9 +49,29 @@
                     <view key="view" contentMode="scaleToFill" id="bwW-bL-PKA">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="CANDIDATES" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zri-zK-gaA">
+                                <rect key="frame" x="136" y="323" width="103" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" title="Candidates" id="5P9-hR-THD">
+                        <barButtonItem key="leftBarButtonItem" title="Menu" id="6yx-ha-ieB">
+                            <connections>
+                                <action selector="showMenu:" destination="crx-oi-iLV" id="4pw-Vh-jrc"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="showMenu" destination="6yx-ha-ieB" id="Mrb-TM-O45"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x3N-nL-UXv" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -89,6 +109,7 @@
                     <nil name="viewControllers"/>
                     <connections>
                         <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="PEH-eL-eUg"/>
+                        <segue destination="crx-oi-iLV" kind="show" identifier="showCandidates" id="eC3-dP-z2N"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="E52-X3-m52" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -104,7 +125,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cellID" id="HZX-bj-xqx">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="menuCell" id="HZX-bj-xqx">
                                 <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="HZX-bj-xqx" id="hgd-Jp-V9U">
