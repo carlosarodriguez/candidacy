@@ -11,8 +11,12 @@ import UIKit
 
 class MenuViewController: UITableViewController {
     
+    let menuItems:[String] = ["News","Candidates","GoVote","Poll"]
+    
     override func viewDidLoad() {
-        super.viewDidLoad()
+        //super.viewDidLoad()
+        self.tableView.delegate = self
+        self.tableView.dataSource = self;
     }
     
     override func didReceiveMemoryWarning() {
@@ -28,20 +32,39 @@ class MenuViewController: UITableViewController {
         return 1
     }
     
-//    override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-//        
-//        var cellIdentifier: String = "menuCell"
-//        var cell: UITableViewCell = tableView.dequeueReusableCellWithIdentifier(cellIdentifier)!
-//        cell = UITableViewCell(style: UITableViewCellStyleDefault, reuseIdentifier: cellIdentifier)
-//        if indexPath.section == 0 {
-//            var titles: [AnyObject] = ["Home", "Profile", "Chats"]
-//            cell.textLabel.text = titles[indexPath.row]
+    override func tableView(tableView: UITableView, numberOfRowsInSection sectionIndex: Int) -> Int {
+        return menuItems.count
+    }
+    
+    override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCellWithIdentifier("menuCell", forIndexPath: indexPath)
+        
+        // Configure the cell...
+        let index:Int = indexPath.row
+        
+        // textLabel and text are both optionals, so, need to unwrap them
+        cell.textLabel!.text! = menuItems[index]
+        
+        return cell
+    }
+    
+    // MARK: - Navigation
+    
+//    // In a storyboard-based application, you will often want to do a little preparation before navigation
+//    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+//        if segue.identifier == "showNews" {
+//            
+//            //let indexPath:NSIndexPath? = self.tableView!.indexPathForSelectedRow
+//            
+//            // Get the destination view controller
+//            let newsVC:NewsViewController = segue.destinationViewController as! NewsViewController
+//            
+//            // Pass in the data model for the row selected
+//            // detailVC.person = self.data.getPerson(index: indexPath!.row)
+//        } else if segue.identifier == "showCandidates" {
+//            // Get the destination view controller
+//            let newsVC:CandidatesViewController = segue.destinationViewController as! CandidatesViewController
 //        }
-//        else {
-//            var titles: [AnyObject] = ["John Appleseed", "John Doe", "Test User"]
-//            cell.textLabel.text = titles[indexPath.row]
-//        }
-//        return cell
 //    }
     
 }
