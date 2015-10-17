@@ -7,7 +7,7 @@
         <!--News-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController title="News" id="BYZ-38-t0r" customClass="NewsViewController" customModule="Candidacy" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController restorationIdentifier="newsController" storyboardIdentifier="newsController" title="News" id="BYZ-38-t0r" customClass="NewsViewController" customModule="Candidacy" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -38,10 +38,10 @@
             </objects>
             <point key="canvasLocation" x="1349.5" y="361.5"/>
         </scene>
-        <!--Candidates View Controller-->
+        <!--Candidates-->
         <scene sceneID="qxl-mc-jpY">
             <objects>
-                <viewController title="Candidates View Controller" id="crx-oi-iLV" customClass="CandidatesViewController" customModule="Candidacy" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController restorationIdentifier="candidatesController" storyboardIdentifier="candidatesController" title="Candidates" id="crx-oi-iLV" customClass="CandidatesViewController" customModule="Candidacy" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Jjj-7I-ElQ"/>
                         <viewControllerLayoutGuide type="bottom" id="0GV-xS-9Ss"/>
@@ -69,9 +69,6 @@
                     </navigationItem>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
-                    <connections>
-                        <outlet property="showMenu" destination="6yx-ha-ieB" id="Mrb-TM-O45"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x3N-nL-UXv" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

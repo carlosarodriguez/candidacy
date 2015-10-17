@@ -48,23 +48,38 @@ class MenuViewController: UITableViewController {
         return cell
     }
     
+    override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        let navigationController: NavigationController = self.storyboard!.instantiateViewControllerWithIdentifier("navController") as! NavigationController
+        
+        if indexPath.row == 0 {
+            let newsViewController: NewsViewController = self.storyboard!.instantiateViewControllerWithIdentifier("newsController") as! NewsViewController
+            navigationController.viewControllers = [newsViewController]
+        } else if indexPath.row == 1 {
+            let candidatesViewController: CandidatesViewController = self.storyboard!.instantiateViewControllerWithIdentifier("candidatesController") as! CandidatesViewController
+            navigationController.viewControllers = [candidatesViewController]
+        }
+        
+        self.frostedViewController.contentViewController = navigationController
+        self.frostedViewController.hideMenuViewController()
+    }
+    
     // MARK: - Navigation
     
-//    // In a storyboard-based application, you will often want to do a little preparation before navigation
+    // In a storyboard-based application, you will often want to do a little preparation before navigation
 //    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+//        let navigationController: NavigationController = self.storyboard!.instantiateViewControllerWithIdentifier("navController") as! NavigationController
+//        
 //        if segue.identifier == "showNews" {
 //            
-//            //let indexPath:NSIndexPath? = self.tableView!.indexPathForSelectedRow
-//            
-//            // Get the destination view controller
-//            let newsVC:NewsViewController = segue.destinationViewController as! NewsViewController
-//            
-//            // Pass in the data model for the row selected
-//            // detailVC.person = self.data.getPerson(index: indexPath!.row)
+//            let newsViewController: NewsViewController = self.storyboard!.instantiateViewControllerWithIdentifier("newsController") as! NewsViewController
+//            navigationController.viewControllers = [newsViewController]
 //        } else if segue.identifier == "showCandidates" {
-//            // Get the destination view controller
-//            let newsVC:CandidatesViewController = segue.destinationViewController as! CandidatesViewController
+//            let candidatesViewController: CandidatesViewController = self.storyboard!.instantiateViewControllerWithIdentifier("candidatesController") as! CandidatesViewController
+//            navigationController.viewControllers = [candidatesViewController]
 //        }
+//        
+//        self.frostedViewController.contentViewController = navigationController
+//        self.frostedViewController.hideMenuViewController()
 //    }
     
 }

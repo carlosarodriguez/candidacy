@@ -41,16 +41,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func applicationWillTerminate(application: UIApplication) {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
     }
-    
-   func didFinishLaunchingWithOptions(launchOptions: [NSObject : AnyObject]?) -> Bool {
-//        var navigationController:NavigationController = DEMONavigationController(rootViewController: HomeViewController())
-//        var menuController: DEMOMenuViewController = DEMOMenuViewController(style: UITableViewStylePlain)
-//        var frostedViewController: REFrostedViewController = REFrostedViewController(contentViewController: navigationController, menuViewController: menuController)
-//        frostedViewController.direction = REFrostedViewControllerDirectionLeft
-//        self.window!.rootViewController = frostedViewController
-        return true
-    }
-
 
 }
 

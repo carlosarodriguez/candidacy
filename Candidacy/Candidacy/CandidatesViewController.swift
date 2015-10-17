@@ -22,7 +22,6 @@ class CandidatesViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    
     @IBAction func showMenu(sender: AnyObject) {
         self.view.endEditing(true)
         self.frostedViewController.view.endEditing(true)
