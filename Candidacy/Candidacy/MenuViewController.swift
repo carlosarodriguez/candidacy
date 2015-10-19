@@ -51,10 +51,10 @@ class MenuViewController: UITableViewController {
     override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         let navigationController: NavigationController = self.storyboard!.instantiateViewControllerWithIdentifier("navController") as! NavigationController
         
-        if indexPath.row == 0 {
+        if indexPath.row == 0 { // News Page
             let newsViewController: NewsViewController = self.storyboard!.instantiateViewControllerWithIdentifier("newsController") as! NewsViewController
             navigationController.viewControllers = [newsViewController]
-        } else if indexPath.row == 1 {
+        } else if indexPath.row == 1 { // Candidates Page
             let candidatesViewController: CandidatesViewController = self.storyboard!.instantiateViewControllerWithIdentifier("candidatesController") as! CandidatesViewController
             navigationController.viewControllers = [candidatesViewController]
         }
@@ -62,24 +62,5 @@ class MenuViewController: UITableViewController {
         self.frostedViewController.contentViewController = navigationController
         self.frostedViewController.hideMenuViewController()
     }
-    
-    // MARK: - Navigation
-    
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-//    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-//        let navigationController: NavigationController = self.storyboard!.instantiateViewControllerWithIdentifier("navController") as! NavigationController
-//        
-//        if segue.identifier == "showNews" {
-//            
-//            let newsViewController: NewsViewController = self.storyboard!.instantiateViewControllerWithIdentifier("newsController") as! NewsViewController
-//            navigationController.viewControllers = [newsViewController]
-//        } else if segue.identifier == "showCandidates" {
-//            let candidatesViewController: CandidatesViewController = self.storyboard!.instantiateViewControllerWithIdentifier("candidatesController") as! CandidatesViewController
-//            navigationController.viewControllers = [candidatesViewController]
-//        }
-//        
-//        self.frostedViewController.contentViewController = navigationController
-//        self.frostedViewController.hideMenuViewController()
-//    }
     
 }

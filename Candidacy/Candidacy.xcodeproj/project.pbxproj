@@ -19,6 +19,15 @@
 		DB6FE9F31BCB046700E6C38C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DB6FE9F11BCB046700E6C38C /* LaunchScreen.storyboard */; };
 		DB6FE9FE1BCB046700E6C38C /* CandidacyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB6FE9FD1BCB046700E6C38C /* CandidacyTests.swift */; };
 		DB6FEA091BCB046700E6C38C /* CandidacyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB6FEA081BCB046700E6C38C /* CandidacyUITests.swift */; };
+		DBE3AEBF1BD460E10055FE19 /* CandidatesDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBE3AEBE1BD460E10055FE19 /* CandidatesDataModel.swift */; settings = {ASSET_TAGS = (); }; };
+		DBE3AEC11BD461500055FE19 /* Candidate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBE3AEC01BD461500055FE19 /* Candidate.swift */; settings = {ASSET_TAGS = (); }; };
+		DBE3AED91BD46AB10055FE19 /* Bernie_Sanders_New_Orleans_rally_crop.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DBE3AED31BD46AB10055FE19 /* Bernie_Sanders_New_Orleans_rally_crop.jpg */; settings = {ASSET_TAGS = (); }; };
+		DBE3AEDA1BD46AB10055FE19 /* Governor_O'Malley_Portrait_(cropped).jpg in Resources */ = {isa = PBXBuildFile; fileRef = DBE3AED41BD46AB10055FE19 /* Governor_O'Malley_Portrait_(cropped).jpg */; settings = {ASSET_TAGS = (); }; };
+		DBE3AEDB1BD46AB10055FE19 /* HRC_in_Iowa_APR_2015.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DBE3AED51BD46AB10055FE19 /* HRC_in_Iowa_APR_2015.jpg */; settings = {ASSET_TAGS = (); }; };
+		DBE3AEDC1BD46AB10055FE19 /* Jim_Webb_official_110th_Congress_photo_(cropped).jpg in Resources */ = {isa = PBXBuildFile; fileRef = DBE3AED61BD46AB10055FE19 /* Jim_Webb_official_110th_Congress_photo_(cropped).jpg */; settings = {ASSET_TAGS = (); }; };
+		DBE3AEDD1BD46AB10055FE19 /* Lessig_(cropped).png in Resources */ = {isa = PBXBuildFile; fileRef = DBE3AED71BD46AB10055FE19 /* Lessig_(cropped).png */; settings = {ASSET_TAGS = (); }; };
+		DBE3AEDE1BD46AB10055FE19 /* Lincoln_Chafee_official_portrait_(cropped)-2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DBE3AED81BD46AB10055FE19 /* Lincoln_Chafee_official_portrait_(cropped)-2.jpg */; settings = {ASSET_TAGS = (); }; };
+		DBE3AEE01BD470DC0055FE19 /* CandidatePhotoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBE3AEDF1BD470DC0055FE19 /* CandidatePhotoCell.swift */; settings = {ASSET_TAGS = (); }; };
 		FEBCBBC9361072E7FA561AE0 /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 576CE8A8F4496B41F2CA199D /* Pods.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 /* End PBXBuildFile section */
 
@@ -62,6 +71,15 @@
 		DB6FEA041BCB046700E6C38C /* CandidacyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CandidacyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DB6FEA081BCB046700E6C38C /* CandidacyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CandidacyUITests.swift; sourceTree = "<group>"; };
 		DB6FEA0A1BCB046700E6C38C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DBE3AEBE1BD460E10055FE19 /* CandidatesDataModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CandidatesDataModel.swift; sourceTree = "<group>"; };
+		DBE3AEC01BD461500055FE19 /* Candidate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Candidate.swift; sourceTree = "<group>"; };
+		DBE3AED31BD46AB10055FE19 /* Bernie_Sanders_New_Orleans_rally_crop.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Bernie_Sanders_New_Orleans_rally_crop.jpg; sourceTree = "<group>"; };
+		DBE3AED41BD46AB10055FE19 /* Governor_O'Malley_Portrait_(cropped).jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Governor_O'Malley_Portrait_(cropped).jpg"; sourceTree = "<group>"; };
+		DBE3AED51BD46AB10055FE19 /* HRC_in_Iowa_APR_2015.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = HRC_in_Iowa_APR_2015.jpg; sourceTree = "<group>"; };
+		DBE3AED61BD46AB10055FE19 /* Jim_Webb_official_110th_Congress_photo_(cropped).jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Jim_Webb_official_110th_Congress_photo_(cropped).jpg"; sourceTree = "<group>"; };
+		DBE3AED71BD46AB10055FE19 /* Lessig_(cropped).png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Lessig_(cropped).png"; sourceTree = "<group>"; };
+		DBE3AED81BD46AB10055FE19 /* Lincoln_Chafee_official_portrait_(cropped)-2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Lincoln_Chafee_official_portrait_(cropped)-2.jpg"; sourceTree = "<group>"; };
+		DBE3AEDF1BD470DC0055FE19 /* CandidatePhotoCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CandidatePhotoCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -129,13 +147,17 @@
 				DB6FE9E81BCB046700E6C38C /* AppDelegate.swift */,
 				DB6FE9EA1BCB046700E6C38C /* NewsViewController.swift */,
 				DB6FE9EC1BCB046700E6C38C /* Main.storyboard */,
+				DBE3AEDF1BD470DC0055FE19 /* CandidatePhotoCell.swift */,
 				DB39570C1BD2F113005CA3FC /* CandidatesViewController.swift */,
+				DBE3AEBE1BD460E10055FE19 /* CandidatesDataModel.swift */,
+				DBE3AEC01BD461500055FE19 /* Candidate.swift */,
 				DB0469471BD0BAF300F0A53F /* MenuViewController.swift */,
 				DB0469451BD0B8CF00F0A53F /* RootViewController.swift */,
 				DB0469431BD0B24E00F0A53F /* NavigationController.swift */,
 				DB6FE9EF1BCB046700E6C38C /* Assets.xcassets */,
 				DB6FE9F11BCB046700E6C38C /* LaunchScreen.storyboard */,
 				DB6FE9F41BCB046700E6C38C /* Info.plist */,
+				DBE3AED21BD46AB10055FE19 /* Candidate Images */,
 			);
 			path = Candidacy;
 			sourceTree = "<group>";
@@ -156,6 +178,19 @@
 				DB6FEA0A1BCB046700E6C38C /* Info.plist */,
 			);
 			path = CandidacyUITests;
+			sourceTree = "<group>";
+		};
+		DBE3AED21BD46AB10055FE19 /* Candidate Images */ = {
+			isa = PBXGroup;
+			children = (
+				DBE3AED31BD46AB10055FE19 /* Bernie_Sanders_New_Orleans_rally_crop.jpg */,
+				DBE3AED41BD46AB10055FE19 /* Governor_O'Malley_Portrait_(cropped).jpg */,
+				DBE3AED51BD46AB10055FE19 /* HRC_in_Iowa_APR_2015.jpg */,
+				DBE3AED61BD46AB10055FE19 /* Jim_Webb_official_110th_Congress_photo_(cropped).jpg */,
+				DBE3AED71BD46AB10055FE19 /* Lessig_(cropped).png */,
+				DBE3AED81BD46AB10055FE19 /* Lincoln_Chafee_official_portrait_(cropped)-2.jpg */,
+			);
+			path = "Candidate Images";
 			sourceTree = "<group>";
 		};
 		EEC21CF0F068398722711BC7 /* Frameworks */ = {
@@ -272,10 +307,16 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DBE3AEDD1BD46AB10055FE19 /* Lessig_(cropped).png in Resources */,
 				DB6FE9F31BCB046700E6C38C /* LaunchScreen.storyboard in Resources */,
 				DB6FE9F01BCB046700E6C38C /* Assets.xcassets in Resources */,
+				DBE3AEDB1BD46AB10055FE19 /* HRC_in_Iowa_APR_2015.jpg in Resources */,
+				DBE3AED91BD46AB10055FE19 /* Bernie_Sanders_New_Orleans_rally_crop.jpg in Resources */,
+				DBE3AEDC1BD46AB10055FE19 /* Jim_Webb_official_110th_Congress_photo_(cropped).jpg in Resources */,
 				DB6FE9EE1BCB046700E6C38C /* Main.storyboard in Resources */,
+				DBE3AEDE1BD46AB10055FE19 /* Lincoln_Chafee_official_portrait_(cropped)-2.jpg in Resources */,
 				B22338061BCDF79000119944 /* iTunesArtwork@2x.png in Resources */,
+				DBE3AEDA1BD46AB10055FE19 /* Governor_O'Malley_Portrait_(cropped).jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -348,12 +389,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DBE3AEBF1BD460E10055FE19 /* CandidatesDataModel.swift in Sources */,
 				DB6FE9EB1BCB046700E6C38C /* NewsViewController.swift in Sources */,
+				DBE3AEE01BD470DC0055FE19 /* CandidatePhotoCell.swift in Sources */,
 				DB0469481BD0BAF300F0A53F /* MenuViewController.swift in Sources */,
 				DB0469441BD0B24E00F0A53F /* NavigationController.swift in Sources */,
 				DB0469461BD0B8CF00F0A53F /* RootViewController.swift in Sources */,
 				DB39570D1BD2F113005CA3FC /* CandidatesViewController.swift in Sources */,
 				DB6FE9E91BCB046700E6C38C /* AppDelegate.swift in Sources */,
+				DBE3AEC11BD461500055FE19 /* Candidate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
