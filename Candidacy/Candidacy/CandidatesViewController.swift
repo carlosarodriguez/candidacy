@@ -44,7 +44,7 @@ class CandidatesViewController: UIViewController, UICollectionViewDataSource, UI
         let tempCandidate:Candidate = data.getCandidate(index: index)
         
         cell.candidateNameLabel.text = tempCandidate.name
-        cell.candidatePhoto.image = tempCandidate.getPic()
+        cell.candidatePhoto.image = cropToBounds(tempCandidate.getPic())
         
         return cell
     }
@@ -53,6 +53,23 @@ class CandidatesViewController: UIViewController, UICollectionViewDataSource, UI
         self.view.endEditing(true)
         self.frostedViewController.view.endEditing(true)
         self.frostedViewController.presentMenuViewController()
+    }
+    
+    func cropToBounds(image: UIImage) -> UIImage {
+        
+        let contextImage: UIImage = UIImage(CGImage: image.CGImage!)
+        let width:CGFloat = image.size.width
+        let height:CGFloat = image.size.width
+        
+        let rect: CGRect = CGRectMake(0.0, 0.0, width, height)
+        
+        // Create bitmap image from context using the rect
+        let imageRef: CGImageRef = CGImageCreateWithImageInRect(contextImage.CGImage, rect)!
+        
+        // Create a new image based on the imageRef and rotate back to the original orientation
+        let image: UIImage = UIImage(CGImage: imageRef, scale: image.scale, orientation: image.imageOrientation)
+        
+        return image
     }
     
     
