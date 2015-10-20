@@ -8,6 +8,7 @@
 
 import Foundation
 import UIKit
+import Alamofire
 
 class Candidate {
     
@@ -15,7 +16,7 @@ class Candidate {
     private var _state:String = ""
     private var _party:String = ""
     private var _votes:Int = 0 // could come in handy when Poll is implemented
-    private var pic:UIImage = UIImage()
+    private var _picURL:String = ""
     
     var name:String {
         get {
@@ -53,14 +54,23 @@ class Candidate {
         }
     }
     
-    func getPic() -> UIImage {
-        return pic
+    var picURL:String {
+        get {
+            return _picURL
+        }
+        set(newVal) {
+            _picURL = newVal
+        }
     }
     
-    init(name:String, party:String, pic:UIImage) {
+//    func getPic() -> UIImage {
+//        return pic
+//    }
+    
+    init(name:String, party:String, picURL:String) {
         self.name = name
         self.party = party
-        self.pic = pic
+        self.picURL = picURL
     }
     
 //    convenience init() {

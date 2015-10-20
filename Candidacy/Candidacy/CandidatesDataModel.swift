@@ -15,12 +15,12 @@ class CandidatesDataModel {
     
     init() {
         // Populate candidates array
-        candidates.append(Candidate(name: "Lincoln Chafee", party: "Democratic", pic: UIImage(named: "Lincoln_Chafee_official_portrait_(cropped)-2.jpg")!))
-        candidates.append(Candidate(name: "Hillary Clinton", party: "Democratic", pic: UIImage(named: "HRC_in_Iowa_APR_2015.jpg")!))
-        candidates.append(Candidate(name: "Lawrence Lessig", party: "Democratic", pic: UIImage(named: "Lessig_(cropped).png")!))
-        candidates.append(Candidate(name: "Martin O'Malley", party: "Democratic", pic: UIImage(named: "Governor_O'Malley_Portrait_(cropped).jpg")!))
-        candidates.append(Candidate(name: "Bernie Sanders", party: "Democratic", pic: UIImage(named: "Bernie_Sanders_New_Orleans_rally_crop.jpg")!))
-        candidates.append(Candidate(name: "Jim Webb", party: "Democratic", pic: UIImage(named: "Jim_Webb_official_110th_Congress_photo_(cropped).jpg")!))
+        candidates.append(Candidate(name: "Lincoln Chafee", party: "Democratic", picURL: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Lincoln_Chafee_official_portrait_%28cropped%29.jpg/114px-Lincoln_Chafee_official_portrait_%28cropped%29.jpg"))
+        candidates.append(Candidate(name: "Hillary Clinton", party: "Democratic", picURL: "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/HRC_in_Iowa_APR_2015.jpg/113px-HRC_in_Iowa_APR_2015.jpg"))
+        candidates.append(Candidate(name: "Lawrence Lessig", party: "Democratic", picURL: "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2c/Lessig_%28cropped%29.png/103px-Lessig_%28cropped%29.png"))
+        candidates.append(Candidate(name: "Martin O'Malley", party: "Democratic", picURL: "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a6/Governor_O%27Malley_Portrait_%28cropped%29.jpg/108px-Governor_O%27Malley_Portrait_%28cropped%29.jpg"))
+        candidates.append(Candidate(name: "Bernie Sanders", party: "Democratic", picURL: "https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/Bernie_Sanders_New_Orleans_rally_crop.jpg/121px-Bernie_Sanders_New_Orleans_rally_crop.jpg"))
+        candidates.append(Candidate(name: "Jim Webb", party: "Democratic", picURL: "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e3/Jim_Webb_official_110th_Congress_photo_%28cropped%29.jpg/107px-Jim_Webb_official_110th_Congress_photo_%28cropped%29.jpg"))
     }
     
     func numberOfCandidates() -> Int {
@@ -31,7 +31,7 @@ class CandidatesDataModel {
         if index < candidates.count {
             return candidates[index]
         } else {
-            return Candidate(name: "<NoName>", party: "<NoParty>", pic: UIImage())
+            return Candidate(name: "<NoName>", party: "<NoParty>", picURL: "<NoPicURL>")
         }
     }
     

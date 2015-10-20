@@ -8,6 +8,7 @@
 
 import UIKit
 import REFrostedViewController
+import Alamofire
 
 
 class CandidatesViewController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate {
@@ -44,7 +45,14 @@ class CandidatesViewController: UIViewController, UICollectionViewDataSource, UI
         let tempCandidate:Candidate = data.getCandidate(index: index)
         
         cell.candidateNameLabel.text = tempCandidate.name
-        cell.candidatePhoto.image = cropToBounds(tempCandidate.getPic())
+        
+        Alamofire.request(.GET, tempCandidate.picURL).response() {
+            (_, _, data, _) in
+            let image = UIImage(data: data!)
+            cell.candidatePhoto.image = image
+        }
+        
+        //cell.candidatePhoto.image = cropToBounds(tempCandidate.getPic())
         
         return cell
     }
