@@ -6,7 +6,6 @@
 //  Copyright © 2015 CS378. All rights reserved.
 //
 
-import Foundation
 import UIKit
 
 class MenuViewController: UITableViewController {
@@ -64,6 +63,9 @@ class MenuViewController: UITableViewController {
         } else if indexPath.row == 1 { // Candidates Page
             let candidatesViewController: CandidatesViewController = self.storyboard!.instantiateViewControllerWithIdentifier("candidatesController") as! CandidatesViewController
             navigationController.viewControllers = [candidatesViewController]
+        } else if indexPath.row == 2 { // GoVote Page
+            let goVoteTableViewController: GoVoteTableViewController = self.storyboard!.instantiateViewControllerWithIdentifier("goVoteController") as! GoVoteTableViewController
+            navigationController.viewControllers = [goVoteTableViewController]
         }
         
         self.frostedViewController.contentViewController = navigationController

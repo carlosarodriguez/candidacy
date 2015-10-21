@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		789A54261BD75FF700645E67 /* GoVoteTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 789A54231BD75FF700645E67 /* GoVoteTableViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		789A54271BD75FF700645E67 /* QuestionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 789A54241BD75FF700645E67 /* QuestionTableViewCell.swift */; settings = {ASSET_TAGS = (); }; };
+		789A54281BD75FF700645E67 /* QuestionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 789A54251BD75FF700645E67 /* QuestionViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		B22338061BCDF79000119944 /* iTunesArtwork@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B22338051BCDF79000119944 /* iTunesArtwork@2x.png */; settings = {ASSET_TAGS = (); }; };
 		DB0469441BD0B24E00F0A53F /* NavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB0469431BD0B24E00F0A53F /* NavigationController.swift */; settings = {ASSET_TAGS = (); }; };
 		DB0469461BD0B8CF00F0A53F /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB0469451BD0B8CF00F0A53F /* RootViewController.swift */; settings = {ASSET_TAGS = (); }; };
@@ -51,6 +54,9 @@
 /* Begin PBXFileReference section */
 		0A4D40A72A2A85473725D53E /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		576CE8A8F4496B41F2CA199D /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		789A54231BD75FF700645E67 /* GoVoteTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GoVoteTableViewController.swift; sourceTree = "<group>"; };
+		789A54241BD75FF700645E67 /* QuestionTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuestionTableViewCell.swift; sourceTree = "<group>"; };
+		789A54251BD75FF700645E67 /* QuestionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuestionViewController.swift; sourceTree = "<group>"; };
 		AA4CB47D97D1DD27434CCF42 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		B22338041BCDF31A00119944 /* Candidacy-BridgingHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Candidacy-BridgingHeader.h"; sourceTree = "<group>"; };
 		B22338051BCDF79000119944 /* iTunesArtwork@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "iTunesArtwork@2x.png"; path = "Graphics/candidacylogo/ios/iTunesArtwork@2x.png"; sourceTree = "<group>"; };
@@ -145,6 +151,9 @@
 			isa = PBXGroup;
 			children = (
 				DB6FE9E81BCB046700E6C38C /* AppDelegate.swift */,
+				789A54231BD75FF700645E67 /* GoVoteTableViewController.swift */,
+				789A54241BD75FF700645E67 /* QuestionTableViewCell.swift */,
+				789A54251BD75FF700645E67 /* QuestionViewController.swift */,
 				DB6FE9EA1BCB046700E6C38C /* NewsViewController.swift */,
 				DB6FE9EC1BCB046700E6C38C /* Main.storyboard */,
 				DBE3AEDF1BD470DC0055FE19 /* CandidatePhotoCell.swift */,
@@ -390,12 +399,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				DBE3AEBF1BD460E10055FE19 /* CandidatesDataModel.swift in Sources */,
+				789A54261BD75FF700645E67 /* GoVoteTableViewController.swift in Sources */,
 				DB6FE9EB1BCB046700E6C38C /* NewsViewController.swift in Sources */,
 				DBE3AEE01BD470DC0055FE19 /* CandidatePhotoCell.swift in Sources */,
 				DB0469481BD0BAF300F0A53F /* MenuViewController.swift in Sources */,
+				789A54281BD75FF700645E67 /* QuestionViewController.swift in Sources */,
 				DB0469441BD0B24E00F0A53F /* NavigationController.swift in Sources */,
 				DB0469461BD0B8CF00F0A53F /* RootViewController.swift in Sources */,
 				DB39570D1BD2F113005CA3FC /* CandidatesViewController.swift in Sources */,
+				789A54271BD75FF700645E67 /* QuestionTableViewCell.swift in Sources */,
 				DB6FE9E91BCB046700E6C38C /* AppDelegate.swift in Sources */,
 				DBE3AEC11BD461500055FE19 /* Candidate.swift in Sources */,
 			);
