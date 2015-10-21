@@ -49,7 +49,7 @@ class MenuViewController: UITableViewController {
         
         // textLabel and text are both optionals, so, need to unwrap them
         cell.textLabel!.text! = menuItems[index]
-        cell.textLabel?.font = UIFont(name: "avenir-medium", size: 20)
+        cell.textLabel?.font = UIFont(name: "avenir-medium", size: 16)
         
         return cell
     }

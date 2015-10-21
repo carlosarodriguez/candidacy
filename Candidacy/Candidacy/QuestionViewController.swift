@@ -22,6 +22,8 @@ class QuestionViewController: UIViewController {
         
         questionLabel.text = question
         answerLabel.text = answer
+        questionLabel.font = UIFont(name: "avenir-heavy", size: 22)
+        answerLabel.font = UIFont(name: "avenir-medium", size: 16)
     }
     
     override func didReceiveMemoryWarning() {

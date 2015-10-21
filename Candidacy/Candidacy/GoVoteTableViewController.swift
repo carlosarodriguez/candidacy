@@ -14,6 +14,7 @@ class GoVoteTableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        self.tableView.separatorStyle = UITableViewCellSeparatorStyle.None
     }
     
     override func didReceiveMemoryWarning() {
@@ -32,6 +33,7 @@ class GoVoteTableViewController: UITableViewController {
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> QuestionTableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("faqCell", forIndexPath:indexPath) as! QuestionTableViewCell
         cell.titleLabel.text = questions[indexPath.row]
+        cell.titleLabel.font = UIFont(name: "avenir-medium", size: 16)
         return cell
     }
     
