@@ -10,7 +10,7 @@ import UIKit
 
 class CandidatePhotoCell: UICollectionViewCell {
     
-    @IBOutlet weak var candidatePhoto: UIImageView!
+    //@IBOutlet weak var candidatePhoto: UIImageView!
     @IBOutlet weak var candidateNameLabel: UILabel!
-    
+    @IBOutlet weak var candidatePhotoButton: UIButton!
 }

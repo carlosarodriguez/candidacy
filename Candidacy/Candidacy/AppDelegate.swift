@@ -17,6 +17,21 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
+        
+        //customize navbar appearance
+        let appearance = UINavigationBar.appearance()
+        appearance.barTintColor = UIColor(red: 252/255, green: 81/255, blue: 69/255, alpha: 1.0)
+        appearance.titleTextAttributes = [NSFontAttributeName: UIFont(name: "avenir-medium", size: 20)!,  NSForegroundColorAttributeName: UIColor.whiteColor()]
+        appearance.translucent = false
+        
+        //Remove hairline pixel seperating navbar and background
+        appearance.setBackgroundImage(
+            UIImage(),
+            forBarPosition: .Any,
+            barMetrics: .Default)
+        
+        appearance.shadowImage = UIImage()
+        
         return true
     }
 

@@ -17,6 +17,12 @@ class MenuViewController: UITableViewController {
         //super.viewDidLoad()
         self.tableView.delegate = self
         self.tableView.dataSource = self;
+        
+        self.tableView.separatorStyle = UITableViewCellSeparatorStyle.None
+        
+        let view: UIView = UIView(frame: CGRectMake(0, 0, 0, 64.0))
+        view.backgroundColor = UIColor(red: 252/255, green: 81/255, blue: 69/255, alpha: 1.0)
+        self.tableView.tableHeaderView = view
     }
     
     override func didReceiveMemoryWarning() {
@@ -44,6 +50,7 @@ class MenuViewController: UITableViewController {
         
         // textLabel and text are both optionals, so, need to unwrap them
         cell.textLabel!.text! = menuItems[index]
+        cell.textLabel?.font = UIFont(name: "avenir-medium", size: 20)
         
         return cell
     }
