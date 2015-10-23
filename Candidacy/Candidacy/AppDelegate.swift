@@ -24,6 +24,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         appearance.titleTextAttributes = [NSFontAttributeName: UIFont(name: "avenir-medium", size: 20)!,  NSForegroundColorAttributeName: UIColor.whiteColor()]
         appearance.translucent = false
         
+        
         //Remove hairline pixel seperating navbar and background
         appearance.setBackgroundImage(
             UIImage(),

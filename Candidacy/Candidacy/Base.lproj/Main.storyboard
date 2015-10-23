@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="F70-Ad-cz0">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="F70-Ad-cz0">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
     </dependencies>
@@ -44,7 +44,7 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="GoVote" id="xLh-k2-4h9">
-                        <barButtonItem key="leftBarButtonItem" image="threelines2" id="PIj-JX-0zO">
+                        <barButtonItem key="leftBarButtonItem" image="menu" id="PIj-JX-0zO">
                             <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                             <connections>
                                 <action selector="showMenu:" destination="AfX-Oz-2t0" id="AuV-9I-RY4"/>
@@ -128,7 +128,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" title="News" id="sTb-fF-9dL">
-                        <barButtonItem key="leftBarButtonItem" image="threelines2" id="OO4-i0-gak">
+                        <barButtonItem key="leftBarButtonItem" image="menu" id="OO4-i0-gak">
                             <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                             <connections>
                                 <action selector="showMenu:" destination="BYZ-38-t0r" id="27r-XK-4gm"/>
@@ -206,7 +206,7 @@
                     </view>
                     <toolbarItems/>
                     <navigationItem key="navigationItem" title="Candidates" id="5P9-hR-THD">
-                        <barButtonItem key="leftBarButtonItem" image="threelines2" id="6yx-ha-ieB">
+                        <barButtonItem key="leftBarButtonItem" image="menu" id="6yx-ha-ieB">
                             <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                             <connections>
                                 <action selector="showMenu:" destination="crx-oi-iLV" id="4pw-Vh-jrc"/>
@@ -237,11 +237,13 @@
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KbC-Ra-Ks1">
                                 <rect key="frame" x="124" y="122" width="126" height="88"/>
+                                <animations/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
+                        <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
@@ -340,7 +342,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="threelines2" width="40" height="34"/>
+        <image name="menu" width="22" height="22"/>
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="PEH-eL-eUg"/>
