@@ -15,6 +15,7 @@ class CandidatesViewController: UIViewController, UICollectionViewDataSource, UI
     @IBOutlet weak var collectionView: UICollectionView!
     private let reuseIdentifier = "candidatePicID"
     var data:CandidatesDataModel = CandidatesDataModel()
+    var indexOfSelectedCandidate:Int = 0
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -48,9 +49,16 @@ class CandidatesViewController: UIViewController, UICollectionViewDataSource, UI
         //cell.candidatePhoto.image = cropToBounds(tempCandidate.getPic())
         cell.candidatePhotoButton.setImage(tempCandidate.getPic(), forState: .Normal)
         cell.candidatePhotoButton.layer.cornerRadius = 0.5 * cell.candidatePhotoButton.bounds.size.width
-        cell.candidatePhotoButton.clipsToBounds = true 
+        cell.candidatePhotoButton.clipsToBounds = true
         
         return cell
+    }
+    
+    @IBAction func candidatePhotoSelected(sender: AnyObject) {
+        let touchPoint = collectionView.convertPoint(CGPoint.zero, fromView: sender as? UIView)
+        if let indexPath = collectionView.indexPathForItemAtPoint(touchPoint) {
+            indexOfSelectedCandidate = indexPath.row
+        }
     }
     
     @IBAction func showMenu(sender: AnyObject) {
@@ -74,6 +82,19 @@ class CandidatesViewController: UIViewController, UICollectionViewDataSource, UI
         let image: UIImage = UIImage(CGImage: imageRef, scale: image.scale, orientation: image.imageOrientation)
         
         return image
+    }
+    
+    // In a storyboard-based application, you will often want to do a little preparation before navigation
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        // Do something for the ShowDetail segue
+        if segue.identifier == "showCandidateDetail" {
+            
+            // Get the destination view controller
+            let detailVC:CandidateDetailViewController = segue.destinationViewController as! CandidateDetailViewController
+            
+            // Pass in the candidate object
+            detailVC.candidate = data.getCandidate(index: indexOfSelectedCandidate)
+        }
     }
     
     

@@ -22,6 +22,7 @@
 		DB6FE9F31BCB046700E6C38C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DB6FE9F11BCB046700E6C38C /* LaunchScreen.storyboard */; };
 		DB6FE9FE1BCB046700E6C38C /* CandidacyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB6FE9FD1BCB046700E6C38C /* CandidacyTests.swift */; };
 		DB6FEA091BCB046700E6C38C /* CandidacyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB6FEA081BCB046700E6C38C /* CandidacyUITests.swift */; };
+		DB9FF0921BDA07AA0016FA63 /* CandidateDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB9FF0911BDA07AA0016FA63 /* CandidateDetailViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		DBC0BE081BD9A535000CBF3E /* Carly_Fiorina_August_2015.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DBC0BE031BD9A535000CBF3E /* Carly_Fiorina_August_2015.jpg */; settings = {ASSET_TAGS = (); }; };
 		DBC0BE091BD9A535000CBF3E /* Chris_Christie_April_2015_(cropped).jpg in Resources */ = {isa = PBXBuildFile; fileRef = DBC0BE041BD9A535000CBF3E /* Chris_Christie_April_2015_(cropped).jpg */; settings = {ASSET_TAGS = (); }; };
 		DBC0BE0A1BD9A535000CBF3E /* Dr._Ben_Carson_in_New_Hampshire_on_August_13th,_2015_1_by_Michael_Vadon_17_(cropped).jpg in Resources */ = {isa = PBXBuildFile; fileRef = DBC0BE051BD9A535000CBF3E /* Dr._Ben_Carson_in_New_Hampshire_on_August_13th,_2015_1_by_Michael_Vadon_17_(cropped).jpg */; settings = {ASSET_TAGS = (); }; };
@@ -93,6 +94,7 @@
 		DB6FEA041BCB046700E6C38C /* CandidacyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CandidacyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DB6FEA081BCB046700E6C38C /* CandidacyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CandidacyUITests.swift; sourceTree = "<group>"; };
 		DB6FEA0A1BCB046700E6C38C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DB9FF0911BDA07AA0016FA63 /* CandidateDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CandidateDetailViewController.swift; sourceTree = "<group>"; };
 		DBC0BE031BD9A535000CBF3E /* Carly_Fiorina_August_2015.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Carly_Fiorina_August_2015.jpg; sourceTree = "<group>"; };
 		DBC0BE041BD9A535000CBF3E /* Chris_Christie_April_2015_(cropped).jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Chris_Christie_April_2015_(cropped).jpg"; sourceTree = "<group>"; };
 		DBC0BE051BD9A535000CBF3E /* Dr._Ben_Carson_in_New_Hampshire_on_August_13th,_2015_1_by_Michael_Vadon_17_(cropped).jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Dr._Ben_Carson_in_New_Hampshire_on_August_13th,_2015_1_by_Michael_Vadon_17_(cropped).jpg"; sourceTree = "<group>"; };
@@ -188,6 +190,7 @@
 				789A54251BD75FF700645E67 /* QuestionViewController.swift */,
 				DB6FE9EA1BCB046700E6C38C /* NewsViewController.swift */,
 				DB6FE9EC1BCB046700E6C38C /* Main.storyboard */,
+				DB9FF0911BDA07AA0016FA63 /* CandidateDetailViewController.swift */,
 				DBE3AEDF1BD470DC0055FE19 /* CandidatePhotoCell.swift */,
 				DB39570C1BD2F113005CA3FC /* CandidatesViewController.swift */,
 				DBE3AEBE1BD460E10055FE19 /* CandidatesDataModel.swift */,
@@ -473,6 +476,7 @@
 				DB39570D1BD2F113005CA3FC /* CandidatesViewController.swift in Sources */,
 				789A54271BD75FF700645E67 /* QuestionTableViewCell.swift in Sources */,
 				DB6FE9E91BCB046700E6C38C /* AppDelegate.swift in Sources */,
+				DB9FF0921BDA07AA0016FA63 /* CandidateDetailViewController.swift in Sources */,
 				DBE3AEC11BD461500055FE19 /* Candidate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

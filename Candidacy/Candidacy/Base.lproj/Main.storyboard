@@ -175,6 +175,10 @@
                                                     <rect key="frame" x="0.0" y="0.0" width="90" height="90"/>
                                                     <animations/>
                                                     <state key="normal" title="Button"/>
+                                                    <connections>
+                                                        <action selector="candidatePhotoSelected:" destination="crx-oi-iLV" eventType="touchUpInside" id="Qxx-eZ-zhi"/>
+                                                        <segue destination="ESC-Ht-2VQ" kind="show" identifier="showCandidateDetail" id="F5b-Ug-B3q"/>
+                                                    </connections>
                                                 </button>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="v7L-kW-rrB">
                                                     <rect key="frame" x="0.0" y="88" width="90" height="50"/>
@@ -218,6 +222,36 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x3N-nL-UXv" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1349.5" y="1141.5"/>
+        </scene>
+        <!--Candidate Detail View Controller-->
+        <scene sceneID="g4Y-e4-QXd">
+            <objects>
+                <viewController restorationIdentifier="candidateDetailVC" storyboardIdentifier="candidateDetailVC" id="ESC-Ht-2VQ" customClass="CandidateDetailViewController" customModule="Candidacy" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="hxX-iq-jFt"/>
+                        <viewControllerLayoutGuide type="bottom" id="IrO-vI-ZSQ"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="PYs-rj-y9W">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KbC-Ra-Ks1">
+                                <rect key="frame" x="124" y="122" width="126" height="88"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="candidateNameLabel" destination="KbC-Ra-Ks1" id="VZf-ee-AvU"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="MKM-lv-k3u" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1827.5" y="1141.5"/>
         </scene>
         <!--Root View Controller-->
         <scene sceneID="gyN-iH-UGQ">
