@@ -235,13 +235,20 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5IN-Vq-9Qh" userLabel="Header">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="102"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KbC-Ra-Ks1">
-                                <rect key="frame" x="124" y="122" width="126" height="88"/>
+                                <rect key="frame" x="124" y="290" width="126" height="88"/>
                                 <animations/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="usL-6A-Qjs">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="668"/>
+                            </scrollView>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -249,6 +256,8 @@
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
                         <outlet property="candidateNameLabel" destination="KbC-Ra-Ks1" id="VZf-ee-AvU"/>
+                        <outlet property="header" destination="5IN-Vq-9Qh" id="XF4-PS-lcu"/>
+                        <outlet property="scrollView" destination="usL-6A-Qjs" id="Dg4-7K-1j2"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MKM-lv-k3u" userLabel="First Responder" sceneMemberID="firstResponder"/>
