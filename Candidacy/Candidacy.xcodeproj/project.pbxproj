@@ -45,8 +45,6 @@
 		DBE3AED91BD46AB10055FE19 /* Bernie_Sanders_New_Orleans_rally_crop.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DBE3AED31BD46AB10055FE19 /* Bernie_Sanders_New_Orleans_rally_crop.jpg */; settings = {ASSET_TAGS = (); }; };
 		DBE3AEDA1BD46AB10055FE19 /* Governor_O'Malley_Portrait_(cropped).jpg in Resources */ = {isa = PBXBuildFile; fileRef = DBE3AED41BD46AB10055FE19 /* Governor_O'Malley_Portrait_(cropped).jpg */; settings = {ASSET_TAGS = (); }; };
 		DBE3AEDB1BD46AB10055FE19 /* HRC_in_Iowa_APR_2015.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DBE3AED51BD46AB10055FE19 /* HRC_in_Iowa_APR_2015.jpg */; settings = {ASSET_TAGS = (); }; };
-		DBE3AEDD1BD46AB10055FE19 /* Lessig_(cropped).png in Resources */ = {isa = PBXBuildFile; fileRef = DBE3AED71BD46AB10055FE19 /* Lessig_(cropped).png */; settings = {ASSET_TAGS = (); }; };
-		DBE3AEDE1BD46AB10055FE19 /* Lincoln_Chafee_official_portrait_(cropped)-2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DBE3AED81BD46AB10055FE19 /* Lincoln_Chafee_official_portrait_(cropped)-2.jpg */; settings = {ASSET_TAGS = (); }; };
 		DBE3AEE01BD470DC0055FE19 /* CandidatePhotoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBE3AEDF1BD470DC0055FE19 /* CandidatePhotoCell.swift */; settings = {ASSET_TAGS = (); }; };
 		FEBCBBC9361072E7FA561AE0 /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 576CE8A8F4496B41F2CA199D /* Pods.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 /* End PBXBuildFile section */
@@ -117,8 +115,6 @@
 		DBE3AED31BD46AB10055FE19 /* Bernie_Sanders_New_Orleans_rally_crop.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Bernie_Sanders_New_Orleans_rally_crop.jpg; sourceTree = "<group>"; };
 		DBE3AED41BD46AB10055FE19 /* Governor_O'Malley_Portrait_(cropped).jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Governor_O'Malley_Portrait_(cropped).jpg"; sourceTree = "<group>"; };
 		DBE3AED51BD46AB10055FE19 /* HRC_in_Iowa_APR_2015.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = HRC_in_Iowa_APR_2015.jpg; sourceTree = "<group>"; };
-		DBE3AED71BD46AB10055FE19 /* Lessig_(cropped).png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Lessig_(cropped).png"; sourceTree = "<group>"; };
-		DBE3AED81BD46AB10055FE19 /* Lincoln_Chafee_official_portrait_(cropped)-2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Lincoln_Chafee_official_portrait_(cropped)-2.jpg"; sourceTree = "<group>"; };
 		DBE3AEDF1BD470DC0055FE19 /* CandidatePhotoCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CandidatePhotoCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -247,8 +243,6 @@
 				DBE3AED31BD46AB10055FE19 /* Bernie_Sanders_New_Orleans_rally_crop.jpg */,
 				DBE3AED41BD46AB10055FE19 /* Governor_O'Malley_Portrait_(cropped).jpg */,
 				DBE3AED51BD46AB10055FE19 /* HRC_in_Iowa_APR_2015.jpg */,
-				DBE3AED71BD46AB10055FE19 /* Lessig_(cropped).png */,
-				DBE3AED81BD46AB10055FE19 /* Lincoln_Chafee_official_portrait_(cropped)-2.jpg */,
 			);
 			path = "Candidate Images";
 			sourceTree = "<group>";
@@ -373,7 +367,6 @@
 				DBC0BE1A1BD9A75B000CBF3E /* 126px-Marco_Rubio,_Official_Portrait,_112th_Congress.jpg in Resources */,
 				DBC0BE1B1BD9A75B000CBF3E /* Donald_Trump_September_3_2015.jpg in Resources */,
 				DBC0BE1F1BD9A75B000CBF3E /* Jim_Gilmore_2015.jpg in Resources */,
-				DBE3AEDD1BD46AB10055FE19 /* Lessig_(cropped).png in Resources */,
 				DBC0BE201BD9A75B000CBF3E /* Lindsey_Graham,_official_Senate_photo_portrait_cropped.jpg in Resources */,
 				DBC0BE241BD9A75B000CBF3E /* Steele_headshot_never_used_before_(afghanistan).jpg in Resources */,
 				DB6FE9F31BCB046700E6C38C /* LaunchScreen.storyboard in Resources */,
@@ -385,7 +378,6 @@
 				DBE3AED91BD46AB10055FE19 /* Bernie_Sanders_New_Orleans_rally_crop.jpg in Resources */,
 				DBC0BE1D1BD9A75B000CBF3E /* Governor_John_Kasich.jpg in Resources */,
 				DB6FE9EE1BCB046700E6C38C /* Main.storyboard in Resources */,
-				DBE3AEDE1BD46AB10055FE19 /* Lincoln_Chafee_official_portrait_(cropped)-2.jpg in Resources */,
 				DBC0BE081BD9A535000CBF3E /* Carly_Fiorina_August_2015.jpg in Resources */,
 				B22338061BCDF79000119944 /* iTunesArtwork@2x.png in Resources */,
 				DBC0BE191BD9A75B000CBF3E /* 100px-Jill_Stein_2012.jpg in Resources */,

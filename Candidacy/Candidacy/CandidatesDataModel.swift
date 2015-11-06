@@ -15,9 +15,7 @@ class CandidatesDataModel {
     
     init() {
         // Populate candidates array
-        candidates.append(Candidate(name: "Lincoln Chafee", party: "Democratic", pic: UIImage(named: "Lincoln_Chafee_official_portrait_(cropped)-2.jpg")!))
         candidates.append(Candidate(name: "Hillary Clinton", party: "Democratic", pic: UIImage(named: "HRC_in_Iowa_APR_2015.jpg")!))
-        candidates.append(Candidate(name: "Lawrence Lessig", party: "Democratic", pic: UIImage(named: "Lessig_(cropped).png")!))
         candidates.append(Candidate(name: "Martin O'Malley", party: "Democratic", pic: UIImage(named: "Governor_O'Malley_Portrait_(cropped).jpg")!))
         candidates.append(Candidate(name: "Bernie Sanders", party: "Democratic", pic: UIImage(named: "Bernie_Sanders_New_Orleans_rally_crop.jpg")!))
         candidates.append(Candidate(name: "Jeb Bush", party: "Republican", pic: UIImage(named: "Governor_of_Florida_Jeb_Bush_2015_in_NH_by_Michael_Vadon_(cropped).jpg")!))
