@@ -17,6 +17,7 @@ class Candidate {
     private var _party:String = ""
     private var _votes:Int = 0 // could come in handy when Poll is implemented
     private var pic:UIImage = UIImage()
+    private var banner:UIImage = UIImage()
     
     var name:String {
         get {
@@ -58,10 +59,15 @@ class Candidate {
         return pic
     }
     
-    init(name:String, party:String, pic:UIImage) {
+    func getBanner() -> UIImage {
+        return banner
+    }
+    
+    init(name:String, party:String, pic:UIImage, banner:UIImage) {
         self.name = name
         self.party = party
         self.pic = pic
+        self.banner = banner
     }
     
 //    convenience init() {

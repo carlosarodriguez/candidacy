@@ -32,11 +32,13 @@ class CandidateDetailViewController: UIViewController, UIScrollViewDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        // set up profile
         candidateNameLabel.text = candidate!.name
         profileImage.image = candidate?.getPic()
         profileImage.layer.cornerRadius = 0.5 * profileImage.bounds.size.width
         profileWhiteBackground.layer.cornerRadius = 0.5 * profileWhiteBackground.bounds.size.width
         profileImage.clipsToBounds = true
+        
         self.navigationController?.navigationBarHidden = true
         
         scrollView.delegate = self
@@ -47,7 +49,7 @@ class CandidateDetailViewController: UIViewController, UIScrollViewDelegate {
         // Header - Image
         
         headerImageView = UIImageView(frame: header.bounds)
-        headerImageView?.image = candidate?.getPic()
+        headerImageView?.image = candidate?.getBanner()
         headerImageView?.contentMode = UIViewContentMode.ScaleAspectFill
         header.insertSubview(headerImageView, belowSubview: headerLabel)
         
@@ -100,6 +102,10 @@ class CandidateDetailViewController: UIViewController, UIScrollViewDelegate {
         
     }
 
+    @IBAction func dismissCandidateProfile(sender: AnyObject) {
+        navigationController?.popViewControllerAnimated(true)
+        self.navigationController?.navigationBarHidden = false
+    }
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()

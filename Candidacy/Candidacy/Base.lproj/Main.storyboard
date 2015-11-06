@@ -265,6 +265,10 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="GPN-j1-jh8" appends="YES" id="iAD-yb-qPI"/>
+                                </connections>
                             </scrollView>
                         </subviews>
                         <animations/>
@@ -281,6 +285,11 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MKM-lv-k3u" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <swipeGestureRecognizer direction="right" id="GPN-j1-jh8">
+                    <connections>
+                        <action selector="dismissCandidateProfile:" destination="ESC-Ht-2VQ" id="iza-l7-6k4"/>
+                    </connections>
+                </swipeGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="1827.5" y="1141.5"/>
         </scene>
