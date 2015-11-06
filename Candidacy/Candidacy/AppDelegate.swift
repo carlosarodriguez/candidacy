@@ -8,6 +8,7 @@
 
 import UIKit
 import REFrostedViewController
+import Parse
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -30,6 +31,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             UIImage(),
             forBarPosition: .Any,
             barMetrics: .Default)
+        
+        // Parse application ID and client ID
+        Parse.setApplicationId("nDqHc4Iv70AgWRP0cyatqlVKN1PNjkYNIUKPvm99", clientKey:"oPda5aM2kPZXWbppTE3NpydOxbIdaPCPV1X8nBdL")
         
         appearance.shadowImage = UIImage()
         

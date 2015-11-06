@@ -1,13 +1,19 @@
 PODS:
   - Alamofire (3.0.0)
+  - Bolts/Tasks (1.4.0)
+  - Parse (1.9.1):
+    - Bolts/Tasks (>= 1.4.0)
   - REFrostedViewController (2.4.8)
 
 DEPENDENCIES:
   - Alamofire (~> 3.0)
+  - Parse
   - REFrostedViewController
 
 SPEC CHECKSUMS:
   Alamofire: b61782387f81bcc538a0284cf2bb5d7995cd0a80
+  Bolts: 0e9bce58b9b9f5e8a7a4d47b16d2fabec289072b
+  Parse: 54a965c8c19a6dde90284ab654dbcc77ef8c001b
   REFrostedViewController: a893b4979ba1f200c547aef9ff4c3fd5a18f5923
 
-COCOAPODS: 0.38.2
+COCOAPODS: 0.39.0

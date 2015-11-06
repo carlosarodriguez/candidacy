@@ -7,34 +7,45 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		789A54261BD75FF700645E67 /* GoVoteTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 789A54231BD75FF700645E67 /* GoVoteTableViewController.swift */; settings = {ASSET_TAGS = (); }; };
-		789A54271BD75FF700645E67 /* QuestionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 789A54241BD75FF700645E67 /* QuestionTableViewCell.swift */; settings = {ASSET_TAGS = (); }; };
-		789A54281BD75FF700645E67 /* QuestionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 789A54251BD75FF700645E67 /* QuestionViewController.swift */; settings = {ASSET_TAGS = (); }; };
-		B22338061BCDF79000119944 /* iTunesArtwork@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B22338051BCDF79000119944 /* iTunesArtwork@2x.png */; settings = {ASSET_TAGS = (); }; };
-		DB0469441BD0B24E00F0A53F /* NavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB0469431BD0B24E00F0A53F /* NavigationController.swift */; settings = {ASSET_TAGS = (); }; };
-		DB0469461BD0B8CF00F0A53F /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB0469451BD0B8CF00F0A53F /* RootViewController.swift */; settings = {ASSET_TAGS = (); }; };
-		DB0469481BD0BAF300F0A53F /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB0469471BD0BAF300F0A53F /* MenuViewController.swift */; settings = {ASSET_TAGS = (); }; };
-		DB39570D1BD2F113005CA3FC /* CandidatesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB39570C1BD2F113005CA3FC /* CandidatesViewController.swift */; settings = {ASSET_TAGS = (); }; };
-		DB5D33871BEC7B28008486D3 /* HilaryBanner.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DB5D33861BEC7B28008486D3 /* HilaryBanner.jpg */; settings = {ASSET_TAGS = (); }; };
-		DB5D33891BEC866E008486D3 /* BenBanner.png in Resources */ = {isa = PBXBuildFile; fileRef = DB5D33881BEC866E008486D3 /* BenBanner.png */; settings = {ASSET_TAGS = (); }; };
-		DB5D339C1BEC867E008486D3 /* BernieBanner.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DB5D338A1BEC867E008486D3 /* BernieBanner.jpg */; settings = {ASSET_TAGS = (); }; };
-		DB5D339D1BEC867E008486D3 /* BobbyBanner.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DB5D338B1BEC867E008486D3 /* BobbyBanner.jpg */; settings = {ASSET_TAGS = (); }; };
-		DB5D339E1BEC867E008486D3 /* CarlyBanner.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DB5D338C1BEC867E008486D3 /* CarlyBanner.jpg */; settings = {ASSET_TAGS = (); }; };
-		DB5D339F1BEC867E008486D3 /* ChrisBanner.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DB5D338D1BEC867E008486D3 /* ChrisBanner.jpg */; settings = {ASSET_TAGS = (); }; };
-		DB5D33A01BEC867E008486D3 /* DonaldBanner.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DB5D338E1BEC867E008486D3 /* DonaldBanner.jpg */; settings = {ASSET_TAGS = (); }; };
-		DB5D33A11BEC867E008486D3 /* GeorgeBanner.png in Resources */ = {isa = PBXBuildFile; fileRef = DB5D338F1BEC867E008486D3 /* GeorgeBanner.png */; settings = {ASSET_TAGS = (); }; };
-		DB5D33A21BEC867E008486D3 /* JebBanner.png in Resources */ = {isa = PBXBuildFile; fileRef = DB5D33901BEC867E008486D3 /* JebBanner.png */; settings = {ASSET_TAGS = (); }; };
-		DB5D33A31BEC867E008486D3 /* JillBanner.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DB5D33911BEC867E008486D3 /* JillBanner.jpg */; settings = {ASSET_TAGS = (); }; };
-		DB5D33A41BEC867E008486D3 /* JimBanner.png in Resources */ = {isa = PBXBuildFile; fileRef = DB5D33921BEC867E008486D3 /* JimBanner.png */; settings = {ASSET_TAGS = (); }; };
-		DB5D33A51BEC867E008486D3 /* JohnBanner.png in Resources */ = {isa = PBXBuildFile; fileRef = DB5D33931BEC867E008486D3 /* JohnBanner.png */; settings = {ASSET_TAGS = (); }; };
-		DB5D33A61BEC867E008486D3 /* LindseyBanner.png in Resources */ = {isa = PBXBuildFile; fileRef = DB5D33941BEC867E008486D3 /* LindseyBanner.png */; settings = {ASSET_TAGS = (); }; };
-		DB5D33A71BEC867E008486D3 /* MarcoBanner.png in Resources */ = {isa = PBXBuildFile; fileRef = DB5D33951BEC867E008486D3 /* MarcoBanner.png */; settings = {ASSET_TAGS = (); }; };
-		DB5D33A81BEC867E008486D3 /* MartinBanner.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DB5D33961BEC867E008486D3 /* MartinBanner.jpg */; settings = {ASSET_TAGS = (); }; };
-		DB5D33A91BEC867E008486D3 /* MikeBanner.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DB5D33971BEC867E008486D3 /* MikeBanner.jpg */; settings = {ASSET_TAGS = (); }; };
-		DB5D33AA1BEC867E008486D3 /* RandBanner.png in Resources */ = {isa = PBXBuildFile; fileRef = DB5D33981BEC867E008486D3 /* RandBanner.png */; settings = {ASSET_TAGS = (); }; };
-		DB5D33AB1BEC867E008486D3 /* RickBanner.png in Resources */ = {isa = PBXBuildFile; fileRef = DB5D33991BEC867E008486D3 /* RickBanner.png */; settings = {ASSET_TAGS = (); }; };
-		DB5D33AC1BEC867E008486D3 /* RobertBanner.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DB5D339A1BEC867E008486D3 /* RobertBanner.jpg */; settings = {ASSET_TAGS = (); }; };
-		DB5D33AD1BEC867E008486D3 /* TedBanner.png in Resources */ = {isa = PBXBuildFile; fileRef = DB5D339B1BEC867E008486D3 /* TedBanner.png */; settings = {ASSET_TAGS = (); }; };
+		7830AFB51BED36D500D2E63C /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7830AFB41BED36D500D2E63C /* AudioToolbox.framework */; };
+		7830AFB71BED36E300D2E63C /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7830AFB61BED36E300D2E63C /* CFNetwork.framework */; };
+		7830AFB91BED36ED00D2E63C /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7830AFB81BED36ED00D2E63C /* CoreGraphics.framework */; };
+		7830AFBB1BED36F700D2E63C /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7830AFBA1BED36F700D2E63C /* CoreLocation.framework */; };
+		7830AFBD1BED370600D2E63C /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7830AFBC1BED370600D2E63C /* MobileCoreServices.framework */; };
+		7830AFBF1BED371500D2E63C /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7830AFBE1BED371500D2E63C /* QuartzCore.framework */; };
+		7830AFC11BED372000D2E63C /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7830AFC01BED372000D2E63C /* Security.framework */; };
+		7830AFC31BED372D00D2E63C /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7830AFC21BED372D00D2E63C /* StoreKit.framework */; };
+		7830AFC51BED373700D2E63C /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7830AFC41BED373700D2E63C /* SystemConfiguration.framework */; };
+		7830AFC81BED3BF100D2E63C /* libz.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 7830AFC61BED3BCB00D2E63C /* libz.1.dylib */; };
+		789A54261BD75FF700645E67 /* GoVoteTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 789A54231BD75FF700645E67 /* GoVoteTableViewController.swift */; };
+		789A54271BD75FF700645E67 /* QuestionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 789A54241BD75FF700645E67 /* QuestionTableViewCell.swift */; };
+		789A54281BD75FF700645E67 /* QuestionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 789A54251BD75FF700645E67 /* QuestionViewController.swift */; };
+		78EAE96F1BED3D4000825413 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 78EAE96E1BED3D4000825413 /* libsqlite3.dylib */; };
+		B22338061BCDF79000119944 /* iTunesArtwork@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B22338051BCDF79000119944 /* iTunesArtwork@2x.png */; };
+		DB0469441BD0B24E00F0A53F /* NavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB0469431BD0B24E00F0A53F /* NavigationController.swift */; };
+		DB0469461BD0B8CF00F0A53F /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB0469451BD0B8CF00F0A53F /* RootViewController.swift */; };
+		DB0469481BD0BAF300F0A53F /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB0469471BD0BAF300F0A53F /* MenuViewController.swift */; };
+		DB39570D1BD2F113005CA3FC /* CandidatesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB39570C1BD2F113005CA3FC /* CandidatesViewController.swift */; };
+		DB5D33871BEC7B28008486D3 /* HilaryBanner.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DB5D33861BEC7B28008486D3 /* HilaryBanner.jpg */; };
+		DB5D33891BEC866E008486D3 /* BenBanner.png in Resources */ = {isa = PBXBuildFile; fileRef = DB5D33881BEC866E008486D3 /* BenBanner.png */; };
+		DB5D339C1BEC867E008486D3 /* BernieBanner.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DB5D338A1BEC867E008486D3 /* BernieBanner.jpg */; };
+		DB5D339D1BEC867E008486D3 /* BobbyBanner.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DB5D338B1BEC867E008486D3 /* BobbyBanner.jpg */; };
+		DB5D339E1BEC867E008486D3 /* CarlyBanner.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DB5D338C1BEC867E008486D3 /* CarlyBanner.jpg */; };
+		DB5D339F1BEC867E008486D3 /* ChrisBanner.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DB5D338D1BEC867E008486D3 /* ChrisBanner.jpg */; };
+		DB5D33A01BEC867E008486D3 /* DonaldBanner.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DB5D338E1BEC867E008486D3 /* DonaldBanner.jpg */; };
+		DB5D33A11BEC867E008486D3 /* GeorgeBanner.png in Resources */ = {isa = PBXBuildFile; fileRef = DB5D338F1BEC867E008486D3 /* GeorgeBanner.png */; };
+		DB5D33A21BEC867E008486D3 /* JebBanner.png in Resources */ = {isa = PBXBuildFile; fileRef = DB5D33901BEC867E008486D3 /* JebBanner.png */; };
+		DB5D33A31BEC867E008486D3 /* JillBanner.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DB5D33911BEC867E008486D3 /* JillBanner.jpg */; };
+		DB5D33A41BEC867E008486D3 /* JimBanner.png in Resources */ = {isa = PBXBuildFile; fileRef = DB5D33921BEC867E008486D3 /* JimBanner.png */; };
+		DB5D33A51BEC867E008486D3 /* JohnBanner.png in Resources */ = {isa = PBXBuildFile; fileRef = DB5D33931BEC867E008486D3 /* JohnBanner.png */; };
+		DB5D33A61BEC867E008486D3 /* LindseyBanner.png in Resources */ = {isa = PBXBuildFile; fileRef = DB5D33941BEC867E008486D3 /* LindseyBanner.png */; };
+		DB5D33A71BEC867E008486D3 /* MarcoBanner.png in Resources */ = {isa = PBXBuildFile; fileRef = DB5D33951BEC867E008486D3 /* MarcoBanner.png */; };
+		DB5D33A81BEC867E008486D3 /* MartinBanner.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DB5D33961BEC867E008486D3 /* MartinBanner.jpg */; };
+		DB5D33A91BEC867E008486D3 /* MikeBanner.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DB5D33971BEC867E008486D3 /* MikeBanner.jpg */; };
+		DB5D33AA1BEC867E008486D3 /* RandBanner.png in Resources */ = {isa = PBXBuildFile; fileRef = DB5D33981BEC867E008486D3 /* RandBanner.png */; };
+		DB5D33AB1BEC867E008486D3 /* RickBanner.png in Resources */ = {isa = PBXBuildFile; fileRef = DB5D33991BEC867E008486D3 /* RickBanner.png */; };
+		DB5D33AC1BEC867E008486D3 /* RobertBanner.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DB5D339A1BEC867E008486D3 /* RobertBanner.jpg */; };
+		DB5D33AD1BEC867E008486D3 /* TedBanner.png in Resources */ = {isa = PBXBuildFile; fileRef = DB5D339B1BEC867E008486D3 /* TedBanner.png */; };
 		DB6FE9E91BCB046700E6C38C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB6FE9E81BCB046700E6C38C /* AppDelegate.swift */; };
 		DB6FE9EB1BCB046700E6C38C /* NewsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB6FE9EA1BCB046700E6C38C /* NewsViewController.swift */; };
 		DB6FE9EE1BCB046700E6C38C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DB6FE9EC1BCB046700E6C38C /* Main.storyboard */; };
@@ -42,31 +53,31 @@
 		DB6FE9F31BCB046700E6C38C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DB6FE9F11BCB046700E6C38C /* LaunchScreen.storyboard */; };
 		DB6FE9FE1BCB046700E6C38C /* CandidacyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB6FE9FD1BCB046700E6C38C /* CandidacyTests.swift */; };
 		DB6FEA091BCB046700E6C38C /* CandidacyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB6FEA081BCB046700E6C38C /* CandidacyUITests.swift */; };
-		DB9FF0921BDA07AA0016FA63 /* CandidateDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB9FF0911BDA07AA0016FA63 /* CandidateDetailViewController.swift */; settings = {ASSET_TAGS = (); }; };
-		DBC0BE081BD9A535000CBF3E /* Carly_Fiorina_August_2015.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DBC0BE031BD9A535000CBF3E /* Carly_Fiorina_August_2015.jpg */; settings = {ASSET_TAGS = (); }; };
-		DBC0BE091BD9A535000CBF3E /* Chris_Christie_April_2015_(cropped).jpg in Resources */ = {isa = PBXBuildFile; fileRef = DBC0BE041BD9A535000CBF3E /* Chris_Christie_April_2015_(cropped).jpg */; settings = {ASSET_TAGS = (); }; };
-		DBC0BE0A1BD9A535000CBF3E /* Dr._Ben_Carson_in_New_Hampshire_on_August_13th,_2015_1_by_Michael_Vadon_17_(cropped).jpg in Resources */ = {isa = PBXBuildFile; fileRef = DBC0BE051BD9A535000CBF3E /* Dr._Ben_Carson_in_New_Hampshire_on_August_13th,_2015_1_by_Michael_Vadon_17_(cropped).jpg */; settings = {ASSET_TAGS = (); }; };
-		DBC0BE0B1BD9A535000CBF3E /* Governor_of_Florida_Jeb_Bush_2015_in_NH_by_Michael_Vadon_(cropped).jpg in Resources */ = {isa = PBXBuildFile; fileRef = DBC0BE061BD9A535000CBF3E /* Governor_of_Florida_Jeb_Bush_2015_in_NH_by_Michael_Vadon_(cropped).jpg */; settings = {ASSET_TAGS = (); }; };
-		DBC0BE0C1BD9A535000CBF3E /* Ted_Cruz,_official_portrait,_113th_Congress_(cropped_2).jpg in Resources */ = {isa = PBXBuildFile; fileRef = DBC0BE071BD9A535000CBF3E /* Ted_Cruz,_official_portrait,_113th_Congress_(cropped_2).jpg */; settings = {ASSET_TAGS = (); }; };
-		DBC0BE191BD9A75B000CBF3E /* 100px-Jill_Stein_2012.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DBC0BE0D1BD9A75B000CBF3E /* 100px-Jill_Stein_2012.jpg */; settings = {ASSET_TAGS = (); }; };
-		DBC0BE1A1BD9A75B000CBF3E /* 126px-Marco_Rubio,_Official_Portrait,_112th_Congress.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DBC0BE0E1BD9A75B000CBF3E /* 126px-Marco_Rubio,_Official_Portrait,_112th_Congress.jpg */; settings = {ASSET_TAGS = (); }; };
-		DBC0BE1B1BD9A75B000CBF3E /* Donald_Trump_September_3_2015.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DBC0BE0F1BD9A75B000CBF3E /* Donald_Trump_September_3_2015.jpg */; settings = {ASSET_TAGS = (); }; };
-		DBC0BE1C1BD9A75B000CBF3E /* George_Pataki_August_2015.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DBC0BE101BD9A75B000CBF3E /* George_Pataki_August_2015.jpg */; settings = {ASSET_TAGS = (); }; };
-		DBC0BE1D1BD9A75B000CBF3E /* Governor_John_Kasich.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DBC0BE111BD9A75B000CBF3E /* Governor_John_Kasich.jpg */; settings = {ASSET_TAGS = (); }; };
-		DBC0BE1E1BD9A75B000CBF3E /* Governor_of_Louisiana_Bobby_Jindal_at_New_Hampshire_Education_Summit_The_Seventy-Four_August_19th,_2015_by_Michael_Vadon_132_(cropped).jpg in Resources */ = {isa = PBXBuildFile; fileRef = DBC0BE121BD9A75B000CBF3E /* Governor_of_Louisiana_Bobby_Jindal_at_New_Hampshire_Education_Summit_The_Seventy-Four_August_19th,_2015_by_Michael_Vadon_132_(cropped).jpg */; settings = {ASSET_TAGS = (); }; };
-		DBC0BE1F1BD9A75B000CBF3E /* Jim_Gilmore_2015.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DBC0BE131BD9A75B000CBF3E /* Jim_Gilmore_2015.jpg */; settings = {ASSET_TAGS = (); }; };
-		DBC0BE201BD9A75B000CBF3E /* Lindsey_Graham,_official_Senate_photo_portrait_cropped.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DBC0BE141BD9A75B000CBF3E /* Lindsey_Graham,_official_Senate_photo_portrait_cropped.jpg */; settings = {ASSET_TAGS = (); }; };
-		DBC0BE211BD9A75B000CBF3E /* Mike_Huckabee_at_2014_CPAC_(cropped).jpg in Resources */ = {isa = PBXBuildFile; fileRef = DBC0BE151BD9A75B000CBF3E /* Mike_Huckabee_at_2014_CPAC_(cropped).jpg */; settings = {ASSET_TAGS = (); }; };
-		DBC0BE221BD9A75B000CBF3E /* Rand_Paul,_official_portrait,_112th_Congress.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DBC0BE161BD9A75B000CBF3E /* Rand_Paul,_official_portrait,_112th_Congress.jpg */; settings = {ASSET_TAGS = (); }; };
-		DBC0BE231BD9A75B000CBF3E /* Rick_Santorum_by_Gage_Skidmore_8.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DBC0BE171BD9A75B000CBF3E /* Rick_Santorum_by_Gage_Skidmore_8.jpg */; settings = {ASSET_TAGS = (); }; };
-		DBC0BE241BD9A75B000CBF3E /* Steele_headshot_never_used_before_(afghanistan).jpg in Resources */ = {isa = PBXBuildFile; fileRef = DBC0BE181BD9A75B000CBF3E /* Steele_headshot_never_used_before_(afghanistan).jpg */; settings = {ASSET_TAGS = (); }; };
-		DBE3AEBF1BD460E10055FE19 /* CandidatesDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBE3AEBE1BD460E10055FE19 /* CandidatesDataModel.swift */; settings = {ASSET_TAGS = (); }; };
-		DBE3AEC11BD461500055FE19 /* Candidate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBE3AEC01BD461500055FE19 /* Candidate.swift */; settings = {ASSET_TAGS = (); }; };
-		DBE3AED91BD46AB10055FE19 /* Bernie_Sanders_New_Orleans_rally_crop.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DBE3AED31BD46AB10055FE19 /* Bernie_Sanders_New_Orleans_rally_crop.jpg */; settings = {ASSET_TAGS = (); }; };
-		DBE3AEDA1BD46AB10055FE19 /* Governor_O'Malley_Portrait_(cropped).jpg in Resources */ = {isa = PBXBuildFile; fileRef = DBE3AED41BD46AB10055FE19 /* Governor_O'Malley_Portrait_(cropped).jpg */; settings = {ASSET_TAGS = (); }; };
-		DBE3AEDB1BD46AB10055FE19 /* HRC_in_Iowa_APR_2015.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DBE3AED51BD46AB10055FE19 /* HRC_in_Iowa_APR_2015.jpg */; settings = {ASSET_TAGS = (); }; };
-		DBE3AEE01BD470DC0055FE19 /* CandidatePhotoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBE3AEDF1BD470DC0055FE19 /* CandidatePhotoCell.swift */; settings = {ASSET_TAGS = (); }; };
-		FEBCBBC9361072E7FA561AE0 /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 576CE8A8F4496B41F2CA199D /* Pods.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		DB9FF0921BDA07AA0016FA63 /* CandidateDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB9FF0911BDA07AA0016FA63 /* CandidateDetailViewController.swift */; };
+		DBC0BE081BD9A535000CBF3E /* Carly_Fiorina_August_2015.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DBC0BE031BD9A535000CBF3E /* Carly_Fiorina_August_2015.jpg */; };
+		DBC0BE091BD9A535000CBF3E /* Chris_Christie_April_2015_(cropped).jpg in Resources */ = {isa = PBXBuildFile; fileRef = DBC0BE041BD9A535000CBF3E /* Chris_Christie_April_2015_(cropped).jpg */; };
+		DBC0BE0A1BD9A535000CBF3E /* Dr._Ben_Carson_in_New_Hampshire_on_August_13th,_2015_1_by_Michael_Vadon_17_(cropped).jpg in Resources */ = {isa = PBXBuildFile; fileRef = DBC0BE051BD9A535000CBF3E /* Dr._Ben_Carson_in_New_Hampshire_on_August_13th,_2015_1_by_Michael_Vadon_17_(cropped).jpg */; };
+		DBC0BE0B1BD9A535000CBF3E /* Governor_of_Florida_Jeb_Bush_2015_in_NH_by_Michael_Vadon_(cropped).jpg in Resources */ = {isa = PBXBuildFile; fileRef = DBC0BE061BD9A535000CBF3E /* Governor_of_Florida_Jeb_Bush_2015_in_NH_by_Michael_Vadon_(cropped).jpg */; };
+		DBC0BE0C1BD9A535000CBF3E /* Ted_Cruz,_official_portrait,_113th_Congress_(cropped_2).jpg in Resources */ = {isa = PBXBuildFile; fileRef = DBC0BE071BD9A535000CBF3E /* Ted_Cruz,_official_portrait,_113th_Congress_(cropped_2).jpg */; };
+		DBC0BE191BD9A75B000CBF3E /* 100px-Jill_Stein_2012.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DBC0BE0D1BD9A75B000CBF3E /* 100px-Jill_Stein_2012.jpg */; };
+		DBC0BE1A1BD9A75B000CBF3E /* 126px-Marco_Rubio,_Official_Portrait,_112th_Congress.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DBC0BE0E1BD9A75B000CBF3E /* 126px-Marco_Rubio,_Official_Portrait,_112th_Congress.jpg */; };
+		DBC0BE1B1BD9A75B000CBF3E /* Donald_Trump_September_3_2015.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DBC0BE0F1BD9A75B000CBF3E /* Donald_Trump_September_3_2015.jpg */; };
+		DBC0BE1C1BD9A75B000CBF3E /* George_Pataki_August_2015.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DBC0BE101BD9A75B000CBF3E /* George_Pataki_August_2015.jpg */; };
+		DBC0BE1D1BD9A75B000CBF3E /* Governor_John_Kasich.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DBC0BE111BD9A75B000CBF3E /* Governor_John_Kasich.jpg */; };
+		DBC0BE1E1BD9A75B000CBF3E /* Governor_of_Louisiana_Bobby_Jindal_at_New_Hampshire_Education_Summit_The_Seventy-Four_August_19th,_2015_by_Michael_Vadon_132_(cropped).jpg in Resources */ = {isa = PBXBuildFile; fileRef = DBC0BE121BD9A75B000CBF3E /* Governor_of_Louisiana_Bobby_Jindal_at_New_Hampshire_Education_Summit_The_Seventy-Four_August_19th,_2015_by_Michael_Vadon_132_(cropped).jpg */; };
+		DBC0BE1F1BD9A75B000CBF3E /* Jim_Gilmore_2015.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DBC0BE131BD9A75B000CBF3E /* Jim_Gilmore_2015.jpg */; };
+		DBC0BE201BD9A75B000CBF3E /* Lindsey_Graham,_official_Senate_photo_portrait_cropped.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DBC0BE141BD9A75B000CBF3E /* Lindsey_Graham,_official_Senate_photo_portrait_cropped.jpg */; };
+		DBC0BE211BD9A75B000CBF3E /* Mike_Huckabee_at_2014_CPAC_(cropped).jpg in Resources */ = {isa = PBXBuildFile; fileRef = DBC0BE151BD9A75B000CBF3E /* Mike_Huckabee_at_2014_CPAC_(cropped).jpg */; };
+		DBC0BE221BD9A75B000CBF3E /* Rand_Paul,_official_portrait,_112th_Congress.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DBC0BE161BD9A75B000CBF3E /* Rand_Paul,_official_portrait,_112th_Congress.jpg */; };
+		DBC0BE231BD9A75B000CBF3E /* Rick_Santorum_by_Gage_Skidmore_8.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DBC0BE171BD9A75B000CBF3E /* Rick_Santorum_by_Gage_Skidmore_8.jpg */; };
+		DBC0BE241BD9A75B000CBF3E /* Steele_headshot_never_used_before_(afghanistan).jpg in Resources */ = {isa = PBXBuildFile; fileRef = DBC0BE181BD9A75B000CBF3E /* Steele_headshot_never_used_before_(afghanistan).jpg */; };
+		DBE3AEBF1BD460E10055FE19 /* CandidatesDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBE3AEBE1BD460E10055FE19 /* CandidatesDataModel.swift */; };
+		DBE3AEC11BD461500055FE19 /* Candidate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBE3AEC01BD461500055FE19 /* Candidate.swift */; };
+		DBE3AED91BD46AB10055FE19 /* Bernie_Sanders_New_Orleans_rally_crop.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DBE3AED31BD46AB10055FE19 /* Bernie_Sanders_New_Orleans_rally_crop.jpg */; };
+		DBE3AEDA1BD46AB10055FE19 /* Governor_O'Malley_Portrait_(cropped).jpg in Resources */ = {isa = PBXBuildFile; fileRef = DBE3AED41BD46AB10055FE19 /* Governor_O'Malley_Portrait_(cropped).jpg */; };
+		DBE3AEDB1BD46AB10055FE19 /* HRC_in_Iowa_APR_2015.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DBE3AED51BD46AB10055FE19 /* HRC_in_Iowa_APR_2015.jpg */; };
+		DBE3AEE01BD470DC0055FE19 /* CandidatePhotoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBE3AEDF1BD470DC0055FE19 /* CandidatePhotoCell.swift */; };
+		FEBCBBC9361072E7FA561AE0 /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 576CE8A8F4496B41F2CA199D /* Pods.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -89,11 +100,22 @@
 /* Begin PBXFileReference section */
 		0A4D40A72A2A85473725D53E /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		576CE8A8F4496B41F2CA199D /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7830AFB41BED36D500D2E63C /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		7830AFB61BED36E300D2E63C /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		7830AFB81BED36ED00D2E63C /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		7830AFBA1BED36F700D2E63C /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		7830AFBC1BED370600D2E63C /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		7830AFBE1BED371500D2E63C /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		7830AFC01BED372000D2E63C /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		7830AFC21BED372D00D2E63C /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		7830AFC41BED373700D2E63C /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		7830AFC61BED3BCB00D2E63C /* libz.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.1.dylib; path = ../../../../../../../usr/lib/libz.1.dylib; sourceTree = "<group>"; };
 		789A54231BD75FF700645E67 /* GoVoteTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GoVoteTableViewController.swift; sourceTree = "<group>"; };
 		789A54241BD75FF700645E67 /* QuestionTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuestionTableViewCell.swift; sourceTree = "<group>"; };
 		789A54251BD75FF700645E67 /* QuestionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuestionViewController.swift; sourceTree = "<group>"; };
+		78EAE96E1BED3D4000825413 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = ../../../../../../../usr/lib/libsqlite3.dylib; sourceTree = "<group>"; };
 		AA4CB47D97D1DD27434CCF42 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
-		B22338041BCDF31A00119944 /* Candidacy-BridgingHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Candidacy-BridgingHeader.h"; sourceTree = "<group>"; };
+		B22338041BCDF31A00119944 /* Candidacy-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Candidacy-Bridging-Header.h"; sourceTree = "<group>"; };
 		B22338051BCDF79000119944 /* iTunesArtwork@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "iTunesArtwork@2x.png"; path = "Graphics/candidacylogo/ios/iTunesArtwork@2x.png"; sourceTree = "<group>"; };
 		DB0469431BD0B24E00F0A53F /* NavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigationController.swift; sourceTree = "<group>"; };
 		DB0469451BD0B8CF00F0A53F /* RootViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
@@ -163,6 +185,17 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				78EAE96F1BED3D4000825413 /* libsqlite3.dylib in Frameworks */,
+				7830AFC81BED3BF100D2E63C /* libz.1.dylib in Frameworks */,
+				7830AFC51BED373700D2E63C /* SystemConfiguration.framework in Frameworks */,
+				7830AFC31BED372D00D2E63C /* StoreKit.framework in Frameworks */,
+				7830AFC11BED372000D2E63C /* Security.framework in Frameworks */,
+				7830AFBF1BED371500D2E63C /* QuartzCore.framework in Frameworks */,
+				7830AFBD1BED370600D2E63C /* MobileCoreServices.framework in Frameworks */,
+				7830AFBB1BED36F700D2E63C /* CoreLocation.framework in Frameworks */,
+				7830AFB91BED36ED00D2E63C /* CoreGraphics.framework in Frameworks */,
+				7830AFB71BED36E300D2E63C /* CFNetwork.framework in Frameworks */,
+				7830AFB51BED36D500D2E63C /* AudioToolbox.framework in Frameworks */,
 				FEBCBBC9361072E7FA561AE0 /* Pods.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -223,7 +256,7 @@
 		DB6FE9DC1BCB046600E6C38C = {
 			isa = PBXGroup;
 			children = (
-				B22338041BCDF31A00119944 /* Candidacy-BridgingHeader.h */,
+				B22338041BCDF31A00119944 /* Candidacy-Bridging-Header.h */,
 				B22338051BCDF79000119944 /* iTunesArtwork@2x.png */,
 				DB6FE9E71BCB046700E6C38C /* Candidacy */,
 				DB6FE9FC1BCB046700E6C38C /* CandidacyTests */,
@@ -318,6 +351,17 @@
 		EEC21CF0F068398722711BC7 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				78EAE96E1BED3D4000825413 /* libsqlite3.dylib */,
+				7830AFC61BED3BCB00D2E63C /* libz.1.dylib */,
+				7830AFC41BED373700D2E63C /* SystemConfiguration.framework */,
+				7830AFC21BED372D00D2E63C /* StoreKit.framework */,
+				7830AFC01BED372000D2E63C /* Security.framework */,
+				7830AFBE1BED371500D2E63C /* QuartzCore.framework */,
+				7830AFBC1BED370600D2E63C /* MobileCoreServices.framework */,
+				7830AFBA1BED36F700D2E63C /* CoreLocation.framework */,
+				7830AFB81BED36ED00D2E63C /* CoreGraphics.framework */,
+				7830AFB61BED36E300D2E63C /* CFNetwork.framework */,
+				7830AFB41BED36D500D2E63C /* AudioToolbox.framework */,
 				576CE8A8F4496B41F2CA199D /* Pods.framework */,
 			);
 			name = Frameworks;
@@ -702,7 +746,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = CS378.Candidacy;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = Candidacy/REFrostedViewController.h;
+				SWIFT_OBJC_BRIDGING_HEADER = "Candidacy-Bridging-Header.h";
 				"SWIFT_OBJC_BRIDGING_HEADER[arch=*]" = "";
 			};
 			name = Debug;
@@ -716,7 +760,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = CS378.Candidacy;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = Candidacy/REFrostedViewController.h;
+				SWIFT_OBJC_BRIDGING_HEADER = "Candidacy-Bridging-Header.h";
 			};
 			name = Release;
 		};
