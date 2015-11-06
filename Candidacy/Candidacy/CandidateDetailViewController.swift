@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Alamofire
 
 let offset_HeaderStop:CGFloat = 40.0 // At this offset the Header stops its transformations
 let offset_B_LabelHeader:CGFloat = 95.0 // At this offset the Black label reaches the Header
@@ -17,23 +18,26 @@ class CandidateDetailViewController: UIViewController, UIScrollViewDelegate {
     // This gets set by the presenting view controller
     var candidate:Candidate? = nil
     
+    @IBOutlet weak var profileWhiteBackground: UIView!
     @IBOutlet weak var header: UIView!
     @IBOutlet weak var scrollView: UIScrollView!
     @IBOutlet weak var candidateNameLabel: UILabel!
     @IBOutlet weak var profileImage: UIImageView!
     @IBOutlet var headerImageView:UIImageView!
     @IBOutlet weak var headerLabel: UILabel!
-    @IBOutlet var headerBlurImageView:UIImageView!
-    var blurredHeaderImageView:UIImageView?
+    //@IBOutlet var headerBlurImageView:UIImageView!
+    //var blurredHeaderImageView:UIImageView?
 
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        // Load the person data.
-        // Assumption is it was set to the Person we need to display before this is called.
         candidateNameLabel.text = candidate!.name
         profileImage.image = candidate?.getPic()
+        profileImage.layer.cornerRadius = 0.5 * profileImage.bounds.size.width
+        profileWhiteBackground.layer.cornerRadius = 0.5 * profileWhiteBackground.bounds.size.width
+        profileImage.clipsToBounds = true
+        self.navigationController?.navigationBarHidden = true
         
         scrollView.delegate = self
     }
@@ -43,17 +47,17 @@ class CandidateDetailViewController: UIViewController, UIScrollViewDelegate {
         // Header - Image
         
         headerImageView = UIImageView(frame: header.bounds)
-        headerImageView?.image = UIImage(named: "header_bg")
+        headerImageView?.image = candidate?.getPic()
         headerImageView?.contentMode = UIViewContentMode.ScaleAspectFill
         header.insertSubview(headerImageView, belowSubview: headerLabel)
         
         // Header - Blurred Image
         
-        headerBlurImageView = UIImageView(frame: header.bounds)
-        //headerBlurImageView?.image = UIImage(named: "header_bg")?.blurredImageWithRadius(10, iterations: 20, tintColor: UIColor.clearColor())
-        headerBlurImageView?.contentMode = UIViewContentMode.ScaleAspectFill
-        headerBlurImageView?.alpha = 0.0
-        header.insertSubview(headerBlurImageView, belowSubview: headerLabel)
+//        headerBlurImageView = UIImageView(frame: header.bounds)
+//        headerBlurImageView?.image = UIImage(named: "header_bg")?.blurredImageWithRadius(10, iterations: 20, tintColor: UIColor.clearColor())
+//        headerBlurImageView?.contentMode = UIViewContentMode.ScaleAspectFill
+//        headerBlurImageView?.alpha = 0.0
+//        header.insertSubview(headerBlurImageView, belowSubview: headerLabel)
         
         header.clipsToBounds = true
     }
@@ -87,7 +91,7 @@ class CandidateDetailViewController: UIViewController, UIScrollViewDelegate {
             
             //  ------------ Blur
             
-            headerBlurImageView?.alpha = min (1.0, (offset - offset_B_LabelHeader)/distance_W_LabelHeader)
+            //headerBlurImageView?.alpha = min (1.0, (offset - offset_B_LabelHeader)/distance_W_LabelHeader)
         }
         
         // Apply Transformations
