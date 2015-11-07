@@ -24,7 +24,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         appearance.barTintColor = UIColor(red: 252/255, green: 81/255, blue: 69/255, alpha: 1.0)
         appearance.titleTextAttributes = [NSFontAttributeName: UIFont(name: "avenir-medium", size: 20)!,  NSForegroundColorAttributeName: UIColor.whiteColor()]
         appearance.translucent = false
-        
+        appearance.barStyle = UIBarStyle.Black
         
         //Remove hairline pixel seperating navbar and background
         appearance.setBackgroundImage(
@@ -39,7 +39,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         return true
     }
-
+    
     func applicationWillResignActive(application: UIApplication) {
         // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
         // Use this method to pause ongoing tasks, disable timers, and throttle down OpenGL ES frame rates. Games should use this method to pause the game.
