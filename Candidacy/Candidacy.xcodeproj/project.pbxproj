@@ -72,6 +72,8 @@
 		DBC0BE231BD9A75B000CBF3E /* Rick_Santorum_by_Gage_Skidmore_8.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DBC0BE171BD9A75B000CBF3E /* Rick_Santorum_by_Gage_Skidmore_8.jpg */; };
 		DBC0BE241BD9A75B000CBF3E /* Steele_headshot_never_used_before_(afghanistan).jpg in Resources */ = {isa = PBXBuildFile; fileRef = DBC0BE181BD9A75B000CBF3E /* Steele_headshot_never_used_before_(afghanistan).jpg */; };
 		DBC8E2A31BEEB7A3001CD578 /* NewsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBC8E2A21BEEB7A3001CD578 /* NewsCell.swift */; settings = {ASSET_TAGS = (); }; };
+		DBC8E2A51BEEC5A5001CD578 /* NewsArticle.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBC8E2A41BEEC5A5001CD578 /* NewsArticle.swift */; settings = {ASSET_TAGS = (); }; };
+		DBC8E2A71BEECFAD001CD578 /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBC8E2A61BEECFAD001CD578 /* SwiftyJSON.swift */; settings = {ASSET_TAGS = (); }; };
 		DBE3AEBF1BD460E10055FE19 /* CandidatesDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBE3AEBE1BD460E10055FE19 /* CandidatesDataModel.swift */; };
 		DBE3AEC11BD461500055FE19 /* Candidate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBE3AEC01BD461500055FE19 /* Candidate.swift */; };
 		DBE3AED91BD46AB10055FE19 /* Bernie_Sanders_New_Orleans_rally_crop.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DBE3AED31BD46AB10055FE19 /* Bernie_Sanders_New_Orleans_rally_crop.jpg */; };
@@ -174,6 +176,8 @@
 		DBC0BE171BD9A75B000CBF3E /* Rick_Santorum_by_Gage_Skidmore_8.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Rick_Santorum_by_Gage_Skidmore_8.jpg; sourceTree = "<group>"; };
 		DBC0BE181BD9A75B000CBF3E /* Steele_headshot_never_used_before_(afghanistan).jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Steele_headshot_never_used_before_(afghanistan).jpg"; sourceTree = "<group>"; };
 		DBC8E2A21BEEB7A3001CD578 /* NewsCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewsCell.swift; sourceTree = "<group>"; };
+		DBC8E2A41BEEC5A5001CD578 /* NewsArticle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewsArticle.swift; sourceTree = "<group>"; };
+		DBC8E2A61BEECFAD001CD578 /* SwiftyJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftyJSON.swift; sourceTree = "<group>"; };
 		DBE3AEBE1BD460E10055FE19 /* CandidatesDataModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CandidatesDataModel.swift; sourceTree = "<group>"; };
 		DBE3AEC01BD461500055FE19 /* Candidate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Candidate.swift; sourceTree = "<group>"; };
 		DBE3AED31BD46AB10055FE19 /* Bernie_Sanders_New_Orleans_rally_crop.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Bernie_Sanders_New_Orleans_rally_crop.jpg; sourceTree = "<group>"; };
@@ -287,7 +291,9 @@
 				789A54241BD75FF700645E67 /* QuestionTableViewCell.swift */,
 				789A54251BD75FF700645E67 /* QuestionViewController.swift */,
 				DB6FE9EA1BCB046700E6C38C /* NewsViewController.swift */,
+				DBC8E2A61BEECFAD001CD578 /* SwiftyJSON.swift */,
 				DBC8E2A21BEEB7A3001CD578 /* NewsCell.swift */,
+				DBC8E2A41BEEC5A5001CD578 /* NewsArticle.swift */,
 				DB6FE9EC1BCB046700E6C38C /* Main.storyboard */,
 				DB9FF0911BDA07AA0016FA63 /* CandidateDetailViewController.swift */,
 				DBE3AEDF1BD470DC0055FE19 /* CandidatePhotoCell.swift */,
@@ -603,8 +609,10 @@
 				DB39570D1BD2F113005CA3FC /* CandidatesViewController.swift in Sources */,
 				789A54271BD75FF700645E67 /* QuestionTableViewCell.swift in Sources */,
 				DBC8E2A31BEEB7A3001CD578 /* NewsCell.swift in Sources */,
+				DBC8E2A71BEECFAD001CD578 /* SwiftyJSON.swift in Sources */,
 				DB6FE9E91BCB046700E6C38C /* AppDelegate.swift in Sources */,
 				DB9FF0921BDA07AA0016FA63 /* CandidateDetailViewController.swift in Sources */,
+				DBC8E2A51BEEC5A5001CD578 /* NewsArticle.swift in Sources */,
 				DBE3AEC11BD461500055FE19 /* Candidate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

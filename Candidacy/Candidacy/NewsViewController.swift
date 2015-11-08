@@ -7,17 +7,20 @@
 //
 
 import UIKit
+import Alamofire
 import REFrostedViewController
 
 
 class NewsViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
     @IBOutlet weak var tableView: UITableView!
+    private var articles:[NewsArticle] = [NewsArticle]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
+        getArticles()
         tableView.delegate = self
         tableView.dataSource = self
         tableView.reloadData()
@@ -33,7 +36,7 @@ class NewsViewController: UIViewController, UITableViewDelegate, UITableViewData
     }
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 3
+        return articles.count
     }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
@@ -41,6 +44,19 @@ class NewsViewController: UIViewController, UITableViewDelegate, UITableViewData
         //cell.titleLabel.text = questions[indexPath.row]
         //cell.titleLabel.font = UIFont(name: "avenir-medium", size: 16)
         return cell
+    }
+    
+    func getArticles() {
+        let urlPath = "http://api.nytimes.com/svc/search/v2/articlesearch.json?q=2016+presidential+election&sort=newest&api-key=2c1bfd3f625c27d8a34f2a444bee93cd:5:70064203"
+        Alamofire.request(.GET, urlPath)
+            .responseJSON { response in
+                
+                if let JSON = response.result.value {
+                    let response = JSON["response"]
+                    print("reponse: \(response)")
+                    //print("JSON: \(JSON)")
+                }
+        }
     }
     
     @IBAction func showMenu(sender: AnyObject) {
