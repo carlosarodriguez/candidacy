@@ -41,22 +41,36 @@ class NewsViewController: UIViewController, UITableViewDelegate, UITableViewData
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("newsCell", forIndexPath:indexPath) as! NewsCell
-        //cell.titleLabel.text = questions[indexPath.row]
-        //cell.titleLabel.font = UIFont(name: "avenir-medium", size: 16)
+        cell.headlineLabel.text = articles[indexPath.row].headline
+        cell.articlePreviewLabel.text = articles[indexPath.row].snippet
         return cell
     }
     
     func getArticles() {
+        //self.articles = [NewsArticle]()
         let urlPath = "http://api.nytimes.com/svc/search/v2/articlesearch.json?q=2016+presidential+election&sort=newest&api-key=2c1bfd3f625c27d8a34f2a444bee93cd:5:70064203"
         Alamofire.request(.GET, urlPath)
             .responseJSON { response in
                 
-                if let JSON = response.result.value {
-                    let response = JSON["response"]
-                    print("reponse: \(response)")
-                    //print("JSON: \(JSON)")
+                if let value: AnyObject = response.result.value {
+                    // handle the results as JSON, without a bunch of nested if loops
+                    let json = JSON(value)
+                    //let hits = json["response"]["meta"]["hits"].intValue
+                    let docs = json["response"]["docs"].array!
+                    //print(fa)
+                    for (var i = 0; i < docs.count; ++i) {
+                        let article = docs[i]
+                        let headline = article["headline"]["main"]
+                        let snippet = article["snippet"]
+                        //print(snippet)
+                        self.articles.append(NewsArticle(headline: String(headline), snippet: String(snippet)))
+                    }
+                    dispatch_async(dispatch_get_main_queue()) {
+                        self.tableView.reloadData()
+                    }
                 }
         }
+        //print(articles)
     }
     
     @IBAction func showMenu(sender: AnyObject) {
