@@ -9,6 +9,7 @@
 import UIKit
 import Alamofire
 import REFrostedViewController
+import SafariServices
 
 
 class NewsViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
@@ -51,9 +52,11 @@ class NewsViewController: UIViewController, UITableViewDelegate, UITableViewData
         let article = self.articles[index]
         let url:NSURL = NSURL(string: article.url)!
        
-        if(UIApplication.sharedApplication().canOpenURL(url)){
-            UIApplication.sharedApplication().openURL(url)
-        }
+//        if(UIApplication.sharedApplication().canOpenURL(url)){
+//            UIApplication.sharedApplication().openURL(url)
+//        }
+        let svc = SFSafariViewController(URL: url)
+        self.presentViewController(svc, animated: true, completion: nil)
     }
 
     
