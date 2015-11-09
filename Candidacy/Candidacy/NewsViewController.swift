@@ -51,10 +51,7 @@ class NewsViewController: UIViewController, UITableViewDelegate, UITableViewData
         let index:Int = indexPath.row
         let article = self.articles[index]
         let url:NSURL = NSURL(string: article.url)!
-       
-//        if(UIApplication.sharedApplication().canOpenURL(url)){
-//            UIApplication.sharedApplication().openURL(url)
-//        }
+    
         let svc = SFSafariViewController(URL: url)
         self.presentViewController(svc, animated: true, completion: nil)
     }
