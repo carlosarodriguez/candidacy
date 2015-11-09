@@ -11,11 +11,12 @@ import UIKit
 
 class NewsArticle {
     
-    private var _headline:String = ""
-    private var _snippet:String = ""
+    private var _headline: String = ""
+    private var _snippet: String = ""
+    private var _url: String = ""
     //private var thumbnail:UIImage = UIImage()
     
-    var headline:String {
+    var headline: String {
         get {
             return _headline
         }
@@ -24,7 +25,7 @@ class NewsArticle {
         }
     }
     
-    var snippet:String {
+    var snippet: String {
         get {
             return _snippet
         }
@@ -33,13 +34,23 @@ class NewsArticle {
         }
     }
     
+    var url: String {
+        get {
+            return _url
+        }
+        set(newVal) {
+            _url = newVal
+        }
+    }
+    
 //    func getThumbnail() -> UIImage {
 //        return thumbnail
 //    }
     
-    init(headline:String, snippet:String) {
+    init(headline: String, snippet: String, url: String) {
         self.headline = headline
         self.snippet = snippet
+        self.url = url
         //self.thumbnail = thumbnail
     }
 }

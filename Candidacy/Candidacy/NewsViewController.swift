@@ -46,6 +46,17 @@ class NewsViewController: UIViewController, UITableViewDelegate, UITableViewData
         return cell
     }
     
+    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        let index:Int = indexPath.row
+        let article = self.articles[index]
+        let url:NSURL = NSURL(string: article.url)!
+       
+        if(UIApplication.sharedApplication().canOpenURL(url)){
+            UIApplication.sharedApplication().openURL(url)
+        }
+    }
+
+    
     func getArticles() {
         //self.articles = [NewsArticle]()
         let urlPath = "http://api.nytimes.com/svc/search/v2/articlesearch.json?q=2016+presidential+election&sort=newest&api-key=2c1bfd3f625c27d8a34f2a444bee93cd:5:70064203"
@@ -62,8 +73,10 @@ class NewsViewController: UIViewController, UITableViewDelegate, UITableViewData
                         let article = docs[i]
                         let headline = article["headline"]["main"]
                         let snippet = article["snippet"]
+                        let url = article["web_url"]
+                        print(url)
                         //print(snippet)
-                        self.articles.append(NewsArticle(headline: String(headline), snippet: String(snippet)))
+                        self.articles.append(NewsArticle(headline: String(headline), snippet: String(snippet), url: String(url)))
                     }
                     dispatch_async(dispatch_get_main_queue()) {
                         self.tableView.reloadData()
