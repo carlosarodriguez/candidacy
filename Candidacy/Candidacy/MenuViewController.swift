@@ -20,7 +20,7 @@ class MenuViewController: UITableViewController {
         self.tableView.separatorStyle = UITableViewCellSeparatorStyle.None
         
         let view: UIView = UIView(frame: CGRectMake(0, 0, 0, 64.0))
-        view.backgroundColor = UIColor(red: 252/255, green: 81/255, blue: 69/255, alpha: 1.0)
+        view.backgroundColor = UIColor(red: 247/255, green: 80/255, blue: 67/255, alpha: 1.0)
         self.tableView.tableHeaderView = view
     }
     
