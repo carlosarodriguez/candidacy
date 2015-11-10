@@ -51,6 +51,7 @@ class NewsViewController: UIViewController, UITableViewDelegate, UITableViewData
         let index:Int = indexPath.row
         let article = self.articles[index]
         let url:NSURL = NSURL(string: article.url)!
+        tableView.deselectRowAtIndexPath(indexPath, animated: true)
     
         let svc = SFSafariViewController(URL: url)
         self.presentViewController(svc, animated: true, completion: nil)
