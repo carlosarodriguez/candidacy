@@ -9,7 +9,6 @@
 import UIKit
 import REFrostedViewController
 
-
 class CandidatesViewController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate {
     
     @IBOutlet weak var collectionView: UICollectionView!
