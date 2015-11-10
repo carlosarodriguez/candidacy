@@ -14,8 +14,8 @@ class CandidatesDataModel {
     
     private var candidates:[Candidate] = [Candidate]()
     
+    // Populate candidates array
     init() {
-//        // Populate candidates array
 //        candidates.append(Candidate(name: "Hillary Clinton", party: "Democratic", pic: UIImage(named: "HRC_in_Iowa_APR_2015.jpg")!, banner: UIImage(named: "HilaryBanner.jpg")!))
 //        candidates.append(Candidate(name: "Martin O'Malley", party: "Democratic", pic: UIImage(named: "Governor_O'Malley_Portrait_(cropped).jpg")!, banner: UIImage(named: "MartinBanner.jpg")!))
 //        candidates.append(Candidate(name: "Bernie Sanders", party: "Democratic", pic: UIImage(named: "Bernie_Sanders_New_Orleans_rally_crop.jpg")!, banner: UIImage(named: "BernieBanner.jpg")!))
@@ -37,17 +37,20 @@ class CandidatesDataModel {
 //        candidates.append(Candidate(name: "Jill Stein", party: "Green", pic: UIImage(named: "100px-Jill_Stein_2012.jpg")!, banner: UIImage(named: "JillBanner.jpg")!))
 //        candidates.append(Candidate(name: "Robert David Steele", party: "Libertarian", pic: UIImage(named: "Steele_headshot_never_used_before_(afghanistan).jpg")!, banner: UIImage(named: "RobertBanner.jpg")!))
         
-        // testing Parse query
+        // execute Parse query
         let query = PFQuery(className:"Candidate")
+        
+        // findObjectsInBackgroundWithBlock executes block after query is done
         query.findObjectsInBackgroundWithBlock {
             (objects: [PFObject]?, error: NSError?) -> Void in
-            
             if error == nil {
                 // The find succeeded.
                 print("Successfully retrieved \(objects!.count) candidates.")
-                // Do something with the found objects
+                
+                // populate Candidate array with objects
                 if let objects = objects as [PFObject]! {
                     for object in objects {
+                        // retrieve data from object
                         let parseID = object["objectId"] as! String
                         let firstName = object["firstName"] as! String
                         let lastName = object["lastName"] as! String
@@ -58,6 +61,7 @@ class CandidatesDataModel {
                         let facebook = object["facebookURL"] as! String
                         let twitter = object["twitterURL"] as! String
                         
+                        // turn the PFFile profilePictureFile into a UIImage
                         var profilePicture = UIImage()
                         if let profilePictureFile = object["profilePicture"] as? PFFile {
                             profilePictureFile.getDataInBackgroundWithBlock({
@@ -68,6 +72,7 @@ class CandidatesDataModel {
                             })
                         }
                         
+                        // turn the PFFile bannerFie into a UIImage
                         var banner = UIImage()
                         let bannerFile = object["bannerPicture"] as! PFFile
                         bannerFile.getDataInBackgroundWithBlock({
@@ -77,7 +82,10 @@ class CandidatesDataModel {
                             }
                         })
                         
+                        // initialize Candidate object with the above parameters
                         let newCandidate = Candidate(parseID: parseID, firstName: firstName, lastName: lastName, state: state, party: politicalParty, active: active, website: website, facebook: facebook, twitter: twitter, pic: profilePicture, banner: banner)
+                        
+                        // add new Candidate to the Candidate array
                         self.candidates.append(newCandidate)
                     }
                 }
@@ -92,8 +100,13 @@ class CandidatesDataModel {
         return candidates.count
     }
     
-    func addCandidate (firstName: String, lastName: String, politicalParty: String, activeCampaign: Bool, websiteURL: String, facebook: String, twitter: String, profilePicture: UIImage, banner: UIImage) {
+    func addCandidate (parseID:String, firstName: String, lastName: String, state: String, politicalParty: String, activeCampaign: Bool, websiteURL: String, facebook: String, twitter: String, profilePicture: UIImage, banner: UIImage) {
         
+        // initialize Candidate object with the above parameters
+        let newCandidate = Candidate(parseID: parseID, firstName: firstName, lastName: lastName, state: state, party: politicalParty, active: activeCampaign, website: websiteURL, facebook: facebook, twitter: twitter, pic: profilePicture, banner: banner)
+        
+        // add new Candidate to the Candidate array
+        self.candidates.append(newCandidate)
     }
     
     func getCandidate(index index:Int) -> Candidate {
