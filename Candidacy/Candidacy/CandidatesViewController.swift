@@ -77,21 +77,19 @@ class CandidatesViewController: UIViewController, UICollectionViewDataSource, UI
                         // add new Candidate to the Candidate array
                        self.data.addCandidate(parseID, firstName: firstName, lastName: lastName, state: state, politicalParty: politicalParty, activeCampaign: active, websiteURL: website, facebook: facebook, twitter: twitter, profilePicture: profilePicture!, banner: banner!)
                     }
+                    dispatch_async(dispatch_get_main_queue()) {
+                        self.collectionView.dataSource = self
+                        self.collectionView.delegate = self
+                        self.collectionView.reloadData()
+                        self.UIActivityIndicator.hidden = true
+                        self.UIActivityIndicator.stopAnimating()
+                    }
                 }
             } else {
                 // Log details of the failure
                 print("Error: \(error!) \(error!.userInfo)")
             }
-        }
-        
-        delay(0.45) { () -> () in
-            self.collectionView.dataSource = self
-            self.collectionView.delegate = self
-            self.collectionView.reloadData()
-            self.UIActivityIndicator.hidden = true
-            self.UIActivityIndicator.stopAnimating()
-        }
-       
+        } 
     }
     
     override func didReceiveMemoryWarning() {
