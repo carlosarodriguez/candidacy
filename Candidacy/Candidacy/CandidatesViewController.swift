@@ -14,13 +14,14 @@ class CandidatesViewController: UIViewController, UICollectionViewDataSource, UI
     
     @IBOutlet weak var collectionView: UICollectionView!
     private let reuseIdentifier = "candidatePicID"
-
+    @IBOutlet weak var UIActivityIndicator: UIActivityIndicatorView!
     var data:CandidatesDataModel = CandidatesDataModel()
     var indexOfSelectedCandidate:Int = 0
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        self.UIActivityIndicator.startAnimating()
         // execute Parse query
         let query = PFQuery(className:"Candidate")
         
@@ -44,31 +45,37 @@ class CandidatesViewController: UIViewController, UICollectionViewDataSource, UI
                         let website = object["website"] as! String
                         let facebook = object["facebookURL"] as! String
                         let twitter = object["twitterURL"] as! String
+                        let profilePictureURL = object["profilePictureURL"] as! String
+                        let bannerURL = object["bannerURL"] as! String
+                        
+                        //turn urls into UIImage
+                        let profilePicture = UIImage(data: NSData(contentsOfURL: NSURL(string: profilePictureURL)!)!)
+                        let banner = UIImage(data: NSData(contentsOfURL: NSURL(string: bannerURL)!)!)
                         
                         // turn the PFFile profilePictureFile into a UIImage
-                        var profilePicture = UIImage()
-                        if let profilePictureFile = object["profilePicture"] as? PFFile {
-                            profilePictureFile.getDataInBackgroundWithBlock({
-                                (imageData: NSData?, error: NSError?) -> Void in
-                                if error == nil {
-                                    profilePicture = UIImage(data: imageData!)!
-                                } 
-                            })
-                        }
-                        
-                        // turn the PFFile bannerFie into a UIImage
-                        var banner = UIImage()
-                        let bannerFile = object["bannerPicture"] as! PFFile
-                        bannerFile.getDataInBackgroundWithBlock({
-                            (imageData: NSData?, error: NSError?) -> Void in
-                            if error == nil {
-                                banner = UIImage(data: imageData!)!
-                            }
-                        })
+//                        var profilePicture = UIImage()
+//                        if let profilePictureFile = object["profilePicture"] as? PFFile {
+//                            profilePictureFile.getDataInBackgroundWithBlock({
+//                                (imageData: NSData?, error: NSError?) -> Void in
+//                                if error == nil {
+//                                    profilePicture = UIImage(data: imageData!)!
+//                                } 
+//                            })
+//                        }
+//                        
+//                        // turn the PFFile bannerFie into a UIImage
+//                        var banner = UIImage()
+//                        let bannerFile = object["bannerPicture"] as! PFFile
+//                        bannerFile.getDataInBackgroundWithBlock({
+//                            (imageData: NSData?, error: NSError?) -> Void in
+//                            if error == nil {
+//                                banner = UIImage(data: imageData!)!
+//                            }
+//                        })
                         
                         
                         // add new Candidate to the Candidate array
-                       self.data.addCandidate(parseID, firstName: firstName, lastName: lastName, state: state, politicalParty: politicalParty, activeCampaign: active, websiteURL: website, facebook: facebook, twitter: twitter, profilePicture: profilePicture, banner: banner)
+                       self.data.addCandidate(parseID, firstName: firstName, lastName: lastName, state: state, politicalParty: politicalParty, activeCampaign: active, websiteURL: website, facebook: facebook, twitter: twitter, profilePicture: profilePicture!, banner: banner!)
                     }
                 }
             } else {
@@ -77,10 +84,12 @@ class CandidatesViewController: UIViewController, UICollectionViewDataSource, UI
             }
         }
         
-        delay(0.3) { () -> () in
+        delay(0.25) { () -> () in
             self.collectionView.dataSource = self
             self.collectionView.delegate = self
             self.collectionView.reloadData()
+            self.UIActivityIndicator.hidden = true
+            self.UIActivityIndicator.stopAnimating()
         }
        
     }
