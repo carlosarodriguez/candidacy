@@ -38,61 +38,65 @@ class CandidatesDataModel {
 //        candidates.append(Candidate(name: "Robert David Steele", party: "Libertarian", pic: UIImage(named: "Steele_headshot_never_used_before_(afghanistan).jpg")!, banner: UIImage(named: "RobertBanner.jpg")!))
         
         // execute Parse query
-        let query = PFQuery(className:"Candidate")
-        
-        // findObjectsInBackgroundWithBlock executes block after query is done
-        query.findObjectsInBackgroundWithBlock {
-            (objects: [PFObject]?, error: NSError?) -> Void in
-            if error == nil {
-                // The find succeeded.
-                print("Successfully retrieved \(objects!.count) candidates.")
-                
-                // populate Candidate array with objects
-                if let objects = objects as [PFObject]! {
-                    for object in objects {
-                        // retrieve data from object
-                        let parseID = object["objectId"] as! String
-                        let firstName = object["firstName"] as! String
-                        let lastName = object["lastName"] as! String
-                        let politicalParty = object["politicalParty"] as! String
-                        let state = object["state"] as! String
-                        let active = object["activeCampaign"] as! Bool
-                        let website = object["website"] as! String
-                        let facebook = object["facebookURL"] as! String
-                        let twitter = object["twitterURL"] as! String
-                        
-                        // turn the PFFile profilePictureFile into a UIImage
-                        var profilePicture = UIImage()
-                        if let profilePictureFile = object["profilePicture"] as? PFFile {
-                            profilePictureFile.getDataInBackgroundWithBlock({
-                                (imageData: NSData?, error: NSError?) -> Void in
-                                if error == nil {
-                                    profilePicture = UIImage(data: imageData!)!
-                                }
-                            })
-                        }
-                        
-                        // turn the PFFile bannerFie into a UIImage
-                        var banner = UIImage()
-                        let bannerFile = object["bannerPicture"] as! PFFile
-                        bannerFile.getDataInBackgroundWithBlock({
-                            (imageData: NSData?, error: NSError?) -> Void in
-                            if error == nil {
-                                banner = UIImage(data: imageData!)!
-                            }
-                        })
-                        
-                        // initialize Candidate object with the above parameters
-                        let newCandidate = Candidate(parseID: parseID, firstName: firstName, lastName: lastName, state: state, party: politicalParty, active: active, website: website, facebook: facebook, twitter: twitter, pic: profilePicture, banner: banner)
-                        
-                        // add new Candidate to the Candidate array
-                        self.candidates.append(newCandidate)
-                    }
-                }
-            } else {
-                // Log details of the failure
-                print("Error: \(error!) \(error!.userInfo)")
-            }
+//        let query = PFQuery(className:"Candidate")
+//        
+//        // findObjectsInBackgroundWithBlock executes block after query is done
+//        query.findObjectsInBackgroundWithBlock {
+//            (objects: [PFObject]?, error: NSError?) -> Void in
+//            if error == nil {
+//                // The find succeeded.
+//                print("Successfully retrieved \(objects!.count) candidates.")
+//                
+//                // populate Candidate array with objects
+//                if let objects = objects as [PFObject]! {
+//                    for object in objects {
+//                        // retrieve data from object
+//                        let parseID = ""
+//                        let firstName = object["firstName"] as! String
+//                        let lastName = object["lastName"] as! String
+//                        let politicalParty = object["politicalParty"] as! String
+//                        let state = object["state"] as! String
+//                        let active = object["activeCampaign"] as! Bool
+//                        let website = object["website"] as! String
+//                        let facebook = object["facebookURL"] as! String
+//                        let twitter = object["twitterURL"] as! String
+//                        
+//                        // turn the PFFile profilePictureFile into a UIImage
+//                        var profilePicture = UIImage()
+//                        if let profilePictureFile = object["profilePicture"] as? PFFile {
+//                            profilePictureFile.getDataInBackgroundWithBlock({
+//                                (imageData: NSData?, error: NSError?) -> Void in
+//                                if error == nil {
+//                                    profilePicture = UIImage(data: imageData!)!
+//                                }
+//                            })
+//                        }
+//                        
+//                        // turn the PFFile bannerFie into a UIImage
+//                        var banner = UIImage()
+//                        let bannerFile = object["bannerPicture"] as! PFFile
+//                        bannerFile.getDataInBackgroundWithBlock({
+//                            (imageData: NSData?, error: NSError?) -> Void in
+//                            if error == nil {
+//                                banner = UIImage(data: imageData!)!
+//                            }
+//                        })
+//                        
+//                        // initialize Candidate object with the above parameters
+//                        let newCandidate = Candidate(parseID: parseID, firstName: firstName, lastName: lastName, state: state, party: politicalParty, active: active, website: website, facebook: facebook, twitter: twitter, pic: profilePicture, banner: banner)
+//                        print(newCandidate)
+//                        
+//                        // add new Candidate to the Candidate array
+//                        self.candidates.append(newCandidate)
+//                    }
+//                }
+//            } else {
+//                // Log details of the failure
+//                print("Error: \(error!) \(error!.userInfo)")
+//            }
+//        }
+        delay(2.0) { () -> () in
+            print(self.candidates.count)
         }
     }
     
@@ -115,6 +119,15 @@ class CandidatesDataModel {
         } else {
             return Candidate(parseID: "<NoParseID>", firstName: "<NoFirstName>", lastName: "<NoLastname>", state: "<NoState>", party: "<NoPoliticalParty>", active: false, website: "<NoWebsite>", facebook: "<NoFacebook>", twitter: "<NoTwitter>", pic: UIImage(), banner: UIImage())
         }
+    }
+    
+    func delay(delay:Double, closure:()->()) {
+        dispatch_after(
+            dispatch_time(
+                DISPATCH_TIME_NOW,
+                Int64(delay * Double(NSEC_PER_SEC))
+            ),
+            dispatch_get_main_queue(), closure)
     }
     
 }

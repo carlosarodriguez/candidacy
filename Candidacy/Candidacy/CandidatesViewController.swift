@@ -8,20 +8,81 @@
 
 import UIKit
 import REFrostedViewController
+import Parse
 
 class CandidatesViewController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate {
     
     @IBOutlet weak var collectionView: UICollectionView!
     private let reuseIdentifier = "candidatePicID"
+
     var data:CandidatesDataModel = CandidatesDataModel()
     var indexOfSelectedCandidate:Int = 0
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        collectionView.dataSource = self
-        collectionView.delegate = self
-        collectionView.reloadData()
+        // execute Parse query
+        let query = PFQuery(className:"Candidate")
+        
+        // findObjectsInBackgroundWithBlock executes block after query is done
+        query.findObjectsInBackgroundWithBlock {
+            (objects: [PFObject]?, error: NSError?) -> Void in
+            if error == nil {
+                // The find succeeded.
+                print("Successfully retrieved \(objects!.count) candidates.")
+                
+                // populate Candidate array with objects
+                if let objects = objects as [PFObject]! {
+                    for object in objects {
+                        // retrieve data from object
+                        let parseID = ""
+                        let firstName = object["firstName"] as! String
+                        let lastName = object["lastName"] as! String
+                        let politicalParty = object["politicalParty"] as! String
+                        let state = object["state"] as! String
+                        let active = object["activeCampaign"] as! Bool
+                        let website = object["website"] as! String
+                        let facebook = object["facebookURL"] as! String
+                        let twitter = object["twitterURL"] as! String
+                        
+                        // turn the PFFile profilePictureFile into a UIImage
+                        var profilePicture = UIImage()
+                        if let profilePictureFile = object["profilePicture"] as? PFFile {
+                            profilePictureFile.getDataInBackgroundWithBlock({
+                                (imageData: NSData?, error: NSError?) -> Void in
+                                if error == nil {
+                                    profilePicture = UIImage(data: imageData!)!
+                                } 
+                            })
+                        }
+                        
+                        // turn the PFFile bannerFie into a UIImage
+                        var banner = UIImage()
+                        let bannerFile = object["bannerPicture"] as! PFFile
+                        bannerFile.getDataInBackgroundWithBlock({
+                            (imageData: NSData?, error: NSError?) -> Void in
+                            if error == nil {
+                                banner = UIImage(data: imageData!)!
+                            }
+                        })
+                        
+                        
+                        // add new Candidate to the Candidate array
+                       self.data.addCandidate(parseID, firstName: firstName, lastName: lastName, state: state, politicalParty: politicalParty, activeCampaign: active, websiteURL: website, facebook: facebook, twitter: twitter, profilePicture: profilePicture, banner: banner)
+                    }
+                }
+            } else {
+                // Log details of the failure
+                print("Error: \(error!) \(error!.userInfo)")
+            }
+        }
+        
+        delay(0.3) { () -> () in
+            self.collectionView.dataSource = self
+            self.collectionView.delegate = self
+            self.collectionView.reloadData()
+        }
+       
     }
     
     override func didReceiveMemoryWarning() {
@@ -29,6 +90,7 @@ class CandidatesViewController: UIViewController, UICollectionViewDataSource, UI
         // Dispose of any resources that can be recreated.
     }
     
+
     func numberOfSectionsInCollectionView(collectionView: UICollectionView) -> Int {
         return 1
     }
@@ -94,6 +156,15 @@ class CandidatesViewController: UIViewController, UICollectionViewDataSource, UI
             // Pass in the candidate object
             detailVC.candidate = data.getCandidate(index: indexOfSelectedCandidate)
         }
+    }
+    
+    func delay(delay:Double, closure:()->()) {
+        dispatch_after(
+            dispatch_time(
+                DISPATCH_TIME_NOW,
+                Int64(delay * Double(NSEC_PER_SEC))
+            ),
+            dispatch_get_main_queue(), closure)
     }
     
     

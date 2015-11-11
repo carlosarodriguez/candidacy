@@ -20,7 +20,7 @@ class NewsViewController: UIViewController, UITableViewDelegate, UITableViewData
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        
+    
         getArticles()
         tableView.delegate = self
         tableView.dataSource = self
