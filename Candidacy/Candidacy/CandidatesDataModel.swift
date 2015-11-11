@@ -14,7 +14,6 @@ class CandidatesDataModel {
     
     private var candidates:[Candidate] = [Candidate]()
     
-    // Populate candidates array
     init() {
     }
     
