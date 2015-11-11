@@ -84,7 +84,7 @@ class CandidatesViewController: UIViewController, UICollectionViewDataSource, UI
             }
         }
         
-        delay(0.25) { () -> () in
+        delay(0.45) { () -> () in
             self.collectionView.dataSource = self
             self.collectionView.delegate = self
             self.collectionView.reloadData()

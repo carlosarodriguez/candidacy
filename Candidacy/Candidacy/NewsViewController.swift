@@ -67,16 +67,13 @@ class NewsViewController: UIViewController, UITableViewDelegate, UITableViewData
                 if let value: AnyObject = response.result.value {
                     // handle the results as JSON, without a bunch of nested if loops
                     let json = JSON(value)
-                    //let hits = json["response"]["meta"]["hits"].intValue
                     let docs = json["response"]["docs"].array!
-                    //print(fa)
                     for (var i = 0; i < docs.count; ++i) {
                         let article = docs[i]
                         let headline = article["headline"]["main"]
                         let snippet = article["snippet"]
                         let url = article["web_url"]
                         print(url)
-                        //print(snippet)
                         self.articles.append(NewsArticle(headline: String(headline), snippet: String(snippet), url: String(url)))
                     }
                     dispatch_async(dispatch_get_main_queue()) {
@@ -84,7 +81,6 @@ class NewsViewController: UIViewController, UITableViewDelegate, UITableViewData
                     }
                 }
         }
-        //print(articles)
     }
     
     @IBAction func showMenu(sender: AnyObject) {
