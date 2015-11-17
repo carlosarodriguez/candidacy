@@ -1,0 +1,6 @@
+framework module AEAccordion {
+  umbrella header "AEAccordion-umbrella.h"
+
+  export *
+  module * { export * }
+}
