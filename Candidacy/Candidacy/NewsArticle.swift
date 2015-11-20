@@ -14,6 +14,7 @@ class NewsArticle {
     private var _headline: String = ""
     private var _snippet: String = ""
     private var _url: String = ""
+    private var _pub_date: String = ""
     //private var thumbnail:UIImage = UIImage()
     
     var headline: String {
@@ -43,14 +44,24 @@ class NewsArticle {
         }
     }
     
+    var pub_date: String {
+        get {
+            return _pub_date
+        }
+        set(newVal) {
+            _pub_date = newVal
+        }
+    }
+    
 //    func getThumbnail() -> UIImage {
 //        return thumbnail
 //    }
     
-    init(headline: String, snippet: String, url: String) {
+    init(headline: String, snippet: String, url: String, pub_date: String) {
         self.headline = headline
         self.snippet = snippet
         self.url = url
+        self.pub_date = pub_date
         //self.thumbnail = thumbnail
     }
 }

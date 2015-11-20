@@ -60,26 +60,34 @@ class NewsViewController: UIViewController, UITableViewDelegate, UITableViewData
     
     func getArticles() {
         //self.articles = [NewsArticle]()
-        let urlPath = "http://api.nytimes.com/svc/search/v2/articlesearch.json?q=2016+presidential+election&sort=newest&api-key=2c1bfd3f625c27d8a34f2a444bee93cd:5:70064203"
-        Alamofire.request(.GET, urlPath)
-            .responseJSON { response in
+        var pageNum = 0
+        while (pageNum < 5) {
+            let urlPath = "http://api.nytimes.com/svc/search/v2/articlesearch.json?q=2016+presidential+election&sort=newest&page=" + String(pageNum) + "&api-key=2c1bfd3f625c27d8a34f2a444bee93cd:5:70064203"
+            Alamofire.request(.GET, urlPath)
+                .responseJSON { response in
                 
-                if let value: AnyObject = response.result.value {
-                    // handle the results as JSON, without a bunch of nested if loops
-                    let json = JSON(value)
-                    let docs = json["response"]["docs"].array!
-                    for (var i = 0; i < docs.count; ++i) {
-                        let article = docs[i]
-                        let headline = article["headline"]["main"]
-                        let snippet = article["snippet"]
-                        let url = article["web_url"]
-                        print(url)
-                        self.articles.append(NewsArticle(headline: String(headline), snippet: String(snippet), url: String(url)))
+                    if let value: AnyObject = response.result.value {
+                        // handle the results as JSON, without a bunch of nested if loops
+                        let json = JSON(value)
+                        let docs = json["response"]["docs"].array!
+                        for (var i = 0; i < docs.count; ++i) {
+                            let article = docs[i]
+                            let headline = article["headline"]["main"]
+                            let snippet = article["snippet"]
+                            let url = article["web_url"]
+                            let pub_date = article["pub_date"]
+                            //print(pub_date)
+                            self.articles.append(NewsArticle(headline: String(headline), snippet: String(snippet), url: String(url), pub_date: String(pub_date)))
+                        }
+                        dispatch_async(dispatch_get_main_queue()) {
+                            self.tableView.reloadData()
+                        }
                     }
-                    dispatch_async(dispatch_get_main_queue()) {
-                        self.tableView.reloadData()
-                    }
-                }
+//                    for (var i = 0; i < self.articles.count; ++i) {
+//                        print(self.articles[i].pub_date)
+//                    }
+            }
+            pageNum++
         }
     }
     
