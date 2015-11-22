@@ -76,7 +76,12 @@ class NewsViewController: UIViewController, UITableViewDelegate, UITableViewData
                             let snippet = article["snippet"]
                             let url = article["web_url"]
                             let pub_date = article["pub_date"]
-                            //print(pub_date)
+                            let multimedia = article["multimedia"].array!
+                            if multimedia.count > 0 {
+                                let thumbnail_url = multimedia[0]["url"]
+                                print(thumbnail_url)
+                            }
+                            print("-------------------")
                             self.articles.append(NewsArticle(headline: String(headline), snippet: String(snippet), url: String(url), pub_date: String(pub_date)))
                         }
                         dispatch_async(dispatch_get_main_queue()) {
