@@ -5,6 +5,35 @@
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
+        <!--Poll-->
+        <scene sceneID="fee-cZ-V8h">
+            <objects>
+                <viewController restorationIdentifier="pollController" storyboardIdentifier="pollController" title="Poll" id="ekC-ff-3Ke" customClass="PollViewController" customModule="Candidacy" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="xWl-OL-AZ0"/>
+                        <viewControllerLayoutGuide type="bottom" id="lwR-GK-wz9"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Al7-Tj-VUd">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" title="Poll" id="mH5-si-dDa">
+                        <barButtonItem key="leftBarButtonItem" image="menu" id="YA5-Ut-ms2">
+                            <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <connections>
+                                <action selector="showMenu:" destination="ekC-ff-3Ke" id="m6b-91-1h9"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vbq-bY-lba" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="850.5" y="-419.5"/>
+        </scene>
         <!--GoVote-->
         <scene sceneID="Ozv-gQ-UIP">
             <objects>
@@ -364,7 +393,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="H8P-GA-w0A" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="279.5" y="361.5"/>
+            <point key="canvasLocation" x="381.5" y="361.5"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="hcs-eb-5gi">
@@ -383,6 +412,7 @@
                         <segue destination="crx-oi-iLV" kind="show" identifier="showCandidates" id="eC3-dP-z2N"/>
                         <segue destination="BYZ-38-t0r" kind="show" identifier="showNews" id="XOM-nL-qBy"/>
                         <segue destination="AfX-Oz-2t0" kind="show" identifier="showGoVote" id="WYK-LY-z1E"/>
+                        <segue destination="ekC-ff-3Ke" kind="show" identifier="showPoll" id="KNS-XC-iYF"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="E52-X3-m52" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -429,13 +459,13 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tfH-uE-EaF" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="793.5" y="1188.5"/>
+            <point key="canvasLocation" x="850.5" y="1170.5"/>
         </scene>
     </scenes>
     <resources>
         <image name="menu" width="22" height="22"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="PEH-eL-eUg"/>
+        <segue reference="XOM-nL-qBy"/>
     </inferredMetricsTieBreakers>
 </document>

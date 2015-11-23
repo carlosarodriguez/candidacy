@@ -66,6 +66,9 @@ class MenuViewController: UITableViewController {
         } else if indexPath.row == 2 { // GoVote Page
             let goVoteTableViewController: GoVoteTableViewController = self.storyboard!.instantiateViewControllerWithIdentifier("goVoteController") as! GoVoteTableViewController
             navigationController.viewControllers = [goVoteTableViewController]
+        } else if indexPath.row == 3 { // Poll Page
+            let pollViewController: PollViewController = self.storyboard!.instantiateViewControllerWithIdentifier("pollController") as! PollViewController
+            navigationController.viewControllers = [pollViewController]
         }
         
         self.frostedViewController.contentViewController = navigationController
