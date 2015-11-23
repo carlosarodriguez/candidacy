@@ -32,6 +32,8 @@ class CandidateDetailViewController: UIViewController, UIScrollViewDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        scrollView.delegate = self
+        
         // set up profile
         candidateNameLabel.text = candidate!.name
         profileImage.image = candidate?.getPic()
@@ -40,8 +42,6 @@ class CandidateDetailViewController: UIViewController, UIScrollViewDelegate {
         profileImage.clipsToBounds = true
         
         self.navigationController?.navigationBarHidden = true
-        
-        scrollView.delegate = self
     }
     
     override func viewDidAppear(animated: Bool) {
@@ -56,7 +56,7 @@ class CandidateDetailViewController: UIViewController, UIScrollViewDelegate {
         // Header - Blurred Image
         
 //        headerBlurImageView = UIImageView(frame: header.bounds)
-//        headerBlurImageView?.image = UIImage(named: "header_bg")?.blurredImageWithRadius(10, iterations: 20, tintColor: UIColor.clearColor())
+//        headerBlurImageView?.image = candidate?.getBanner().blurredImageWithRadius(10, iterations: 20, tintColor: UIColor.clearColor())
 //        headerBlurImageView?.contentMode = UIViewContentMode.ScaleAspectFill
 //        headerBlurImageView?.alpha = 0.0
 //        header.insertSubview(headerBlurImageView, belowSubview: headerLabel)
@@ -65,7 +65,6 @@ class CandidateDetailViewController: UIViewController, UIScrollViewDelegate {
     }
     
     func scrollViewDidScroll(scrollView: UIScrollView) {
-        
         let offset = scrollView.contentOffset.y
         //var avatarTransform = CATransform3DIdentity
         var headerTransform = CATransform3DIdentity

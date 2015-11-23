@@ -20,6 +20,8 @@ class CandidatesViewController: UIViewController, UICollectionViewDataSource, UI
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.collectionView.dataSource = self
+        self.collectionView.delegate = self
         // Do any additional setup after loading the view, typically from a nib.
         self.UIActivityIndicator.startAnimating()
         // execute Parse query
@@ -47,6 +49,7 @@ class CandidatesViewController: UIViewController, UICollectionViewDataSource, UI
                         let twitter = object["twitterURL"] as! String
                         let profilePictureURL = object["profilePictureURL"] as! String
                         let bannerURL = object["bannerURL"] as! String
+                        let profileInfo = [String:String]() // this dictionary will hold info needed for the candidates profiles (personal details, bio, etc.)
                         
                         //turn urls into UIImage
                         let profilePicture = UIImage(data: NSData(contentsOfURL: NSURL(string: profilePictureURL)!)!)
@@ -75,11 +78,9 @@ class CandidatesViewController: UIViewController, UICollectionViewDataSource, UI
                         
                         
                         // add new Candidate to the Candidate array
-                       self.data.addCandidate(parseID, firstName: firstName, lastName: lastName, state: state, politicalParty: politicalParty, activeCampaign: active, websiteURL: website, facebook: facebook, twitter: twitter, profilePicture: profilePicture!, banner: banner!)
+                        self.data.addCandidate(parseID, firstName: firstName, lastName: lastName, state: state, politicalParty: politicalParty, activeCampaign: active, websiteURL: website, facebook: facebook, twitter: twitter, profilePicture: profilePicture!, banner: banner!, profileInfo: profileInfo)
                     }
                     dispatch_async(dispatch_get_main_queue()) {
-                        self.collectionView.dataSource = self
-                        self.collectionView.delegate = self
                         self.collectionView.reloadData()
                         self.UIActivityIndicator.hidden = true
                         self.UIActivityIndicator.stopAnimating()

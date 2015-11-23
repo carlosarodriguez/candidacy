@@ -24,6 +24,7 @@ class Candidate {
     private var _twitter:String = ""
     private var pic:UIImage = UIImage()
     private var banner:UIImage = UIImage()
+    private var profileInfo:Dictionary = [String:String]()
     
     var parseID:String {
         get {
@@ -132,7 +133,7 @@ class Candidate {
         return banner
     }
     
-    init(parseID:String, firstName:String, lastName:String, state:String, party:String, active:Bool, website:String, facebook:String, twitter:String, pic:UIImage, banner:UIImage) {
+    init(parseID:String, firstName:String, lastName:String, state:String, party:String, active:Bool, website:String, facebook:String, twitter:String, pic:UIImage, banner:UIImage, profileInfo: Dictionary<String, String>) {
         self.parseID = parseID
         self.firstName = firstName
         self.lastName = lastName
@@ -146,6 +147,7 @@ class Candidate {
         self.twitter = twitter
         self.pic = pic
         self.banner = banner
+        self.profileInfo = profileInfo
     }
     
 //    convenience init() {
