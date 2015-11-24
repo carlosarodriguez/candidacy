@@ -13,11 +13,14 @@ let offset_HeaderStop:CGFloat = 40.0 // At this offset the Header stops its tran
 let offset_B_LabelHeader:CGFloat = 95.0 // At this offset the Black label reaches the Header
 let distance_W_LabelHeader:CGFloat = 35.0 // The distance between the bottom of the Header and the top of the White Label
 
-class CandidateDetailViewController: UIViewController, UIScrollViewDelegate {
+class CandidateDetailViewController: UIViewController, UIScrollViewDelegate, UITableViewDataSource, UITableViewDelegate {
     
     // This gets set by the presenting view controller
     var candidate:Candidate? = nil
     
+    var profileSections:[String] = ["Personal Details", "Bio", "Political Positions", "Quotes"]
+    
+    @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var profileWhiteBackground: UIView!
     @IBOutlet weak var header: UIView!
     @IBOutlet weak var scrollView: UIScrollView!
@@ -33,6 +36,8 @@ class CandidateDetailViewController: UIViewController, UIScrollViewDelegate {
         super.viewDidLoad()
         
         scrollView.delegate = self
+        tableView.dataSource = self
+        tableView.delegate = self
         
         // set up profile
         candidateNameLabel.text = candidate!.name
@@ -99,6 +104,25 @@ class CandidateDetailViewController: UIViewController, UIScrollViewDelegate {
         
         header.layer.transform = headerTransform
         
+    }
+    
+    func numberOfSectionsInTableView(tableView: UITableView) -> Int {
+        return 1;
+    }
+    
+    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return profileSections.count
+    }
+    
+    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCellWithIdentifier("profileCell", forIndexPath:indexPath) as UITableViewCell
+        cell.textLabel?.text = profileSections[indexPath.row]
+        cell.textLabel?.font = UIFont(name: "avenir-medium", size: 16)
+        return cell
+    }
+    
+    func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
+        return self.tableView.frame.size.height / 4;
     }
 
     @IBAction func dismissCandidateProfile(sender: AnyObject) {
