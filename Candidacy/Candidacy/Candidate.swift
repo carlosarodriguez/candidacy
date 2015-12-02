@@ -10,8 +10,8 @@ import Foundation
 import UIKit
 import Alamofire
 
-class Candidate {
-    private var _parseID = ""
+class Candidate: NSObject, NSCoding {
+    //private var _parseID = ""
     private var _firstName:String = ""
     private var _lastName:String = ""
     private var _name:String = ""
@@ -24,16 +24,35 @@ class Candidate {
     private var _twitter:String = ""
     private var pic:UIImage = UIImage()
     private var banner:UIImage = UIImage()
-    private var profileInfo:Dictionary = [String:String]()
+    //private var profileInfo:Dictionary = [String:String]()
     
-    var parseID:String {
-        get {
-            return _parseID
-        }
-        set (newValue) {
-            _parseID = newValue
-        }
+    init(firstName:String, lastName:String, state:String, party:String, active:Bool, website:String, facebook:String, twitter:String, pic:UIImage, banner:UIImage) {//, profileInfo: Dictionary<String, String>) {
+        super.init()
+        //self.parseID = parseID
+        self.firstName = firstName
+        self.lastName = lastName
+        self.name = firstName + " " + lastName
+        self.state = state
+        self.party = party
+        self.active = active
+        //        self.votes = votes
+        self.website = website
+        self.facebook = facebook
+        self.twitter = twitter
+        self.pic = pic
+        self.banner = banner
+        // self.profileInfo = profileInfo
+        
     }
+    
+//    var parseID:String {
+//        get {
+//            return _parseID
+//        }
+//        set (newValue) {
+//            _parseID = newValue
+//        }
+//    }
     
     var firstName:String {
         get {
@@ -133,25 +152,33 @@ class Candidate {
         return banner
     }
     
-    init(parseID:String, firstName:String, lastName:String, state:String, party:String, active:Bool, website:String, facebook:String, twitter:String, pic:UIImage, banner:UIImage, profileInfo: Dictionary<String, String>) {
-        self.parseID = parseID
-        self.firstName = firstName
-        self.lastName = lastName
-        self.name = firstName + " " + lastName
-        self.state = state
-        self.party = party
-        self.active = active
-//        self.votes = votes
-        self.website = website
-        self.facebook = facebook
-        self.twitter = twitter
-        self.pic = pic
-        self.banner = banner
-        self.profileInfo = profileInfo
+    @objc required convenience init(coder aDecoder: NSCoder) {
+        //let parseID = aDecoder.decodeObjectForKey("parseID") as! String
+        let firstName = aDecoder.decodeObjectForKey("firstName") as! String
+        let lastName = aDecoder.decodeObjectForKey("lastName") as! String
+        let state = aDecoder.decodeObjectForKey("state") as! String
+        let party = aDecoder.decodeObjectForKey("party") as! String
+        let active = aDecoder.decodeBoolForKey("active")
+        let website = aDecoder.decodeObjectForKey("website") as! String
+        let facebook = aDecoder.decodeObjectForKey("facebook") as! String
+        let twitter = aDecoder.decodeObjectForKey("twitter") as! String
+        let pic = aDecoder.decodeObjectForKey("pic") as! UIImage
+        let banner = aDecoder.decodeObjectForKey("banner") as! UIImage
+
+        self.init(firstName: firstName, lastName: lastName, state: state, party: party, active: active, website: website, facebook: facebook, twitter: twitter, pic:pic, banner:banner)
     }
     
-//    convenience init() {
-//        self.init(name:"<NoName>", state:"<NoState>", party:"<NoParty>")
-//    }
-    
+    @objc func encodeWithCoder(aCoder: NSCoder) {
+        //aCoder.encodeObject(parseID, forKey: "parseId")
+        aCoder.encodeObject(firstName, forKey: "firstName")
+        aCoder.encodeObject(lastName, forKey: "lastName")
+        aCoder.encodeObject(state, forKey: "state")
+        aCoder.encodeObject(party, forKey: "party")
+        aCoder.encodeBool(active, forKey: "active")
+        aCoder.encodeObject(website, forKey: "website")
+        aCoder.encodeObject(facebook, forKey: "facebook")
+        aCoder.encodeObject(twitter, forKey: "twitter")
+        aCoder.encodeObject(pic, forKey: "pic")
+        aCoder.encodeObject(banner, forKey: "banner")
+    }
 }

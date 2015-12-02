@@ -4,6 +4,11 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>AEAccordion.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Alamofire.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -32,22 +37,12 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>37A80794A193CC82DC3A4F246C1EA5B6</key>
+		<key>000ED19344020C53CE003F934EE7A6C0</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>432ECC54282C84882B482CCB4CF227FC</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>43DDE2BD77E53FA839A5B3231C2C631B</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>48D021B27B94BD46EBB38DF115A7D140</key>
+		<key>3843CAE7C280A3110BEE9E6874AA49F1</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -57,27 +52,17 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>708E01B006A9F88B3C13711562282B5E</key>
+		<key>5B7875CBB4C8486AAE4B3F8ECFC31AC1</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>A31B07BCBFAACF2B0700993D5D423C9D</key>
+		<key>675D9EAE6F3CE873CAC0A4E7C5F708D1</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>B8A759F57254B6094CF99273E5ECEE8B</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>D08FD10194CAC0ED2BFBC6F17637EA16</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>FC60BF03BA59633E27A5A9E9F05720ED</key>
+		<key>908919D6B56848857C0E6C7E80B4FE1C</key>
 		<dict>
 			<key>primary</key>
 			<true/>

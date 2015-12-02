@@ -14,83 +14,21 @@ class CandidatesViewController: UIViewController, UICollectionViewDataSource, UI
     
     @IBOutlet weak var collectionView: UICollectionView!
     private let reuseIdentifier = "candidatePicID"
-    @IBOutlet weak var UIActivityIndicator: UIActivityIndicatorView!
     var data:CandidatesDataModel = CandidatesDataModel()
     var indexOfSelectedCandidate:Int = 0
+    var candidates:[Candidate] = [Candidate]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        // Get a reference to the global user defaults object
+        let defaults = NSUserDefaults.standardUserDefaults()
+        defaults.synchronize()
+        let decoded = defaults.objectForKey("candidates") as! NSData
+        let decodedCandidates = NSKeyedUnarchiver.unarchiveObjectWithData(decoded) as! [Candidate]
+        self.candidates = decodedCandidates
         self.collectionView.dataSource = self
         self.collectionView.delegate = self
-        // Do any additional setup after loading the view, typically from a nib.
-        self.UIActivityIndicator.startAnimating()
-        // execute Parse query
-        let query = PFQuery(className:"Candidate")
-        
-        // findObjectsInBackgroundWithBlock executes block after query is done
-        query.findObjectsInBackgroundWithBlock {
-            (objects: [PFObject]?, error: NSError?) -> Void in
-            if error == nil {
-                // The find succeeded.
-                print("Successfully retrieved \(objects!.count) candidates.")
-                
-                // populate Candidate array with objects
-                if let objects = objects as [PFObject]! {
-                    for object in objects {
-                        // retrieve data from object
-                        let parseID = ""
-                        let firstName = object["firstName"] as! String
-                        let lastName = object["lastName"] as! String
-                        let politicalParty = object["politicalParty"] as! String
-                        let state = object["state"] as! String
-                        let active = object["activeCampaign"] as! Bool
-                        let website = object["website"] as! String
-                        let facebook = object["facebookURL"] as! String
-                        let twitter = object["twitterURL"] as! String
-                        let profilePictureURL = object["profilePictureURL"] as! String
-                        let bannerURL = object["bannerURL"] as! String
-                        let profileInfo = [String:String]() // this dictionary will hold info needed for the candidates profiles (personal details, bio, etc.)
-                        
-                        //turn urls into UIImage
-                        let profilePicture = UIImage(data: NSData(contentsOfURL: NSURL(string: profilePictureURL)!)!)
-                        let banner = UIImage(data: NSData(contentsOfURL: NSURL(string: bannerURL)!)!)
-                        
-                        // turn the PFFile profilePictureFile into a UIImage
-//                        var profilePicture = UIImage()
-//                        if let profilePictureFile = object["profilePicture"] as? PFFile {
-//                            profilePictureFile.getDataInBackgroundWithBlock({
-//                                (imageData: NSData?, error: NSError?) -> Void in
-//                                if error == nil {
-//                                    profilePicture = UIImage(data: imageData!)!
-//                                } 
-//                            })
-//                        }
-//                        
-//                        // turn the PFFile bannerFie into a UIImage
-//                        var banner = UIImage()
-//                        let bannerFile = object["bannerPicture"] as! PFFile
-//                        bannerFile.getDataInBackgroundWithBlock({
-//                            (imageData: NSData?, error: NSError?) -> Void in
-//                            if error == nil {
-//                                banner = UIImage(data: imageData!)!
-//                            }
-//                        })
-                        
-                        
-                        // add new Candidate to the Candidate array
-                        self.data.addCandidate(parseID, firstName: firstName, lastName: lastName, state: state, politicalParty: politicalParty, activeCampaign: active, websiteURL: website, facebook: facebook, twitter: twitter, profilePicture: profilePicture!, banner: banner!, profileInfo: profileInfo)
-                    }
-                    dispatch_async(dispatch_get_main_queue()) {
-                        self.collectionView.reloadData()
-                        self.UIActivityIndicator.hidden = true
-                        self.UIActivityIndicator.stopAnimating()
-                    }
-                }
-            } else {
-                // Log details of the failure
-                print("Error: \(error!) \(error!.userInfo)")
-            }
-        } 
+        self.collectionView.reloadData()
     }
     
     override func didReceiveMemoryWarning() {
@@ -98,20 +36,24 @@ class CandidatesViewController: UIViewController, UICollectionViewDataSource, UI
         // Dispose of any resources that can be recreated.
     }
     
+    func receiveParseData(data: CandidatesDataModel) {
+        print(data.numberOfCandidates())
+        self.data = data
+    }
 
     func numberOfSectionsInCollectionView(collectionView: UICollectionView) -> Int {
         return 1
     }
     
     func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return data.numberOfCandidates()
+        return self.candidates.count//data.numberOfCandidates()
     }
     
     func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
         
         let cell = collectionView.dequeueReusableCellWithReuseIdentifier(reuseIdentifier, forIndexPath: indexPath) as! CandidatePhotoCell
         let index:Int = indexPath.row
-        let tempCandidate:Candidate = data.getCandidate(index: index)
+        let tempCandidate:Candidate = self.candidates[index]//data.getCandidate(index: index)
         
         cell.candidateNameLabel.text = tempCandidate.name
     
@@ -162,7 +104,7 @@ class CandidatesViewController: UIViewController, UICollectionViewDataSource, UI
             let detailVC:CandidateDetailViewController = segue.destinationViewController as! CandidateDetailViewController
             
             // Pass in the candidate object
-            detailVC.candidate = data.getCandidate(index: indexOfSelectedCandidate)
+            detailVC.candidate = self.candidates[indexOfSelectedCandidate]//data.getCandidate(index: indexOfSelectedCandidate)
         }
     }
     
