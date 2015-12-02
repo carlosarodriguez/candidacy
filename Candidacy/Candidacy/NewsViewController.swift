@@ -29,7 +29,13 @@ class NewsViewController: UIViewController, UITableViewDelegate, UITableViewData
         tableView.delegate = self
         tableView.dataSource = self
         tableView.reloadData()
-        loadCandidatesFromParse()
+        
+    }
+    
+    override func viewDidAppear(animated: Bool) {
+        dispatch_async(dispatch_get_global_queue(Int(QOS_CLASS_BACKGROUND.rawValue), 0)) {
+            self.loadCandidatesFromParse()
+        }
     }
 
     override func didReceiveMemoryWarning() {
@@ -102,8 +108,7 @@ class NewsViewController: UIViewController, UITableViewDelegate, UITableViewData
     }
     
     func loadCandidatesFromParse() {
-        dispatch_async(dispatch_get_global_queue(Int(QOS_CLASS_USER_INITIATED.rawValue), 0)) {
-            // execute Parse query
+                    // execute Parse query
             let query = PFQuery(className:"Candidate")
             
             // findObjectsInBackgroundWithBlock executes block after query is done
@@ -159,12 +164,12 @@ class NewsViewController: UIViewController, UITableViewDelegate, UITableViewData
                             // add new Candidate to the Candidate array
                             self.candidates.append(Candidate(firstName: firstName, lastName: lastName, state: state, party: politicalParty, active: active, website: website, facebook: facebook, twitter: twitter, pic: profilePicture!, banner: banner!))//, profileInfo: profileInfo)
                         }
-                
-                        let defaults = NSUserDefaults.standardUserDefaults()
-                        let encodedData = NSKeyedArchiver.archivedDataWithRootObject(self.candidates)
-                        defaults.setObject(encodedData, forKey: "candidates")
-                        defaults.synchronize()
-                        
+                        dispatch_async(dispatch_get_global_queue(Int(QOS_CLASS_USER_INITIATED.rawValue), 0)) {
+                            let defaults = NSUserDefaults.standardUserDefaults()
+                            let encodedData = NSKeyedArchiver.archivedDataWithRootObject(self.candidates)
+                            defaults.setObject(encodedData, forKey: "candidates")
+                            defaults.synchronize()
+                        }
 //                        self.delegate = CandidatesViewController()
 //                        self.delegate?.receiveParseData(self.data)
                     }
@@ -173,7 +178,7 @@ class NewsViewController: UIViewController, UITableViewDelegate, UITableViewData
                     print("Error: \(error!) \(error!.userInfo)")
                 }
             }
-        }
+        
         
     }
 
