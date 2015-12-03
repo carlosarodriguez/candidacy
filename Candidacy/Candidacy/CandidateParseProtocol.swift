@@ -12,5 +12,5 @@ import UIKit
 
 protocol CandidateParseProtocol
 {
-    func receiveParseData(data: CandidatesDataModel)
+    func callParse()
 }

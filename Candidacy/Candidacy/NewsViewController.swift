@@ -24,18 +24,22 @@ class NewsViewController: UIViewController, UITableViewDelegate, UITableViewData
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-
-        getArticles()
-        tableView.delegate = self
-        tableView.dataSource = self
-        tableView.reloadData()
+        dispatch_async(dispatch_get_main_queue()) {
+            self.getArticles()
+            self.tableView.delegate = self
+            self.tableView.dataSource = self
+            self.tableView.reloadData()
+        }
         
     }
     
-    override func viewDidAppear(animated: Bool) {
-        dispatch_async(dispatch_get_global_queue(Int(QOS_CLASS_BACKGROUND.rawValue), 0)) {
-            self.loadCandidatesFromParse()
-        }
+    override func viewWillAppear(animated: Bool) {
+//        dispatch_async(dispatch_get_global_queue(Int(QOS_CLASS_BACKGROUND.rawValue), 0)) {
+//            //self.loadCandidatesFromParse()
+//            self.delegate = CandidatesViewController()
+//            self.delegate?.callParse()
+//        }
+        
     }
 
     override func didReceiveMemoryWarning() {
@@ -110,7 +114,7 @@ class NewsViewController: UIViewController, UITableViewDelegate, UITableViewData
     func loadCandidatesFromParse() {
                     // execute Parse query
             let query = PFQuery(className:"Candidate")
-            
+        
             // findObjectsInBackgroundWithBlock executes block after query is done
             query.findObjectsInBackgroundWithBlock {
                 (objects: [PFObject]?, error: NSError?) -> Void in
@@ -123,6 +127,7 @@ class NewsViewController: UIViewController, UITableViewDelegate, UITableViewData
                         for object in objects {
                             // retrieve data from object
                             //let parseID = "anything"
+                            
                             let firstName = object["firstName"] as! String
                             let lastName = object["lastName"] as! String
                             let politicalParty = object["politicalParty"] as! String
@@ -164,21 +169,20 @@ class NewsViewController: UIViewController, UITableViewDelegate, UITableViewData
                             // add new Candidate to the Candidate array
                             self.candidates.append(Candidate(firstName: firstName, lastName: lastName, state: state, party: politicalParty, active: active, website: website, facebook: facebook, twitter: twitter, pic: profilePicture!, banner: banner!))//, profileInfo: profileInfo)
                         }
-                        dispatch_async(dispatch_get_global_queue(Int(QOS_CLASS_USER_INITIATED.rawValue), 0)) {
+                      
                             let defaults = NSUserDefaults.standardUserDefaults()
                             let encodedData = NSKeyedArchiver.archivedDataWithRootObject(self.candidates)
                             defaults.setObject(encodedData, forKey: "candidates")
                             defaults.synchronize()
-                        }
-//                        self.delegate = CandidatesViewController()
-//                        self.delegate?.receiveParseData(self.data)
+                        
+//                       self.delegate = CandidatesViewController()
+//                       self.delegate?.receiveParseData(self.candidates)
                     }
                 } else {
                     // Log details of the failure
                     print("Error: \(error!) \(error!.userInfo)")
                 }
             }
-        
         
     }
 

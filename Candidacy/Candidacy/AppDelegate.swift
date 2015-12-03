@@ -14,6 +14,7 @@ import Parse
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
+    var delegate:CandidateParseProtocol? = nil
 
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
@@ -36,6 +37,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         Parse.setApplicationId("nDqHc4Iv70AgWRP0cyatqlVKN1PNjkYNIUKPvm99", clientKey:"oPda5aM2kPZXWbppTE3NpydOxbIdaPCPV1X8nBdL")
         
         appearance.shadowImage = UIImage()
+        
+       
+        let qualityOfServiceClass = QOS_CLASS_BACKGROUND
+        let backgroundQueue = dispatch_get_global_queue(qualityOfServiceClass, 0)
+        dispatch_async(backgroundQueue, {
+            //self.loadCandidatesFromParse()
+            self.delegate = CandidatesViewController()
+            self.delegate?.callParse()
+        })
         
         return true
     }
@@ -61,6 +71,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func applicationWillTerminate(application: UIApplication) {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
     }
+    
+    func application(application: UIApplication, willFinishLaunchingWithOptions launchOptions: [NSObject : AnyObject]?) -> Bool {
+            
+        return true
+    }
+    
 
 }
 

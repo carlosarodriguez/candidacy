@@ -1,0 +1,7 @@
+use_frameworks!
+
+
+pod 'REFrostedViewController'
+pod 'Alamofire', '~> 3.0'
+pod 'Parse'
+pod 'AEAccordion'

@@ -6,17 +6,21 @@
 //  Copyright © 2015 CS378. All rights reserved.
 //
 
+
 import UIKit
 import REFrostedViewController
 import Parse
+import ParseUI
 
-class CandidatesViewController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate {
+class CandidatesViewController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate, CandidateParseProtocol{
     
     @IBOutlet weak var collectionView: UICollectionView!
     private let reuseIdentifier = "candidatePicID"
     var data:CandidatesDataModel = CandidatesDataModel()
     var indexOfSelectedCandidate:Int = 0
     var candidates:[Candidate] = [Candidate]()
+    var imageBan: UIImage?
+    var candidateImage: UIImage?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -36,9 +40,84 @@ class CandidatesViewController: UIViewController, UICollectionViewDataSource, UI
         // Dispose of any resources that can be recreated.
     }
     
-    func receiveParseData(data: CandidatesDataModel) {
-        print(data.numberOfCandidates())
-        self.data = data
+    func receiveParseData(data: [Candidate]) {
+        print(data.count)
+        self.candidates = data
+    }
+    
+    func callParse() {
+        // execute Parse query
+        let query = PFQuery(className:"Candidate")
+        
+        // findObjectsInBackgroundWithBlock executes block after query is done
+        query.findObjectsInBackgroundWithBlock {
+            (objects: [PFObject]?, error: NSError?) -> Void in
+            if error == nil {
+                // The find succeeded.
+                print("Successfully retrieved \(objects!.count) candidates.")
+                
+                // populate Candidate array with objects
+                if let objects = objects as [PFObject]! {
+                    for object in objects {
+                        // retrieve data from object
+                        //let parseID = "anything"
+                        
+                        let firstName = object["firstName"] as! String
+                        let lastName = object["lastName"] as! String
+                        let politicalParty = object["politicalParty"] as! String
+                        let state = object["state"] as! String
+                        let active = object["activeCampaign"] as! Bool
+                        let website = object["website"] as! String
+                        let facebook = object["facebookURL"] as! String
+                        let twitter = object["twitterURL"] as! String
+                        let profilePictureURL = object["profilePictureURL"] as! String
+                        let bannerURL = object["bannerURL"] as! String
+                        //let profileInfo = [String:String]() // this dictionary will hold info needed for the candidates profiles (personal details, bio, etc.)
+                        
+                        //turn urls into UIImage
+                        //let profilePicture = UIImage()//UIImage(data: NSData(contentsOfURL: NSURL(string: profilePictureURL)!)!)
+                        //let banner = UIImage()//UIImage(data: NSData(contentsOfURL: NSURL(string: bannerURL)!)!)
+                        
+                        // turn the PFFile profilePictureFile into a UIImage
+                                                var profilePicture = UIImage()
+                                                if let profilePictureFile = object["profilePicture"] as? PFFile {
+                                                    profilePictureFile.getDataInBackgroundWithBlock({
+                                                        (imageData: NSData?, error: NSError?) -> Void in
+                                                        if error == nil {
+                                                            profilePicture = UIImage(data: imageData!)!
+                                                        }
+                                                    })
+                                                }
+                        
+                                                // turn the PFFile bannerFie into a UIImage
+                                                var banner = UIImage()
+                                                let bannerFile = object["bannerPicture"] as! PFFile
+                                                bannerFile.getDataInBackgroundWithBlock({
+                                                    (imageData: NSData?, error: NSError?) -> Void in
+                                                    if error == nil {
+                                                        banner = UIImage(data: imageData!)!
+                                                    }
+                                                })
+                        
+                        
+                        // add new Candidate to the Candidate array
+                        self.candidates.append(Candidate(firstName: firstName, lastName: lastName, state: state, party: politicalParty, active: active, website: website, facebook: facebook, twitter: twitter, pic: profilePicture, banner: banner))//, profileInfo: profileInfo)
+                    }
+                    
+                    let defaults = NSUserDefaults.standardUserDefaults()
+                    let encodedData = NSKeyedArchiver.archivedDataWithRootObject(self.candidates)
+                    defaults.setObject(encodedData, forKey: "candidates")
+                    defaults.synchronize()
+                    
+                    //                       self.delegate = CandidatesViewController()
+                    //                       self.delegate?.receiveParseData(self.candidates)
+                }
+            } else {
+                // Log details of the failure
+                print("Error: \(error!) \(error!.userInfo)")
+            }
+        }
+        
     }
 
     func numberOfSectionsInCollectionView(collectionView: UICollectionView) -> Int {
@@ -116,7 +195,6 @@ class CandidatesViewController: UIViewController, UICollectionViewDataSource, UI
             ),
             dispatch_get_main_queue(), closure)
     }
-    
     
 }
 

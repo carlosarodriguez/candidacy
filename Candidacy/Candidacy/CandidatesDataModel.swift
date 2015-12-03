@@ -22,7 +22,7 @@ class CandidatesDataModel {
         return candidates.count
     }
     
-    func addCandidate (parseID:String, firstName: String, lastName: String, state: String, politicalParty: String, activeCampaign: Bool, websiteURL: String, facebook: String, twitter: String, profilePicture: UIImage, banner: UIImage) {//, profileInfo: Dictionary<String,String>) {
+    func addCandidate (firstName: String, lastName: String, state: String, politicalParty: String, activeCampaign: Bool, websiteURL: String, facebook: String, twitter: String, profilePicture: UIImage, banner: UIImage) {//, profileInfo: Dictionary<String,String>) {
         
         // initialize Candidate object with the above parameters
         let newCandidate = Candidate(firstName: firstName, lastName: lastName, state: state, party: politicalParty, active: activeCampaign, website: websiteURL, facebook: facebook, twitter: twitter, pic: profilePicture, banner: banner)//, profileInfo: profileInfo)
