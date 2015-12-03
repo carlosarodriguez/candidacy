@@ -113,7 +113,7 @@ class CandidateDetailViewController: UIViewController, UIScrollViewDelegate, UIT
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("profileCell", forIndexPath:indexPath) as UITableViewCell
         cell.textLabel?.text = profileSections[indexPath.row]
-        cell.textLabel?.font = UIFont(name: "avenir-medium", size: 16)
+        cell.textLabel?.font = UIFont(name: "avenir", size: 18)
         return cell
     }
     
@@ -207,6 +207,7 @@ class CandidateDetailViewController: UIViewController, UIScrollViewDelegate, UIT
                 quotesViewController.quote2.text = quotes[1]
             }
         }
+        tableView.deselectRowAtIndexPath(indexPath, animated: true)
     }
 
     @IBAction func dismissCandidateProfile(sender: AnyObject) {
