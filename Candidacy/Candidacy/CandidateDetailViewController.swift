@@ -142,6 +142,14 @@ class CandidateDetailViewController: UIViewController, UIScrollViewDelegate, UIT
             personalDetailsViewController.almamaterLabel.lineBreakMode = NSLineBreakMode.ByWordWrapping
             personalDetailsViewController.almamaterLabel.sizeToFit()
             personalDetailsViewController.religionLabel.text = personalDetails["religion"] as? String
+        } else if (indexPath.row == 1) { //bio
+            print(indexPath.row)
+            let bioViewController:BioViewController = self.storyboard!.instantiateViewControllerWithIdentifier("bioVC") as! BioViewController
+            bioViewController.modalPresentationStyle = .OverCurrentContext
+            self.presentViewController(bioViewController, animated: true, completion: nil)
+
+            bioViewController.delegate = self
+            bioViewController.bioTextView.text = bio
         }
     }
 

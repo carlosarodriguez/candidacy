@@ -1,5 +1,5 @@
 //
-//  PersonalDetailsViewController.swift
+//  BioViewController.swift
 //  Candidacy
 //
 //  Created by Kevin Avila on 12/3/15.
@@ -8,17 +8,13 @@
 
 import UIKit
 
-class PersonalDetailsViewController: UIViewController {
+class BioViewController: UIViewController {
     
     var delegate:CandidateDetailViewController? = nil
     
     @IBOutlet weak var scrollView: UIScrollView!
-    @IBOutlet weak var ageLabel: UILabel!
-    @IBOutlet weak var hometownLabel: UILabel!
-    @IBOutlet weak var partyLabel: UILabel!
-    @IBOutlet weak var spouseLabel: UILabel!
-    @IBOutlet weak var almamaterLabel: UILabel!
-    @IBOutlet weak var religionLabel: UILabel!
+    @IBOutlet weak var bioTextView: UITextView!
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -29,19 +25,13 @@ class PersonalDetailsViewController: UIViewController {
         scrollView.layer.borderWidth = 2
         scrollView.layer.borderColor = UIColor.blackColor().CGColor
         view.backgroundColor = UIColor.clearColor()
-        ageLabel.font = UIFont(name: "avenir-medium", size: 16)
-        hometownLabel.font = UIFont(name: "avenir-medium", size: 16)
-        partyLabel.font = UIFont(name: "avenir-medium", size: 16)
-        spouseLabel.font = UIFont(name: "avenir-medium", size: 16)
-        almamaterLabel.font = UIFont(name: "avenir-medium", size: 16)
-        religionLabel.font = UIFont(name: "avenir-medium", size: 16)
+        bioTextView.font = UIFont(name: "avenir-medium", size: 16)
         //view.opaque = false
     }
     
-
-    @IBAction func dismissPersonalDetails(sender: AnyObject) {
+    @IBAction func dismissBio(sender: AnyObject) {
         self.dismissViewControllerAnimated(true, completion: {})
         delegate!.view.alpha = 1.0
     }
-    
+
 }
