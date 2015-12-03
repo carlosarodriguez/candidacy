@@ -16,11 +16,10 @@ class CandidatesViewController: UIViewController, UICollectionViewDataSource, UI
     
     @IBOutlet weak var collectionView: UICollectionView!
     private let reuseIdentifier = "candidatePicID"
-    var data:CandidatesDataModel = CandidatesDataModel()
     var indexOfSelectedCandidate:Int = 0
     var candidates:[Candidate] = [Candidate]()
-    var imageBan: UIImage?
-    var candidateImage: UIImage?
+    var imageBan: UIImage = UIImage()
+    var candidateImage: UIImage = UIImage()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -60,8 +59,6 @@ class CandidatesViewController: UIViewController, UICollectionViewDataSource, UI
                 if let objects = objects as [PFObject]! {
                     for object in objects {
                         // retrieve data from object
-                        //let parseID = "anything"
-                        
                         let firstName = object["firstName"] as! String
                         let lastName = object["lastName"] as! String
                         let politicalParty = object["politicalParty"] as! String
@@ -72,52 +69,21 @@ class CandidatesViewController: UIViewController, UICollectionViewDataSource, UI
                         let twitter = object["twitterURL"] as! String
                         let profilePictureURL = object["profilePictureURL"] as! String
                         let bannerURL = object["bannerURL"] as! String
-                        //let profileInfo = [String:String]() // this dictionary will hold info needed for the candidates profiles (personal details, bio, etc.)
-                        
-                        //turn urls into UIImage
-                        //let profilePicture = UIImage()//UIImage(data: NSData(contentsOfURL: NSURL(string: profilePictureURL)!)!)
-                        //let banner = UIImage()//UIImage(data: NSData(contentsOfURL: NSURL(string: bannerURL)!)!)
-                        
-                        // turn the PFFile profilePictureFile into a UIImage
-                                                var profilePicture = UIImage()
-                                                if let profilePictureFile = object["profilePicture"] as? PFFile {
-                                                    profilePictureFile.getDataInBackgroundWithBlock({
-                                                        (imageData: NSData?, error: NSError?) -> Void in
-                                                        if error == nil {
-                                                            profilePicture = UIImage(data: imageData!)!
-                                                        }
-                                                    })
-                                                }
-                        
-                                                // turn the PFFile bannerFie into a UIImage
-                                                var banner = UIImage()
-                                                let bannerFile = object["bannerPicture"] as! PFFile
-                                                bannerFile.getDataInBackgroundWithBlock({
-                                                    (imageData: NSData?, error: NSError?) -> Void in
-                                                    if error == nil {
-                                                        banner = UIImage(data: imageData!)!
-                                                    }
-                                                })
-                        
                         
                         // add new Candidate to the Candidate array
-                        self.candidates.append(Candidate(firstName: firstName, lastName: lastName, state: state, party: politicalParty, active: active, website: website, facebook: facebook, twitter: twitter, pic: profilePicture, banner: banner))//, profileInfo: profileInfo)
+                        self.candidates.append(Candidate(firstName: firstName, lastName: lastName, state: state, party: politicalParty, active: active, website: website, facebook: facebook, twitter: twitter, pic: self.candidateImage, banner: self.imageBan, profURL: profilePictureURL, banURL: bannerURL))
                     }
                     
                     let defaults = NSUserDefaults.standardUserDefaults()
                     let encodedData = NSKeyedArchiver.archivedDataWithRootObject(self.candidates)
                     defaults.setObject(encodedData, forKey: "candidates")
                     defaults.synchronize()
-                    
-                    //                       self.delegate = CandidatesViewController()
-                    //                       self.delegate?.receiveParseData(self.candidates)
                 }
             } else {
                 // Log details of the failure
                 print("Error: \(error!) \(error!.userInfo)")
             }
         }
-        
     }
 
     func numberOfSectionsInCollectionView(collectionView: UICollectionView) -> Int {
@@ -187,6 +153,7 @@ class CandidatesViewController: UIViewController, UICollectionViewDataSource, UI
         }
     }
     
+
     func delay(delay:Double, closure:()->()) {
         dispatch_after(
             dispatch_time(

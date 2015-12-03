@@ -24,9 +24,10 @@ class Candidate: NSObject, NSCoding {
     private var _twitter:String = ""
     private var pic:UIImage = UIImage()
     private var banner:UIImage = UIImage()
-    //private var profileInfo:Dictionary = [String:String]()
+    private var _profURL:String = ""
+    private var _banURL:String = ""
     
-    init(firstName:String, lastName:String, state:String, party:String, active:Bool, website:String, facebook:String, twitter:String, pic:UIImage, banner:UIImage) {//, profileInfo: Dictionary<String, String>) {
+    init(firstName:String, lastName:String, state:String, party:String, active:Bool, website:String, facebook:String, twitter:String, pic:UIImage, banner:UIImage, profURL:String, banURL:String) {//, profileInfo: Dictionary<String, String>) {
         super.init()
         //self.parseID = parseID
         self.firstName = firstName
@@ -41,18 +42,29 @@ class Candidate: NSObject, NSCoding {
         self.twitter = twitter
         self.pic = pic
         self.banner = banner
-        // self.profileInfo = profileInfo
+        self.profURL = profURL
+        self.banURL = banURL
         
     }
     
-//    var parseID:String {
-//        get {
-//            return _parseID
-//        }
-//        set (newValue) {
-//            _parseID = newValue
-//        }
-//    }
+    var profURL:String {
+        get {
+            return _profURL
+        }
+        set (newValue) {
+            _profURL = newValue
+        }
+    }
+    
+    var banURL:String {
+        get {
+            return _banURL
+        }
+        set (newValue) {
+            _banURL = newValue
+        }
+    }
+    
     
     var firstName:String {
         get {
@@ -145,11 +157,11 @@ class Candidate: NSObject, NSCoding {
     }
     
     func getPic() -> UIImage {
-        return pic
+        return UIImage(data: NSData(contentsOfURL: NSURL(string: profURL)!)!)!
     }
     
     func getBanner() -> UIImage {
-        return banner
+        return UIImage(data: NSData(contentsOfURL: NSURL(string: banURL)!)!)!
     }
     
     @objc required convenience init(coder aDecoder: NSCoder) {
@@ -164,8 +176,10 @@ class Candidate: NSObject, NSCoding {
         let twitter = aDecoder.decodeObjectForKey("twitter") as! String
         let pic = aDecoder.decodeObjectForKey("pic") as! UIImage
         let banner = aDecoder.decodeObjectForKey("banner") as! UIImage
+        let profURL = aDecoder.decodeObjectForKey("profURL") as! String
+        let banURL = aDecoder.decodeObjectForKey("banURL") as! String
 
-        self.init(firstName: firstName, lastName: lastName, state: state, party: party, active: active, website: website, facebook: facebook, twitter: twitter, pic:pic, banner:banner)
+        self.init(firstName: firstName, lastName: lastName, state: state, party: party, active: active, website: website, facebook: facebook, twitter: twitter, pic:pic, banner:banner, profURL:profURL, banURL:banURL)
     }
     
     @objc func encodeWithCoder(aCoder: NSCoder) {
@@ -180,5 +194,7 @@ class Candidate: NSObject, NSCoding {
         aCoder.encodeObject(twitter, forKey: "twitter")
         aCoder.encodeObject(pic, forKey: "pic")
         aCoder.encodeObject(banner, forKey: "banner")
+        aCoder.encodeObject(profURL, forKey: "profURL")
+        aCoder.encodeObject(banURL, forKey: "banURL")
     }
 }

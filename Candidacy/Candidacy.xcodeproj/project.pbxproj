@@ -452,6 +452,7 @@
 				TargetAttributes = {
 					DB6FE9E41BCB046600E6C38C = {
 						CreatedOnToolsVersion = 7.0;
+						DevelopmentTeam = 965PL5CKR9;
 					};
 					DB6FE9F81BCB046700E6C38C = {
 						CreatedOnToolsVersion = 7.0;
@@ -762,6 +763,7 @@
 			baseConfigurationReference = 0A4D40A72A2A85473725D53E /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = Candidacy/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = CS378.Candidacy;
@@ -776,6 +778,7 @@
 			baseConfigurationReference = AA4CB47D97D1DD27434CCF42 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = Candidacy/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = CS378.Candidacy;

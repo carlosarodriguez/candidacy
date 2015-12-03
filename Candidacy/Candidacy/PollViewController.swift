@@ -8,7 +8,7 @@
 
 import UIKit
 
-class PollViewController: UIViewController {
+class PollViewController: UIViewController{
     
     override func viewDidLoad() {
         super.viewDidLoad()
