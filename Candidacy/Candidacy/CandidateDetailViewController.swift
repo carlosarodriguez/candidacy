@@ -176,7 +176,38 @@ class CandidateDetailViewController: UIViewController, UIScrollViewDelegate, UIT
             politicalPositionsViewController.educationLabel.text = educationMultiLineString
             politicalPositionsViewController.educationLabel.lineBreakMode = NSLineBreakMode.ByWordWrapping
             politicalPositionsViewController.educationLabel.sizeToFit()
+            
+            politicalPositionsViewController.delegate = self
+            let fpArray = politicalPositions["foreignpolicy"] as! [String]
+            let fpMultiLineString = fpArray.joinWithSeparator("\n")
+            politicalPositionsViewController.fpLabel.text = fpMultiLineString
+            politicalPositionsViewController.fpLabel.lineBreakMode = NSLineBreakMode.ByWordWrapping
+            politicalPositionsViewController.fpLabel.sizeToFit()
+            
+            politicalPositionsViewController.delegate = self
+            let healthcareArray = politicalPositions["healthcare"] as! [String]
+            let healthcareMultiLineString = healthcareArray.joinWithSeparator("\n")
+            politicalPositionsViewController.healthcareLabel.text = healthcareMultiLineString
+            politicalPositionsViewController.healthcareLabel.lineBreakMode = NSLineBreakMode.ByWordWrapping
+            politicalPositionsViewController.healthcareLabel.sizeToFit()
 
+            politicalPositionsViewController.delegate = self
+            let taxesArray = politicalPositions["taxes"] as! [String]
+            let taxesMultiLineString = taxesArray.joinWithSeparator("\n")
+            politicalPositionsViewController.taxesLabel.text = taxesMultiLineString
+            politicalPositionsViewController.taxesLabel.lineBreakMode = NSLineBreakMode.ByWordWrapping
+            politicalPositionsViewController.taxesLabel.sizeToFit()
+        } else if (indexPath.row == 3) { //quotes
+            print(indexPath.row)
+            let quotesViewController:QuotesViewController = self.storyboard!.instantiateViewControllerWithIdentifier("quotesVC") as! QuotesViewController
+            quotesViewController.modalPresentationStyle = .OverCurrentContext
+            self.presentViewController(quotesViewController, animated: true, completion: nil)
+            
+            quotesViewController.delegate = self
+            if (quotes.count == 2) {
+                quotesViewController.quote1.text = quotes[0]
+                quotesViewController.quote2.text = quotes[1]
+            }
         }
     }
 

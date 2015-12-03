@@ -28,6 +28,7 @@
 		DB0469461BD0B8CF00F0A53F /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB0469451BD0B8CF00F0A53F /* RootViewController.swift */; };
 		DB0469481BD0BAF300F0A53F /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB0469471BD0BAF300F0A53F /* MenuViewController.swift */; };
 		DB39570D1BD2F113005CA3FC /* CandidatesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB39570C1BD2F113005CA3FC /* CandidatesViewController.swift */; };
+		DB47A95D1C10F03B003FC453 /* QuotesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB47A95C1C10F03B003FC453 /* QuotesViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		DB4920F31C10C62D00C29AB7 /* BioViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB4920F21C10C62D00C29AB7 /* BioViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		DB4920F51C10CE2000C29AB7 /* PoliticalPositionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB4920F41C10CE2000C29AB7 /* PoliticalPositionsViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		DB5D33871BEC7B28008486D3 /* HilaryBanner.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DB5D33861BEC7B28008486D3 /* HilaryBanner.jpg */; };
@@ -132,6 +133,7 @@
 		DB0469451BD0B8CF00F0A53F /* RootViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
 		DB0469471BD0BAF300F0A53F /* MenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
 		DB39570C1BD2F113005CA3FC /* CandidatesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CandidatesViewController.swift; sourceTree = "<group>"; };
+		DB47A95C1C10F03B003FC453 /* QuotesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuotesViewController.swift; sourceTree = "<group>"; };
 		DB4920F21C10C62D00C29AB7 /* BioViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BioViewController.swift; sourceTree = "<group>"; };
 		DB4920F41C10CE2000C29AB7 /* PoliticalPositionsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PoliticalPositionsViewController.swift; sourceTree = "<group>"; };
 		DB5D33861BEC7B28008486D3 /* HilaryBanner.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = HilaryBanner.jpg; sourceTree = "<group>"; };
@@ -306,6 +308,7 @@
 				DBC8E2A21BEEB7A3001CD578 /* NewsCell.swift */,
 				DBC8E2A41BEEC5A5001CD578 /* NewsArticle.swift */,
 				DB6FE9EC1BCB046700E6C38C /* Main.storyboard */,
+				DB47A95C1C10F03B003FC453 /* QuotesViewController.swift */,
 				DB4920F41C10CE2000C29AB7 /* PoliticalPositionsViewController.swift */,
 				DB4920F21C10C62D00C29AB7 /* BioViewController.swift */,
 				DB6BE51E1C10721500D9D29A /* PersonalDetailsViewController.swift */,
@@ -637,6 +640,7 @@
 				DBC8E2A71BEECFAD001CD578 /* SwiftyJSON.swift in Sources */,
 				DB6FE9E91BCB046700E6C38C /* AppDelegate.swift in Sources */,
 				DB9FF0921BDA07AA0016FA63 /* CandidateDetailViewController.swift in Sources */,
+				DB47A95D1C10F03B003FC453 /* QuotesViewController.swift in Sources */,
 				DBC8E2A51BEEC5A5001CD578 /* NewsArticle.swift in Sources */,
 				DBE3AEC11BD461500055FE19 /* Candidate.swift in Sources */,
 			);
