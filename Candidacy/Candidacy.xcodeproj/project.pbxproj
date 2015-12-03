@@ -48,7 +48,7 @@
 		DB5D33AB1BEC867E008486D3 /* RickBanner.png in Resources */ = {isa = PBXBuildFile; fileRef = DB5D33991BEC867E008486D3 /* RickBanner.png */; };
 		DB5D33AC1BEC867E008486D3 /* RobertBanner.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DB5D339A1BEC867E008486D3 /* RobertBanner.jpg */; };
 		DB5D33AD1BEC867E008486D3 /* TedBanner.png in Resources */ = {isa = PBXBuildFile; fileRef = DB5D339B1BEC867E008486D3 /* TedBanner.png */; };
-		DB6BE51F1C10721500D9D29A /* PersonalDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB6BE51E1C10721500D9D29A /* PersonalDetailsViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		DB6BE51F1C10721500D9D29A /* PersonalDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB6BE51E1C10721500D9D29A /* PersonalDetailsViewController.swift */; };
 		DB6FE9E91BCB046700E6C38C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB6FE9E81BCB046700E6C38C /* AppDelegate.swift */; };
 		DB6FE9EB1BCB046700E6C38C /* NewsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB6FE9EA1BCB046700E6C38C /* NewsViewController.swift */; };
 		DB6FE9EE1BCB046700E6C38C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DB6FE9EC1BCB046700E6C38C /* Main.storyboard */; };
@@ -84,7 +84,7 @@
 		DBE3AEDA1BD46AB10055FE19 /* Governor_O'Malley_Portrait_(cropped).jpg in Resources */ = {isa = PBXBuildFile; fileRef = DBE3AED41BD46AB10055FE19 /* Governor_O'Malley_Portrait_(cropped).jpg */; };
 		DBE3AEDB1BD46AB10055FE19 /* HRC_in_Iowa_APR_2015.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DBE3AED51BD46AB10055FE19 /* HRC_in_Iowa_APR_2015.jpg */; };
 		DBE3AEE01BD470DC0055FE19 /* CandidatePhotoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBE3AEDF1BD470DC0055FE19 /* CandidatePhotoCell.swift */; };
-		FEBCBBC9361072E7FA561AE0 /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 576CE8A8F4496B41F2CA199D /* Pods.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		FEBCBBC9361072E7FA561AE0 /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 576CE8A8F4496B41F2CA199D /* Pods.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -776,6 +776,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = CS378.Candidacy;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "Candidacy-Bridging-Header.h";
 				"SWIFT_OBJC_BRIDGING_HEADER[arch=*]" = "";
 			};
@@ -791,6 +792,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = CS378.Candidacy;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "Candidacy-Bridging-Header.h";
 			};
 			name = Release;
