@@ -2,6 +2,7 @@ PODS:
   - AEAccordion (1.0.3)
   - Alamofire (3.0.0)
   - Bolts/Tasks (1.4.0)
+  - NMPopUpViewSwift (3.0.1)
   - Parse (1.9.1):
     - Bolts/Tasks (>= 1.4.0)
   - ParseUI (1.1.7):
@@ -12,6 +13,7 @@ PODS:
 DEPENDENCIES:
   - AEAccordion
   - Alamofire (~> 3.0)
+  - NMPopUpViewSwift
   - Parse
   - ParseUI
   - REFrostedViewController
@@ -20,6 +22,7 @@ SPEC CHECKSUMS:
   AEAccordion: 4a6b3b938fc9abe8a20d7e9e238a50a5eae02572
   Alamofire: b61782387f81bcc538a0284cf2bb5d7995cd0a80
   Bolts: 0e9bce58b9b9f5e8a7a4d47b16d2fabec289072b
+  NMPopUpViewSwift: 23a44d6db17a9abc6b806f9fac597be6d7e9f300
   Parse: 54a965c8c19a6dde90284ab654dbcc77ef8c001b
   ParseUI: c2bcdfbb00330e464b5b773266ae221697a3bb7b
   REFrostedViewController: a893b4979ba1f200c547aef9ff4c3fd5a18f5923

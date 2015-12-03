@@ -6,3 +6,4 @@ pod 'Alamofire', '~> 3.0'
 pod 'Parse'
 pod 'AEAccordion'
 pod 'ParseUI'
+pod "NMPopUpViewSwift"

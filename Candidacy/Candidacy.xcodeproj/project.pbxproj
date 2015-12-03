@@ -10,7 +10,6 @@
 		7830AFB51BED36D500D2E63C /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7830AFB41BED36D500D2E63C /* AudioToolbox.framework */; };
 		7830AFB71BED36E300D2E63C /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7830AFB61BED36E300D2E63C /* CFNetwork.framework */; };
 		7830AFB91BED36ED00D2E63C /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7830AFB81BED36ED00D2E63C /* CoreGraphics.framework */; };
-		7830AFBB1BED36F700D2E63C /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7830AFBA1BED36F700D2E63C /* CoreLocation.framework */; };
 		7830AFBD1BED370600D2E63C /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7830AFBC1BED370600D2E63C /* MobileCoreServices.framework */; };
 		7830AFBF1BED371500D2E63C /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7830AFBE1BED371500D2E63C /* QuartzCore.framework */; };
 		7830AFC11BED372000D2E63C /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7830AFC01BED372000D2E63C /* Security.framework */; };
@@ -23,6 +22,7 @@
 		78EAE96F1BED3D4000825413 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 78EAE96E1BED3D4000825413 /* libsqlite3.dylib */; };
 		B22338061BCDF79000119944 /* iTunesArtwork@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B22338051BCDF79000119944 /* iTunesArtwork@2x.png */; };
 		B22939211C0EC733002263D8 /* CandidateParseProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = B22939201C0EC733002263D8 /* CandidateParseProtocol.swift */; };
+		B28A927A1C10600F00A6CFF7 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7830AFBA1BED36F700D2E63C /* CoreLocation.framework */; };
 		DB0469441BD0B24E00F0A53F /* NavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB0469431BD0B24E00F0A53F /* NavigationController.swift */; };
 		DB0469461BD0B8CF00F0A53F /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB0469451BD0B8CF00F0A53F /* RootViewController.swift */; };
 		DB0469481BD0BAF300F0A53F /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB0469471BD0BAF300F0A53F /* MenuViewController.swift */; };
@@ -197,12 +197,12 @@
 			files = (
 				78EAE96F1BED3D4000825413 /* libsqlite3.dylib in Frameworks */,
 				7830AFC81BED3BF100D2E63C /* libz.1.dylib in Frameworks */,
+				B28A927A1C10600F00A6CFF7 /* CoreLocation.framework in Frameworks */,
 				7830AFC51BED373700D2E63C /* SystemConfiguration.framework in Frameworks */,
 				7830AFC31BED372D00D2E63C /* StoreKit.framework in Frameworks */,
 				7830AFC11BED372000D2E63C /* Security.framework in Frameworks */,
 				7830AFBF1BED371500D2E63C /* QuartzCore.framework in Frameworks */,
 				7830AFBD1BED370600D2E63C /* MobileCoreServices.framework in Frameworks */,
-				7830AFBB1BED36F700D2E63C /* CoreLocation.framework in Frameworks */,
 				7830AFB91BED36ED00D2E63C /* CoreGraphics.framework in Frameworks */,
 				7830AFB71BED36E300D2E63C /* CFNetwork.framework in Frameworks */,
 				7830AFB51BED36D500D2E63C /* AudioToolbox.framework in Frameworks */,
@@ -306,10 +306,10 @@
 				B22939201C0EC733002263D8 /* CandidateParseProtocol.swift */,
 				DBE3AEC01BD461500055FE19 /* Candidate.swift */,
 				DB0469471BD0BAF300F0A53F /* MenuViewController.swift */,
-				DB0469451BD0B8CF00F0A53F /* RootViewController.swift */,
 				DB0469431BD0B24E00F0A53F /* NavigationController.swift */,
 				DBC8E2A61BEECFAD001CD578 /* SwiftyJSON.swift */,
 				DB6FE9EF1BCB046700E6C38C /* Assets.xcassets */,
+				DB0469451BD0B8CF00F0A53F /* RootViewController.swift */,
 				DB6FE9F11BCB046700E6C38C /* LaunchScreen.storyboard */,
 				DB6FE9F41BCB046700E6C38C /* Info.plist */,
 				DB5D33851BEC7B28008486D3 /* Candidate Banners */,

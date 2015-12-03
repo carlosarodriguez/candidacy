@@ -19,6 +19,16 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>NMPopUpViewSwift-NMPopUpViewSwift.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>NMPopUpViewSwift.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Parse.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -42,12 +52,22 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>404DAD260E534D3172B3ABAD9EE177A6</key>
+		<key>03C15C35944CAB844BD27C0561B01A7E</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>40CF77DAE287337AB32DD1800933400D</key>
+		<key>1DFFA8344067D4D66FCCBC1E9B44182B</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>2C0B563DEAEF7D4F9DD92AA642EF4022</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>3DE2C99BA9CD90484C41C64D78C3BB7F</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -57,22 +77,22 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>C5E85E309323B77741B07A50D717C23C</key>
+		<key>9C56350BEA7D64E24F68F6E95805D07B</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>C62A911489F043C02B13D3D7BC2FF060</key>
+		<key>A343F6C664F2E292BFE62760E15AC7C2</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>DE37FD022214DB2EBB95FBF52E6A4EDD</key>
+		<key>BCC7F0AF3D5936F572C276B2D4819CE5</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>FF7592390DD5D014C9430CC56C31E896</key>
+		<key>D14EB0EB03B9FB2EECEB2441194FF1CD</key>
 		<dict>
 			<key>primary</key>
 			<true/>
