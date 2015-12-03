@@ -315,19 +315,10 @@
                         <subviews>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5IN-Vq-9Qh" userLabel="Header">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="102"/>
-                                <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lso-KZ-14h">
-                                        <rect key="frame" x="132" y="41" width="111" height="21"/>
-                                        <animations/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                </subviews>
                                 <animations/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="usL-6A-Qjs">
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="usL-6A-Qjs">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="668"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="eeQ-02-dga">
@@ -339,14 +330,14 @@
                                         <rect key="frame" x="153" y="66" width="69" height="69"/>
                                         <animations/>
                                     </imageView>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KbC-Ra-Ks1">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KbC-Ra-Ks1">
                                         <rect key="frame" x="62" y="143" width="250" height="30"/>
                                         <animations/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="20"/>
                                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="wqN-5a-oXb">
+                                    <tableView clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="wqN-5a-oXb">
                                         <rect key="frame" x="0.0" y="193" width="375" height="475"/>
                                         <animations/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -376,6 +367,12 @@
                                 </subviews>
                                 <animations/>
                                 <gestureRecognizers/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="wqN-5a-oXb" secondAttribute="trailing" id="4Rh-It-H9p"/>
+                                    <constraint firstItem="wqN-5a-oXb" firstAttribute="leading" secondItem="usL-6A-Qjs" secondAttribute="leading" id="4sh-Vm-QwO"/>
+                                    <constraint firstItem="wqN-5a-oXb" firstAttribute="top" secondItem="KbC-Ra-Ks1" secondAttribute="bottom" constant="20" id="RYP-Fk-fB0"/>
+                                    <constraint firstAttribute="bottom" secondItem="wqN-5a-oXb" secondAttribute="bottom" id="hnD-vM-vyi"/>
+                                </constraints>
                                 <connections>
                                     <outletCollection property="gestureRecognizers" destination="GPN-j1-jh8" appends="YES" id="iAD-yb-qPI"/>
                                 </connections>
@@ -383,12 +380,17 @@
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="bottomMargin" secondItem="usL-6A-Qjs" secondAttribute="bottom" constant="-1" id="Cgb-oA-KfS"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="usL-6A-Qjs" secondAttribute="trailing" constant="-20" id="JGy-LC-Oj4"/>
+                            <constraint firstItem="usL-6A-Qjs" firstAttribute="top" secondItem="PYs-rj-y9W" secondAttribute="topMargin" id="uQd-kQ-oSe"/>
+                            <constraint firstItem="usL-6A-Qjs" firstAttribute="leading" secondItem="PYs-rj-y9W" secondAttribute="leadingMargin" constant="-20" id="wFl-gz-YfC"/>
+                        </constraints>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
                         <outlet property="candidateNameLabel" destination="KbC-Ra-Ks1" id="VZf-ee-AvU"/>
                         <outlet property="header" destination="5IN-Vq-9Qh" id="XF4-PS-lcu"/>
-                        <outlet property="headerLabel" destination="lso-KZ-14h" id="YGp-gK-wNH"/>
                         <outlet property="profileImage" destination="yfQ-zw-cJ9" id="mQF-Yz-mMn"/>
                         <outlet property="profileWhiteBackground" destination="eeQ-02-dga" id="4S4-p3-fTM"/>
                         <outlet property="scrollView" destination="usL-6A-Qjs" id="Dg4-7K-1j2"/>

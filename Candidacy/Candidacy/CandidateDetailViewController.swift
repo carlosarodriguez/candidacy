@@ -27,7 +27,7 @@ class CandidateDetailViewController: UIViewController, UIScrollViewDelegate, UIT
     @IBOutlet weak var candidateNameLabel: UILabel!
     @IBOutlet weak var profileImage: UIImageView!
     @IBOutlet var headerImageView:UIImageView!
-    @IBOutlet weak var headerLabel: UILabel!
+ 
     //@IBOutlet var headerBlurImageView:UIImageView!
     //var blurredHeaderImageView:UIImageView?
 
@@ -56,7 +56,7 @@ class CandidateDetailViewController: UIViewController, UIScrollViewDelegate, UIT
         headerImageView = UIImageView(frame: header.bounds)
         headerImageView?.image = candidate?.getBanner()
         headerImageView?.contentMode = UIViewContentMode.ScaleAspectFill
-        header.insertSubview(headerImageView, belowSubview: headerLabel)
+        header.insertSubview(headerImageView, aboveSubview: tableView)
         
         // Header - Blurred Image
         
@@ -70,39 +70,6 @@ class CandidateDetailViewController: UIViewController, UIScrollViewDelegate, UIT
     }
     
     func scrollViewDidScroll(scrollView: UIScrollView) {
-        let offset = scrollView.contentOffset.y
-        //var avatarTransform = CATransform3DIdentity
-        var headerTransform = CATransform3DIdentity
-        
-        // PULL DOWN -----------------
-        
-        if offset < 0 {
-            
-            let headerScaleFactor:CGFloat = -(offset) / header.bounds.height
-            let headerSizevariation = ((header.bounds.height * (1.0 + headerScaleFactor)) - header.bounds.height)/2.0
-            headerTransform = CATransform3DTranslate(headerTransform, 0, headerSizevariation, 0)
-            headerTransform = CATransform3DScale(headerTransform, 1.0 + headerScaleFactor, 1.0 + headerScaleFactor, 0)
-            
-            header.layer.transform = headerTransform
-        }  else {
-            
-            // Header -----------
-            
-            headerTransform = CATransform3DTranslate(headerTransform, 0, max(-offset_HeaderStop, -offset), 0)
-            
-            //  ------------ Label
-            
-            let labelTransform = CATransform3DMakeTranslation(0, max(-distance_W_LabelHeader, offset_B_LabelHeader - offset), 0)
-            headerLabel.layer.transform = labelTransform
-            
-            //  ------------ Blur
-            
-            //headerBlurImageView?.alpha = min (1.0, (offset - offset_B_LabelHeader)/distance_W_LabelHeader)
-        }
-        
-        // Apply Transformations
-        
-        header.layer.transform = headerTransform
         
     }
     
