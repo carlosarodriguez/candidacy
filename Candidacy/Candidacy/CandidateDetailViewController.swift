@@ -17,7 +17,7 @@ class CandidateDetailViewController: UIViewController, UIScrollViewDelegate, UIT
     
     var personalDetails = Dictionary<String, AnyObject>()
     var bio:String = ""
-    var politicalPositions = Dictionary<String,[String]>()
+    var politicalPositions = Dictionary<String, AnyObject>()
     var quotes:[String] = [String]()
     
     var profileSections:[String] = ["Personal Details", "Bio", "Political Positions", "Quotes"]
@@ -84,12 +84,12 @@ class CandidateDetailViewController: UIViewController, UIScrollViewDelegate, UIT
                         
                         self.bio = object["biography"] as! String
                         
-                        self.politicalPositions["abortion"] = object["abortion"] as? [String]
-                        self.politicalPositions["drugs"] = object["drugs"] as? [String]
-                        self.politicalPositions["education"] = object["education"] as? [String]
-                        self.politicalPositions["foreignpolicy"] = object["foreignpolicy"] as? [String]
-                        self.politicalPositions["healthcare"] = object["healthcare"] as? [String]
-                        self.politicalPositions["taxes"] = object["taxes"] as? [String]
+                        self.politicalPositions["abortion"] = object["abortion"] as! [String]
+                        self.politicalPositions["drugs"] = object["drugs"] as! [String]
+                        self.politicalPositions["education"] = object["education"] as! [String]
+                        self.politicalPositions["foreignpolicy"] = object["foreignpolicy"] as! [String]
+                        self.politicalPositions["healthcare"] = object["healthcare"] as! [String]
+                        self.politicalPositions["taxes"] = object["taxes"] as! [String]
                         
                         self.quotes = object["quotes"] as! [String]
                     }
@@ -150,6 +150,33 @@ class CandidateDetailViewController: UIViewController, UIScrollViewDelegate, UIT
 
             bioViewController.delegate = self
             bioViewController.bioTextView.text = bio
+        } else if (indexPath.row == 2) { //political positions
+            print(indexPath.row)
+            let politicalPositionsViewController:PoliticalPositionsViewController = self.storyboard!.instantiateViewControllerWithIdentifier("politicalPositionsVC") as! PoliticalPositionsViewController
+            politicalPositionsViewController.modalPresentationStyle = .OverCurrentContext
+            self.presentViewController(politicalPositionsViewController, animated: true, completion: nil)
+            
+            politicalPositionsViewController.delegate = self
+            let abortionArray = politicalPositions["abortion"] as! [String]
+            let abortionMultiLineString = abortionArray.joinWithSeparator("\n")
+            politicalPositionsViewController.abortionLabel.text = abortionMultiLineString
+            politicalPositionsViewController.abortionLabel.lineBreakMode = NSLineBreakMode.ByWordWrapping
+            politicalPositionsViewController.abortionLabel.sizeToFit()
+            
+            politicalPositionsViewController.delegate = self
+            let drugsArray = politicalPositions["drugs"] as! [String]
+            let drugsMultiLineString = drugsArray.joinWithSeparator("\n")
+            politicalPositionsViewController.drugsLabel.text = drugsMultiLineString
+            politicalPositionsViewController.drugsLabel.lineBreakMode = NSLineBreakMode.ByWordWrapping
+            politicalPositionsViewController.drugsLabel.sizeToFit()
+            
+            politicalPositionsViewController.delegate = self
+            let educationArray = politicalPositions["education"] as! [String]
+            let educationMultiLineString = educationArray.joinWithSeparator("\n")
+            politicalPositionsViewController.educationLabel.text = educationMultiLineString
+            politicalPositionsViewController.educationLabel.lineBreakMode = NSLineBreakMode.ByWordWrapping
+            politicalPositionsViewController.educationLabel.sizeToFit()
+
         }
     }
 
