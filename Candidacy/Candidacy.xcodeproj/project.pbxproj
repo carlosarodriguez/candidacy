@@ -23,6 +23,7 @@
 		B22338061BCDF79000119944 /* iTunesArtwork@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B22338051BCDF79000119944 /* iTunesArtwork@2x.png */; };
 		B22939211C0EC733002263D8 /* CandidateParseProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = B22939201C0EC733002263D8 /* CandidateParseProtocol.swift */; };
 		B28A927A1C10600F00A6CFF7 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7830AFBA1BED36F700D2E63C /* CoreLocation.framework */; };
+		B28A927E1C1063BA00A6CFF7 /* PollViewStats.swift in Sources */ = {isa = PBXBuildFile; fileRef = B28A927D1C1063BA00A6CFF7 /* PollViewStats.swift */; };
 		DB0469441BD0B24E00F0A53F /* NavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB0469431BD0B24E00F0A53F /* NavigationController.swift */; };
 		DB0469461BD0B8CF00F0A53F /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB0469451BD0B8CF00F0A53F /* RootViewController.swift */; };
 		DB0469481BD0BAF300F0A53F /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB0469471BD0BAF300F0A53F /* MenuViewController.swift */; };
@@ -123,6 +124,7 @@
 		B22338041BCDF31A00119944 /* Candidacy-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Candidacy-Bridging-Header.h"; sourceTree = "<group>"; };
 		B22338051BCDF79000119944 /* iTunesArtwork@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "iTunesArtwork@2x.png"; path = "Graphics/candidacylogo/ios/iTunesArtwork@2x.png"; sourceTree = "<group>"; };
 		B22939201C0EC733002263D8 /* CandidateParseProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CandidateParseProtocol.swift; sourceTree = "<group>"; };
+		B28A927D1C1063BA00A6CFF7 /* PollViewStats.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PollViewStats.swift; sourceTree = "<group>"; };
 		DB0469431BD0B24E00F0A53F /* NavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigationController.swift; sourceTree = "<group>"; };
 		DB0469451BD0B8CF00F0A53F /* RootViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
 		DB0469471BD0BAF300F0A53F /* MenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
@@ -299,6 +301,7 @@
 				DBC8E2A41BEEC5A5001CD578 /* NewsArticle.swift */,
 				DB6FE9EC1BCB046700E6C38C /* Main.storyboard */,
 				DBE0289D1C029CB6004E086E /* PollViewController.swift */,
+				B28A927D1C1063BA00A6CFF7 /* PollViewStats.swift */,
 				DB9FF0911BDA07AA0016FA63 /* CandidateDetailViewController.swift */,
 				DBE3AEDF1BD470DC0055FE19 /* CandidatePhotoCell.swift */,
 				DB39570C1BD2F113005CA3FC /* CandidatesViewController.swift */,
@@ -617,6 +620,7 @@
 				DB39570D1BD2F113005CA3FC /* CandidatesViewController.swift in Sources */,
 				789A54271BD75FF700645E67 /* QuestionTableViewCell.swift in Sources */,
 				B22939211C0EC733002263D8 /* CandidateParseProtocol.swift in Sources */,
+				B28A927E1C1063BA00A6CFF7 /* PollViewStats.swift in Sources */,
 				DBC8E2A31BEEB7A3001CD578 /* NewsCell.swift in Sources */,
 				DBC8E2A71BEECFAD001CD578 /* SwiftyJSON.swift in Sources */,
 				DB6FE9E91BCB046700E6C38C /* AppDelegate.swift in Sources */,
