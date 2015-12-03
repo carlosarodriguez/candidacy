@@ -8,15 +8,17 @@
 
 import UIKit
 import Alamofire
-
-let offset_HeaderStop:CGFloat = 40.0 // At this offset the Header stops its transformations
-let offset_B_LabelHeader:CGFloat = 95.0 // At this offset the Black label reaches the Header
-let distance_W_LabelHeader:CGFloat = 35.0 // The distance between the bottom of the Header and the top of the White Label
+import Parse
 
 class CandidateDetailViewController: UIViewController, UIScrollViewDelegate, UITableViewDataSource, UITableViewDelegate {
     
     // This gets set by the presenting view controller
     var candidate:Candidate? = nil
+    
+    var personalDetails = Dictionary<String, AnyObject>()
+    var bio:String = ""
+    var politicalPositions = Dictionary<String,[String]>()
+    var quotes:[String] = [String]()
     
     var profileSections:[String] = ["Personal Details", "Bio", "Political Positions", "Quotes"]
     
@@ -27,9 +29,6 @@ class CandidateDetailViewController: UIViewController, UIScrollViewDelegate, UIT
     @IBOutlet weak var candidateNameLabel: UILabel!
     @IBOutlet weak var profileImage: UIImageView!
     @IBOutlet var headerImageView:UIImageView!
- 
-    //@IBOutlet var headerBlurImageView:UIImageView!
-    //var blurredHeaderImageView:UIImageView?
 
     
     override func viewDidLoad() {
@@ -47,6 +46,8 @@ class CandidateDetailViewController: UIViewController, UIScrollViewDelegate, UIT
         profileImage.clipsToBounds = true
         
         self.navigationController?.navigationBarHidden = true
+        
+        retrieveProfileInfo()
     }
     
     override func viewDidAppear(animated: Bool) {
@@ -58,20 +59,50 @@ class CandidateDetailViewController: UIViewController, UIScrollViewDelegate, UIT
         headerImageView?.contentMode = UIViewContentMode.ScaleAspectFill
         header.insertSubview(headerImageView, aboveSubview: tableView)
         
-        // Header - Blurred Image
-        
-//        headerBlurImageView = UIImageView(frame: header.bounds)
-//        headerBlurImageView?.image = candidate?.getBanner().blurredImageWithRadius(10, iterations: 20, tintColor: UIColor.clearColor())
-//        headerBlurImageView?.contentMode = UIViewContentMode.ScaleAspectFill
-//        headerBlurImageView?.alpha = 0.0
-//        header.insertSubview(headerBlurImageView, belowSubview: headerLabel)
-        
         header.clipsToBounds = true
     }
     
-    func scrollViewDidScroll(scrollView: UIScrollView) {
+    func retrieveProfileInfo() {
+        let query = PFQuery(className:"Candidate")
+        
+        query.whereKey("firstName", equalTo: candidate!.firstName)
+        query.findObjectsInBackgroundWithBlock {
+            (objects: [PFObject]?, error: NSError?) -> Void in
+            if error == nil {
+                // The find succeeded.
+                print("Successfully retrieved our \(objects!.count) candidate.")
+                
+                // get profile info for candidate
+                if let objects = objects as [PFObject]! {
+                    for object in objects {
+                        self.personalDetails["age"] = object["age"] as! Int
+                        self.personalDetails["hometown"] = object["hometown"] as! String
+                        self.personalDetails["party"] = object["politicalParty"] as! String
+                        self.personalDetails["spouse"] = object["spouse"] as! String
+                        self.personalDetails["almamater"] = object["almamater"] as! [String]
+                        self.personalDetails["religion"] = object["religion"] as! String
+                        
+                        self.bio = object["biography"] as! String
+                        
+                        self.politicalPositions["abortion"] = object["abortion"] as? [String]
+                        self.politicalPositions["drugs"] = object["drugs"] as? [String]
+                        self.politicalPositions["education"] = object["education"] as? [String]
+                        self.politicalPositions["foreignpolicy"] = object["foreignpolicy"] as? [String]
+                        self.politicalPositions["healthcare"] = object["healthcare"] as? [String]
+                        self.politicalPositions["taxes"] = object["taxes"] as? [String]
+                        
+                        self.quotes = object["quotes"] as! [String]
+                    }
+                }
+            } else {
+                // Log details of the failure
+                print("Error: \(error!) \(error!.userInfo)")
+            }
+        }
         
     }
+
+    // Table View Data Source
     
     func numberOfSectionsInTableView(tableView: UITableView) -> Int {
         return 1;
@@ -90,6 +121,28 @@ class CandidateDetailViewController: UIViewController, UIScrollViewDelegate, UIT
     
     func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
         return self.tableView.frame.size.height / 4;
+    }
+    
+    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        view.alpha = 0.5
+        if (indexPath.row == 0) { // personalDetails
+            print(indexPath.row)
+            let personalDetailsViewController:PersonalDetailsViewController = self.storyboard!.instantiateViewControllerWithIdentifier("personalDetailsVC") as! PersonalDetailsViewController
+            personalDetailsViewController.modalPresentationStyle = .OverCurrentContext
+            self.presentViewController(personalDetailsViewController, animated: true, completion: nil)
+            
+            personalDetailsViewController.delegate = self
+            personalDetailsViewController.ageLabel.text = String(personalDetails["age"]!)
+            personalDetailsViewController.hometownLabel.text = personalDetails["hometown"] as? String
+            personalDetailsViewController.partyLabel.text = personalDetails["party"] as? String
+            personalDetailsViewController.spouseLabel.text = personalDetails["spouse"] as? String
+            let almamaterArray = personalDetails["almamater"] as! [String]
+            let almamaterMultiLineString = almamaterArray.joinWithSeparator("\n")
+            personalDetailsViewController.almamaterLabel.text = almamaterMultiLineString
+            personalDetailsViewController.almamaterLabel.lineBreakMode = NSLineBreakMode.ByWordWrapping
+            personalDetailsViewController.almamaterLabel.sizeToFit()
+            personalDetailsViewController.religionLabel.text = personalDetails["religion"] as? String
+        }
     }
 
     @IBAction func dismissCandidateProfile(sender: AnyObject) {

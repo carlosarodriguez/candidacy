@@ -48,6 +48,7 @@
 		DB5D33AB1BEC867E008486D3 /* RickBanner.png in Resources */ = {isa = PBXBuildFile; fileRef = DB5D33991BEC867E008486D3 /* RickBanner.png */; };
 		DB5D33AC1BEC867E008486D3 /* RobertBanner.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DB5D339A1BEC867E008486D3 /* RobertBanner.jpg */; };
 		DB5D33AD1BEC867E008486D3 /* TedBanner.png in Resources */ = {isa = PBXBuildFile; fileRef = DB5D339B1BEC867E008486D3 /* TedBanner.png */; };
+		DB6BE51F1C10721500D9D29A /* PersonalDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB6BE51E1C10721500D9D29A /* PersonalDetailsViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		DB6FE9E91BCB046700E6C38C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB6FE9E81BCB046700E6C38C /* AppDelegate.swift */; };
 		DB6FE9EB1BCB046700E6C38C /* NewsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB6FE9EA1BCB046700E6C38C /* NewsViewController.swift */; };
 		DB6FE9EE1BCB046700E6C38C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DB6FE9EC1BCB046700E6C38C /* Main.storyboard */; };
@@ -149,6 +150,7 @@
 		DB5D33991BEC867E008486D3 /* RickBanner.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = RickBanner.png; sourceTree = "<group>"; };
 		DB5D339A1BEC867E008486D3 /* RobertBanner.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = RobertBanner.jpg; sourceTree = "<group>"; };
 		DB5D339B1BEC867E008486D3 /* TedBanner.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TedBanner.png; sourceTree = "<group>"; };
+		DB6BE51E1C10721500D9D29A /* PersonalDetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersonalDetailsViewController.swift; sourceTree = "<group>"; };
 		DB6FE9E51BCB046700E6C38C /* Candidacy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Candidacy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DB6FE9E81BCB046700E6C38C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DB6FE9EA1BCB046700E6C38C /* NewsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsViewController.swift; sourceTree = "<group>"; };
@@ -300,6 +302,7 @@
 				DBC8E2A21BEEB7A3001CD578 /* NewsCell.swift */,
 				DBC8E2A41BEEC5A5001CD578 /* NewsArticle.swift */,
 				DB6FE9EC1BCB046700E6C38C /* Main.storyboard */,
+				DB6BE51E1C10721500D9D29A /* PersonalDetailsViewController.swift */,
 				DBE0289D1C029CB6004E086E /* PollViewController.swift */,
 				B28A927D1C1063BA00A6CFF7 /* PollViewStats.swift */,
 				DB9FF0911BDA07AA0016FA63 /* CandidateDetailViewController.swift */,
@@ -619,6 +622,7 @@
 				DB0469461BD0B8CF00F0A53F /* RootViewController.swift in Sources */,
 				DB39570D1BD2F113005CA3FC /* CandidatesViewController.swift in Sources */,
 				789A54271BD75FF700645E67 /* QuestionTableViewCell.swift in Sources */,
+				DB6BE51F1C10721500D9D29A /* PersonalDetailsViewController.swift in Sources */,
 				B22939211C0EC733002263D8 /* CandidateParseProtocol.swift in Sources */,
 				B28A927E1C1063BA00A6CFF7 /* PollViewStats.swift in Sources */,
 				DBC8E2A31BEEB7A3001CD578 /* NewsCell.swift in Sources */,
