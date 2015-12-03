@@ -22,35 +22,55 @@
 		78EAE96F1BED3D4000825413 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 78EAE96E1BED3D4000825413 /* libsqlite3.dylib */; };
 		B22338061BCDF79000119944 /* iTunesArtwork@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B22338051BCDF79000119944 /* iTunesArtwork@2x.png */; };
 		B22939211C0EC733002263D8 /* CandidateParseProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = B22939201C0EC733002263D8 /* CandidateParseProtocol.swift */; };
+		B27A0B3A1C10F638003B5692 /* benbanner.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B27A0B261C10F638003B5692 /* benbanner.jpg */; };
+		B27A0B3B1C10F638003B5692 /* berniebanner.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B27A0B271C10F638003B5692 /* berniebanner.jpg */; };
+		B27A0B3C1C10F638003B5692 /* bobbybanner.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B27A0B281C10F638003B5692 /* bobbybanner.jpg */; };
+		B27A0B3D1C10F638003B5692 /* carlybanner.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B27A0B291C10F638003B5692 /* carlybanner.jpg */; };
+		B27A0B3E1C10F638003B5692 /* chrisbanner.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B27A0B2A1C10F638003B5692 /* chrisbanner.jpg */; };
+		B27A0B3F1C10F638003B5692 /* donaldbanner.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B27A0B2B1C10F638003B5692 /* donaldbanner.jpg */; };
+		B27A0B401C10F638003B5692 /* georgebanner.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B27A0B2C1C10F638003B5692 /* georgebanner.jpg */; };
+		B27A0B411C10F638003B5692 /* hillarybanner.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B27A0B2D1C10F638003B5692 /* hillarybanner.jpg */; };
+		B27A0B421C10F638003B5692 /* jebbanner.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B27A0B2E1C10F638003B5692 /* jebbanner.jpg */; };
+		B27A0B431C10F638003B5692 /* jillbanner.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B27A0B2F1C10F638003B5692 /* jillbanner.jpg */; };
+		B27A0B441C10F638003B5692 /* jimbanner.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B27A0B301C10F638003B5692 /* jimbanner.jpg */; };
+		B27A0B451C10F638003B5692 /* johnbanner.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B27A0B311C10F638003B5692 /* johnbanner.jpg */; };
+		B27A0B461C10F638003B5692 /* lindseybanner.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B27A0B321C10F638003B5692 /* lindseybanner.jpg */; };
+		B27A0B471C10F638003B5692 /* marcobanner.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B27A0B331C10F638003B5692 /* marcobanner.jpg */; };
+		B27A0B481C10F638003B5692 /* martinbanner.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B27A0B341C10F638003B5692 /* martinbanner.jpg */; };
+		B27A0B491C10F638003B5692 /* mikebanner.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B27A0B351C10F638003B5692 /* mikebanner.jpg */; };
+		B27A0B4A1C10F638003B5692 /* randbanner.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B27A0B361C10F638003B5692 /* randbanner.jpg */; };
+		B27A0B4B1C10F638003B5692 /* rickbanner.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B27A0B371C10F638003B5692 /* rickbanner.jpg */; };
+		B27A0B4C1C10F638003B5692 /* robert davidbanner.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B27A0B381C10F638003B5692 /* robert davidbanner.jpg */; };
+		B27A0B4D1C10F638003B5692 /* tedbanner.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B27A0B391C10F638003B5692 /* tedbanner.jpg */; };
+		B27A0B621C10F645003B5692 /* ben.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B27A0B4E1C10F645003B5692 /* ben.jpg */; };
+		B27A0B631C10F645003B5692 /* bernie.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B27A0B4F1C10F645003B5692 /* bernie.jpg */; };
+		B27A0B641C10F645003B5692 /* bobby.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B27A0B501C10F645003B5692 /* bobby.jpg */; };
+		B27A0B651C10F645003B5692 /* carly.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B27A0B511C10F645003B5692 /* carly.jpg */; };
+		B27A0B661C10F645003B5692 /* chris.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B27A0B521C10F645003B5692 /* chris.jpg */; };
+		B27A0B671C10F645003B5692 /* donald.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B27A0B531C10F645003B5692 /* donald.jpg */; };
+		B27A0B681C10F645003B5692 /* george.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B27A0B541C10F645003B5692 /* george.jpg */; };
+		B27A0B691C10F645003B5692 /* hillary.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B27A0B551C10F645003B5692 /* hillary.jpg */; };
+		B27A0B6A1C10F645003B5692 /* jeb.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B27A0B561C10F645003B5692 /* jeb.jpg */; };
+		B27A0B6B1C10F645003B5692 /* jill.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B27A0B571C10F645003B5692 /* jill.jpg */; };
+		B27A0B6C1C10F645003B5692 /* jim.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B27A0B581C10F645003B5692 /* jim.jpg */; };
+		B27A0B6D1C10F645003B5692 /* john.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B27A0B591C10F645003B5692 /* john.jpg */; };
+		B27A0B6E1C10F645003B5692 /* lindsey.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B27A0B5A1C10F645003B5692 /* lindsey.jpg */; };
+		B27A0B6F1C10F645003B5692 /* marco.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B27A0B5B1C10F645003B5692 /* marco.jpg */; };
+		B27A0B701C10F645003B5692 /* martin.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B27A0B5C1C10F645003B5692 /* martin.jpg */; };
+		B27A0B711C10F645003B5692 /* mike.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B27A0B5D1C10F645003B5692 /* mike.jpg */; };
+		B27A0B721C10F645003B5692 /* rand.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B27A0B5E1C10F645003B5692 /* rand.jpg */; };
+		B27A0B731C10F645003B5692 /* rick.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B27A0B5F1C10F645003B5692 /* rick.jpg */; };
+		B27A0B741C10F645003B5692 /* robert david.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B27A0B601C10F645003B5692 /* robert david.jpg */; };
+		B27A0B751C10F645003B5692 /* ted.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B27A0B611C10F645003B5692 /* ted.jpg */; };
 		B28A927A1C10600F00A6CFF7 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7830AFBA1BED36F700D2E63C /* CoreLocation.framework */; };
 		B28A927E1C1063BA00A6CFF7 /* PollViewStats.swift in Sources */ = {isa = PBXBuildFile; fileRef = B28A927D1C1063BA00A6CFF7 /* PollViewStats.swift */; };
 		DB0469441BD0B24E00F0A53F /* NavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB0469431BD0B24E00F0A53F /* NavigationController.swift */; };
 		DB0469461BD0B8CF00F0A53F /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB0469451BD0B8CF00F0A53F /* RootViewController.swift */; };
 		DB0469481BD0BAF300F0A53F /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB0469471BD0BAF300F0A53F /* MenuViewController.swift */; };
 		DB39570D1BD2F113005CA3FC /* CandidatesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB39570C1BD2F113005CA3FC /* CandidatesViewController.swift */; };
-		DB47A95D1C10F03B003FC453 /* QuotesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB47A95C1C10F03B003FC453 /* QuotesViewController.swift */; settings = {ASSET_TAGS = (); }; };
-		DB4920F31C10C62D00C29AB7 /* BioViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB4920F21C10C62D00C29AB7 /* BioViewController.swift */; settings = {ASSET_TAGS = (); }; };
-		DB4920F51C10CE2000C29AB7 /* PoliticalPositionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB4920F41C10CE2000C29AB7 /* PoliticalPositionsViewController.swift */; settings = {ASSET_TAGS = (); }; };
-		DB5D33871BEC7B28008486D3 /* HilaryBanner.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DB5D33861BEC7B28008486D3 /* HilaryBanner.jpg */; };
-		DB5D33891BEC866E008486D3 /* BenBanner.png in Resources */ = {isa = PBXBuildFile; fileRef = DB5D33881BEC866E008486D3 /* BenBanner.png */; };
-		DB5D339C1BEC867E008486D3 /* BernieBanner.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DB5D338A1BEC867E008486D3 /* BernieBanner.jpg */; };
-		DB5D339D1BEC867E008486D3 /* BobbyBanner.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DB5D338B1BEC867E008486D3 /* BobbyBanner.jpg */; };
-		DB5D339E1BEC867E008486D3 /* CarlyBanner.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DB5D338C1BEC867E008486D3 /* CarlyBanner.jpg */; };
-		DB5D339F1BEC867E008486D3 /* ChrisBanner.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DB5D338D1BEC867E008486D3 /* ChrisBanner.jpg */; };
-		DB5D33A01BEC867E008486D3 /* DonaldBanner.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DB5D338E1BEC867E008486D3 /* DonaldBanner.jpg */; };
-		DB5D33A11BEC867E008486D3 /* GeorgeBanner.png in Resources */ = {isa = PBXBuildFile; fileRef = DB5D338F1BEC867E008486D3 /* GeorgeBanner.png */; };
-		DB5D33A21BEC867E008486D3 /* JebBanner.png in Resources */ = {isa = PBXBuildFile; fileRef = DB5D33901BEC867E008486D3 /* JebBanner.png */; };
-		DB5D33A31BEC867E008486D3 /* JillBanner.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DB5D33911BEC867E008486D3 /* JillBanner.jpg */; };
-		DB5D33A41BEC867E008486D3 /* JimBanner.png in Resources */ = {isa = PBXBuildFile; fileRef = DB5D33921BEC867E008486D3 /* JimBanner.png */; };
-		DB5D33A51BEC867E008486D3 /* JohnBanner.png in Resources */ = {isa = PBXBuildFile; fileRef = DB5D33931BEC867E008486D3 /* JohnBanner.png */; };
-		DB5D33A61BEC867E008486D3 /* LindseyBanner.png in Resources */ = {isa = PBXBuildFile; fileRef = DB5D33941BEC867E008486D3 /* LindseyBanner.png */; };
-		DB5D33A71BEC867E008486D3 /* MarcoBanner.png in Resources */ = {isa = PBXBuildFile; fileRef = DB5D33951BEC867E008486D3 /* MarcoBanner.png */; };
-		DB5D33A81BEC867E008486D3 /* MartinBanner.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DB5D33961BEC867E008486D3 /* MartinBanner.jpg */; };
-		DB5D33A91BEC867E008486D3 /* MikeBanner.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DB5D33971BEC867E008486D3 /* MikeBanner.jpg */; };
-		DB5D33AA1BEC867E008486D3 /* RandBanner.png in Resources */ = {isa = PBXBuildFile; fileRef = DB5D33981BEC867E008486D3 /* RandBanner.png */; };
-		DB5D33AB1BEC867E008486D3 /* RickBanner.png in Resources */ = {isa = PBXBuildFile; fileRef = DB5D33991BEC867E008486D3 /* RickBanner.png */; };
-		DB5D33AC1BEC867E008486D3 /* RobertBanner.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DB5D339A1BEC867E008486D3 /* RobertBanner.jpg */; };
-		DB5D33AD1BEC867E008486D3 /* TedBanner.png in Resources */ = {isa = PBXBuildFile; fileRef = DB5D339B1BEC867E008486D3 /* TedBanner.png */; };
+		DB47A95D1C10F03B003FC453 /* QuotesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB47A95C1C10F03B003FC453 /* QuotesViewController.swift */; };
+		DB4920F31C10C62D00C29AB7 /* BioViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB4920F21C10C62D00C29AB7 /* BioViewController.swift */; };
+		DB4920F51C10CE2000C29AB7 /* PoliticalPositionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB4920F41C10CE2000C29AB7 /* PoliticalPositionsViewController.swift */; };
 		DB6BE51F1C10721500D9D29A /* PersonalDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB6BE51E1C10721500D9D29A /* PersonalDetailsViewController.swift */; };
 		DB6FE9E91BCB046700E6C38C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB6FE9E81BCB046700E6C38C /* AppDelegate.swift */; };
 		DB6FE9EB1BCB046700E6C38C /* NewsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB6FE9EA1BCB046700E6C38C /* NewsViewController.swift */; };
@@ -128,6 +148,46 @@
 		B22338041BCDF31A00119944 /* Candidacy-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Candidacy-Bridging-Header.h"; sourceTree = "<group>"; };
 		B22338051BCDF79000119944 /* iTunesArtwork@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "iTunesArtwork@2x.png"; path = "Graphics/candidacylogo/ios/iTunesArtwork@2x.png"; sourceTree = "<group>"; };
 		B22939201C0EC733002263D8 /* CandidateParseProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CandidateParseProtocol.swift; sourceTree = "<group>"; };
+		B27A0B261C10F638003B5692 /* benbanner.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = benbanner.jpg; path = "compressed banners/benbanner.jpg"; sourceTree = "<group>"; };
+		B27A0B271C10F638003B5692 /* berniebanner.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = berniebanner.jpg; path = "compressed banners/berniebanner.jpg"; sourceTree = "<group>"; };
+		B27A0B281C10F638003B5692 /* bobbybanner.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = bobbybanner.jpg; path = "compressed banners/bobbybanner.jpg"; sourceTree = "<group>"; };
+		B27A0B291C10F638003B5692 /* carlybanner.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = carlybanner.jpg; path = "compressed banners/carlybanner.jpg"; sourceTree = "<group>"; };
+		B27A0B2A1C10F638003B5692 /* chrisbanner.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = chrisbanner.jpg; path = "compressed banners/chrisbanner.jpg"; sourceTree = "<group>"; };
+		B27A0B2B1C10F638003B5692 /* donaldbanner.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = donaldbanner.jpg; path = "compressed banners/donaldbanner.jpg"; sourceTree = "<group>"; };
+		B27A0B2C1C10F638003B5692 /* georgebanner.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = georgebanner.jpg; path = "compressed banners/georgebanner.jpg"; sourceTree = "<group>"; };
+		B27A0B2D1C10F638003B5692 /* hillarybanner.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = hillarybanner.jpg; path = "compressed banners/hillarybanner.jpg"; sourceTree = "<group>"; };
+		B27A0B2E1C10F638003B5692 /* jebbanner.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = jebbanner.jpg; path = "compressed banners/jebbanner.jpg"; sourceTree = "<group>"; };
+		B27A0B2F1C10F638003B5692 /* jillbanner.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = jillbanner.jpg; path = "compressed banners/jillbanner.jpg"; sourceTree = "<group>"; };
+		B27A0B301C10F638003B5692 /* jimbanner.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = jimbanner.jpg; path = "compressed banners/jimbanner.jpg"; sourceTree = "<group>"; };
+		B27A0B311C10F638003B5692 /* johnbanner.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = johnbanner.jpg; path = "compressed banners/johnbanner.jpg"; sourceTree = "<group>"; };
+		B27A0B321C10F638003B5692 /* lindseybanner.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = lindseybanner.jpg; path = "compressed banners/lindseybanner.jpg"; sourceTree = "<group>"; };
+		B27A0B331C10F638003B5692 /* marcobanner.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = marcobanner.jpg; path = "compressed banners/marcobanner.jpg"; sourceTree = "<group>"; };
+		B27A0B341C10F638003B5692 /* martinbanner.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = martinbanner.jpg; path = "compressed banners/martinbanner.jpg"; sourceTree = "<group>"; };
+		B27A0B351C10F638003B5692 /* mikebanner.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = mikebanner.jpg; path = "compressed banners/mikebanner.jpg"; sourceTree = "<group>"; };
+		B27A0B361C10F638003B5692 /* randbanner.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = randbanner.jpg; path = "compressed banners/randbanner.jpg"; sourceTree = "<group>"; };
+		B27A0B371C10F638003B5692 /* rickbanner.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = rickbanner.jpg; path = "compressed banners/rickbanner.jpg"; sourceTree = "<group>"; };
+		B27A0B381C10F638003B5692 /* robert davidbanner.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "robert davidbanner.jpg"; path = "compressed banners/robert davidbanner.jpg"; sourceTree = "<group>"; };
+		B27A0B391C10F638003B5692 /* tedbanner.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = tedbanner.jpg; path = "compressed banners/tedbanner.jpg"; sourceTree = "<group>"; };
+		B27A0B4E1C10F645003B5692 /* ben.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = ben.jpg; path = compressedCandidates/ben.jpg; sourceTree = "<group>"; };
+		B27A0B4F1C10F645003B5692 /* bernie.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = bernie.jpg; path = compressedCandidates/bernie.jpg; sourceTree = "<group>"; };
+		B27A0B501C10F645003B5692 /* bobby.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = bobby.jpg; path = compressedCandidates/bobby.jpg; sourceTree = "<group>"; };
+		B27A0B511C10F645003B5692 /* carly.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = carly.jpg; path = compressedCandidates/carly.jpg; sourceTree = "<group>"; };
+		B27A0B521C10F645003B5692 /* chris.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = chris.jpg; path = compressedCandidates/chris.jpg; sourceTree = "<group>"; };
+		B27A0B531C10F645003B5692 /* donald.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = donald.jpg; path = compressedCandidates/donald.jpg; sourceTree = "<group>"; };
+		B27A0B541C10F645003B5692 /* george.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = george.jpg; path = compressedCandidates/george.jpg; sourceTree = "<group>"; };
+		B27A0B551C10F645003B5692 /* hillary.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = hillary.jpg; path = compressedCandidates/hillary.jpg; sourceTree = "<group>"; };
+		B27A0B561C10F645003B5692 /* jeb.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = jeb.jpg; path = compressedCandidates/jeb.jpg; sourceTree = "<group>"; };
+		B27A0B571C10F645003B5692 /* jill.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = jill.jpg; path = compressedCandidates/jill.jpg; sourceTree = "<group>"; };
+		B27A0B581C10F645003B5692 /* jim.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = jim.jpg; path = compressedCandidates/jim.jpg; sourceTree = "<group>"; };
+		B27A0B591C10F645003B5692 /* john.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = john.jpg; path = compressedCandidates/john.jpg; sourceTree = "<group>"; };
+		B27A0B5A1C10F645003B5692 /* lindsey.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = lindsey.jpg; path = compressedCandidates/lindsey.jpg; sourceTree = "<group>"; };
+		B27A0B5B1C10F645003B5692 /* marco.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = marco.jpg; path = compressedCandidates/marco.jpg; sourceTree = "<group>"; };
+		B27A0B5C1C10F645003B5692 /* martin.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = martin.jpg; path = compressedCandidates/martin.jpg; sourceTree = "<group>"; };
+		B27A0B5D1C10F645003B5692 /* mike.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = mike.jpg; path = compressedCandidates/mike.jpg; sourceTree = "<group>"; };
+		B27A0B5E1C10F645003B5692 /* rand.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = rand.jpg; path = compressedCandidates/rand.jpg; sourceTree = "<group>"; };
+		B27A0B5F1C10F645003B5692 /* rick.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = rick.jpg; path = compressedCandidates/rick.jpg; sourceTree = "<group>"; };
+		B27A0B601C10F645003B5692 /* robert david.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "robert david.jpg"; path = "compressedCandidates/robert david.jpg"; sourceTree = "<group>"; };
+		B27A0B611C10F645003B5692 /* ted.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = ted.jpg; path = compressedCandidates/ted.jpg; sourceTree = "<group>"; };
 		B28A927D1C1063BA00A6CFF7 /* PollViewStats.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PollViewStats.swift; sourceTree = "<group>"; };
 		DB0469431BD0B24E00F0A53F /* NavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigationController.swift; sourceTree = "<group>"; };
 		DB0469451BD0B8CF00F0A53F /* RootViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
@@ -136,26 +196,6 @@
 		DB47A95C1C10F03B003FC453 /* QuotesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuotesViewController.swift; sourceTree = "<group>"; };
 		DB4920F21C10C62D00C29AB7 /* BioViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BioViewController.swift; sourceTree = "<group>"; };
 		DB4920F41C10CE2000C29AB7 /* PoliticalPositionsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PoliticalPositionsViewController.swift; sourceTree = "<group>"; };
-		DB5D33861BEC7B28008486D3 /* HilaryBanner.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = HilaryBanner.jpg; sourceTree = "<group>"; };
-		DB5D33881BEC866E008486D3 /* BenBanner.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BenBanner.png; sourceTree = "<group>"; };
-		DB5D338A1BEC867E008486D3 /* BernieBanner.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = BernieBanner.jpg; sourceTree = "<group>"; };
-		DB5D338B1BEC867E008486D3 /* BobbyBanner.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = BobbyBanner.jpg; sourceTree = "<group>"; };
-		DB5D338C1BEC867E008486D3 /* CarlyBanner.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = CarlyBanner.jpg; sourceTree = "<group>"; };
-		DB5D338D1BEC867E008486D3 /* ChrisBanner.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = ChrisBanner.jpg; sourceTree = "<group>"; };
-		DB5D338E1BEC867E008486D3 /* DonaldBanner.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = DonaldBanner.jpg; sourceTree = "<group>"; };
-		DB5D338F1BEC867E008486D3 /* GeorgeBanner.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = GeorgeBanner.png; sourceTree = "<group>"; };
-		DB5D33901BEC867E008486D3 /* JebBanner.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = JebBanner.png; sourceTree = "<group>"; };
-		DB5D33911BEC867E008486D3 /* JillBanner.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = JillBanner.jpg; sourceTree = "<group>"; };
-		DB5D33921BEC867E008486D3 /* JimBanner.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = JimBanner.png; sourceTree = "<group>"; };
-		DB5D33931BEC867E008486D3 /* JohnBanner.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = JohnBanner.png; sourceTree = "<group>"; };
-		DB5D33941BEC867E008486D3 /* LindseyBanner.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LindseyBanner.png; sourceTree = "<group>"; };
-		DB5D33951BEC867E008486D3 /* MarcoBanner.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MarcoBanner.png; sourceTree = "<group>"; };
-		DB5D33961BEC867E008486D3 /* MartinBanner.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = MartinBanner.jpg; sourceTree = "<group>"; };
-		DB5D33971BEC867E008486D3 /* MikeBanner.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = MikeBanner.jpg; sourceTree = "<group>"; };
-		DB5D33981BEC867E008486D3 /* RandBanner.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = RandBanner.png; sourceTree = "<group>"; };
-		DB5D33991BEC867E008486D3 /* RickBanner.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = RickBanner.png; sourceTree = "<group>"; };
-		DB5D339A1BEC867E008486D3 /* RobertBanner.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = RobertBanner.jpg; sourceTree = "<group>"; };
-		DB5D339B1BEC867E008486D3 /* TedBanner.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TedBanner.png; sourceTree = "<group>"; };
 		DB6BE51E1C10721500D9D29A /* PersonalDetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersonalDetailsViewController.swift; sourceTree = "<group>"; };
 		DB6FE9E51BCB046700E6C38C /* Candidacy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Candidacy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DB6FE9E81BCB046700E6C38C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -246,31 +286,58 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
-		DB5D33851BEC7B28008486D3 /* Candidate Banners */ = {
+		B27A0B241C10F5EA003B5692 /* compressedCandidates */ = {
 			isa = PBXGroup;
 			children = (
-				DB5D338A1BEC867E008486D3 /* BernieBanner.jpg */,
-				DB5D338B1BEC867E008486D3 /* BobbyBanner.jpg */,
-				DB5D338C1BEC867E008486D3 /* CarlyBanner.jpg */,
-				DB5D338D1BEC867E008486D3 /* ChrisBanner.jpg */,
-				DB5D338E1BEC867E008486D3 /* DonaldBanner.jpg */,
-				DB5D338F1BEC867E008486D3 /* GeorgeBanner.png */,
-				DB5D33901BEC867E008486D3 /* JebBanner.png */,
-				DB5D33911BEC867E008486D3 /* JillBanner.jpg */,
-				DB5D33921BEC867E008486D3 /* JimBanner.png */,
-				DB5D33931BEC867E008486D3 /* JohnBanner.png */,
-				DB5D33941BEC867E008486D3 /* LindseyBanner.png */,
-				DB5D33951BEC867E008486D3 /* MarcoBanner.png */,
-				DB5D33961BEC867E008486D3 /* MartinBanner.jpg */,
-				DB5D33971BEC867E008486D3 /* MikeBanner.jpg */,
-				DB5D33981BEC867E008486D3 /* RandBanner.png */,
-				DB5D33991BEC867E008486D3 /* RickBanner.png */,
-				DB5D339A1BEC867E008486D3 /* RobertBanner.jpg */,
-				DB5D339B1BEC867E008486D3 /* TedBanner.png */,
-				DB5D33881BEC866E008486D3 /* BenBanner.png */,
-				DB5D33861BEC7B28008486D3 /* HilaryBanner.jpg */,
+				B27A0B4E1C10F645003B5692 /* ben.jpg */,
+				B27A0B4F1C10F645003B5692 /* bernie.jpg */,
+				B27A0B501C10F645003B5692 /* bobby.jpg */,
+				B27A0B511C10F645003B5692 /* carly.jpg */,
+				B27A0B521C10F645003B5692 /* chris.jpg */,
+				B27A0B531C10F645003B5692 /* donald.jpg */,
+				B27A0B541C10F645003B5692 /* george.jpg */,
+				B27A0B551C10F645003B5692 /* hillary.jpg */,
+				B27A0B561C10F645003B5692 /* jeb.jpg */,
+				B27A0B571C10F645003B5692 /* jill.jpg */,
+				B27A0B581C10F645003B5692 /* jim.jpg */,
+				B27A0B591C10F645003B5692 /* john.jpg */,
+				B27A0B5A1C10F645003B5692 /* lindsey.jpg */,
+				B27A0B5B1C10F645003B5692 /* marco.jpg */,
+				B27A0B5C1C10F645003B5692 /* martin.jpg */,
+				B27A0B5D1C10F645003B5692 /* mike.jpg */,
+				B27A0B5E1C10F645003B5692 /* rand.jpg */,
+				B27A0B5F1C10F645003B5692 /* rick.jpg */,
+				B27A0B601C10F645003B5692 /* robert david.jpg */,
+				B27A0B611C10F645003B5692 /* ted.jpg */,
 			);
-			path = "Candidate Banners";
+			name = compressedCandidates;
+			sourceTree = "<group>";
+		};
+		B27A0B251C10F5F2003B5692 /* compressedBanners */ = {
+			isa = PBXGroup;
+			children = (
+				B27A0B261C10F638003B5692 /* benbanner.jpg */,
+				B27A0B271C10F638003B5692 /* berniebanner.jpg */,
+				B27A0B281C10F638003B5692 /* bobbybanner.jpg */,
+				B27A0B291C10F638003B5692 /* carlybanner.jpg */,
+				B27A0B2A1C10F638003B5692 /* chrisbanner.jpg */,
+				B27A0B2B1C10F638003B5692 /* donaldbanner.jpg */,
+				B27A0B2C1C10F638003B5692 /* georgebanner.jpg */,
+				B27A0B2D1C10F638003B5692 /* hillarybanner.jpg */,
+				B27A0B2E1C10F638003B5692 /* jebbanner.jpg */,
+				B27A0B2F1C10F638003B5692 /* jillbanner.jpg */,
+				B27A0B301C10F638003B5692 /* jimbanner.jpg */,
+				B27A0B311C10F638003B5692 /* johnbanner.jpg */,
+				B27A0B321C10F638003B5692 /* lindseybanner.jpg */,
+				B27A0B331C10F638003B5692 /* marcobanner.jpg */,
+				B27A0B341C10F638003B5692 /* martinbanner.jpg */,
+				B27A0B351C10F638003B5692 /* mikebanner.jpg */,
+				B27A0B361C10F638003B5692 /* randbanner.jpg */,
+				B27A0B371C10F638003B5692 /* rickbanner.jpg */,
+				B27A0B381C10F638003B5692 /* robert davidbanner.jpg */,
+				B27A0B391C10F638003B5692 /* tedbanner.jpg */,
+			);
+			name = compressedBanners;
 			sourceTree = "<group>";
 		};
 		DB6FE9DC1BCB046600E6C38C = {
@@ -327,7 +394,8 @@
 				DB0469451BD0B8CF00F0A53F /* RootViewController.swift */,
 				DB6FE9F11BCB046700E6C38C /* LaunchScreen.storyboard */,
 				DB6FE9F41BCB046700E6C38C /* Info.plist */,
-				DB5D33851BEC7B28008486D3 /* Candidate Banners */,
+				B27A0B251C10F5F2003B5692 /* compressedBanners */,
+				B27A0B241C10F5EA003B5692 /* compressedCandidates */,
 				DBE3AED21BD46AB10055FE19 /* Candidate Images */,
 			);
 			path = Candidacy;
@@ -504,50 +572,70 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B27A0B461C10F638003B5692 /* lindseybanner.jpg in Resources */,
+				B27A0B711C10F645003B5692 /* mike.jpg in Resources */,
+				B27A0B3B1C10F638003B5692 /* berniebanner.jpg in Resources */,
 				DBC0BE211BD9A75B000CBF3E /* Mike_Huckabee_at_2014_CPAC_(cropped).jpg in Resources */,
+				B27A0B681C10F645003B5692 /* george.jpg in Resources */,
 				DBC0BE0A1BD9A535000CBF3E /* Dr._Ben_Carson_in_New_Hampshire_on_August_13th,_2015_1_by_Michael_Vadon_17_(cropped).jpg in Resources */,
 				DBC0BE1C1BD9A75B000CBF3E /* George_Pataki_August_2015.jpg in Resources */,
-				DB5D339F1BEC867E008486D3 /* ChrisBanner.jpg in Resources */,
 				DBC0BE1A1BD9A75B000CBF3E /* 126px-Marco_Rubio,_Official_Portrait,_112th_Congress.jpg in Resources */,
+				B27A0B691C10F645003B5692 /* hillary.jpg in Resources */,
+				B27A0B721C10F645003B5692 /* rand.jpg in Resources */,
+				B27A0B6A1C10F645003B5692 /* jeb.jpg in Resources */,
+				B27A0B6E1C10F645003B5692 /* lindsey.jpg in Resources */,
 				DBC0BE1B1BD9A75B000CBF3E /* Donald_Trump_September_3_2015.jpg in Resources */,
-				DB5D339C1BEC867E008486D3 /* BernieBanner.jpg in Resources */,
-				DB5D33A21BEC867E008486D3 /* JebBanner.png in Resources */,
-				DB5D33AC1BEC867E008486D3 /* RobertBanner.jpg in Resources */,
+				B27A0B431C10F638003B5692 /* jillbanner.jpg in Resources */,
 				DBC0BE1F1BD9A75B000CBF3E /* Jim_Gilmore_2015.jpg in Resources */,
 				DBC0BE201BD9A75B000CBF3E /* Lindsey_Graham,_official_Senate_photo_portrait_cropped.jpg in Resources */,
+				B27A0B701C10F645003B5692 /* martin.jpg in Resources */,
+				B27A0B3C1C10F638003B5692 /* bobbybanner.jpg in Resources */,
+				B27A0B6D1C10F645003B5692 /* john.jpg in Resources */,
 				DBC0BE241BD9A75B000CBF3E /* Steele_headshot_never_used_before_(afghanistan).jpg in Resources */,
 				DB6FE9F31BCB046700E6C38C /* LaunchScreen.storyboard in Resources */,
+				B27A0B411C10F638003B5692 /* hillarybanner.jpg in Resources */,
+				B27A0B421C10F638003B5692 /* jebbanner.jpg in Resources */,
+				B27A0B4D1C10F638003B5692 /* tedbanner.jpg in Resources */,
 				DBC0BE1E1BD9A75B000CBF3E /* Governor_of_Louisiana_Bobby_Jindal_at_New_Hampshire_Education_Summit_The_Seventy-Four_August_19th,_2015_by_Michael_Vadon_132_(cropped).jpg in Resources */,
 				DBC0BE0C1BD9A535000CBF3E /* Ted_Cruz,_official_portrait,_113th_Congress_(cropped_2).jpg in Resources */,
-				DB5D33AD1BEC867E008486D3 /* TedBanner.png in Resources */,
+				B27A0B491C10F638003B5692 /* mikebanner.jpg in Resources */,
+				B27A0B6B1C10F645003B5692 /* jill.jpg in Resources */,
+				B27A0B651C10F645003B5692 /* carly.jpg in Resources */,
+				B27A0B401C10F638003B5692 /* georgebanner.jpg in Resources */,
 				DB6FE9F01BCB046700E6C38C /* Assets.xcassets in Resources */,
-				DB5D33A41BEC867E008486D3 /* JimBanner.png in Resources */,
-				DB5D339E1BEC867E008486D3 /* CarlyBanner.jpg in Resources */,
 				DBC0BE231BD9A75B000CBF3E /* Rick_Santorum_by_Gage_Skidmore_8.jpg in Resources */,
-				DB5D33A51BEC867E008486D3 /* JohnBanner.png in Resources */,
+				B27A0B3F1C10F638003B5692 /* donaldbanner.jpg in Resources */,
+				B27A0B3D1C10F638003B5692 /* carlybanner.jpg in Resources */,
+				B27A0B4A1C10F638003B5692 /* randbanner.jpg in Resources */,
 				DBE3AEDB1BD46AB10055FE19 /* HRC_in_Iowa_APR_2015.jpg in Resources */,
-				DB5D33AA1BEC867E008486D3 /* RandBanner.png in Resources */,
+				B27A0B3A1C10F638003B5692 /* benbanner.jpg in Resources */,
+				B27A0B6F1C10F645003B5692 /* marco.jpg in Resources */,
+				B27A0B731C10F645003B5692 /* rick.jpg in Resources */,
+				B27A0B4B1C10F638003B5692 /* rickbanner.jpg in Resources */,
+				B27A0B6C1C10F645003B5692 /* jim.jpg in Resources */,
+				B27A0B741C10F645003B5692 /* robert david.jpg in Resources */,
+				B27A0B671C10F645003B5692 /* donald.jpg in Resources */,
 				DBE3AED91BD46AB10055FE19 /* Bernie_Sanders_New_Orleans_rally_crop.jpg in Resources */,
-				DB5D33A11BEC867E008486D3 /* GeorgeBanner.png in Resources */,
-				DB5D33A31BEC867E008486D3 /* JillBanner.jpg in Resources */,
-				DB5D33A81BEC867E008486D3 /* MartinBanner.jpg in Resources */,
 				DBC0BE1D1BD9A75B000CBF3E /* Governor_John_Kasich.jpg in Resources */,
-				DB5D33A91BEC867E008486D3 /* MikeBanner.jpg in Resources */,
 				DB6FE9EE1BCB046700E6C38C /* Main.storyboard in Resources */,
-				DB5D339D1BEC867E008486D3 /* BobbyBanner.jpg in Resources */,
-				DB5D33891BEC866E008486D3 /* BenBanner.png in Resources */,
-				DB5D33871BEC7B28008486D3 /* HilaryBanner.jpg in Resources */,
 				DBC0BE081BD9A535000CBF3E /* Carly_Fiorina_August_2015.jpg in Resources */,
+				B27A0B441C10F638003B5692 /* jimbanner.jpg in Resources */,
 				B22338061BCDF79000119944 /* iTunesArtwork@2x.png in Resources */,
+				B27A0B661C10F645003B5692 /* chris.jpg in Resources */,
+				B27A0B4C1C10F638003B5692 /* robert davidbanner.jpg in Resources */,
+				B27A0B751C10F645003B5692 /* ted.jpg in Resources */,
 				DBC0BE191BD9A75B000CBF3E /* 100px-Jill_Stein_2012.jpg in Resources */,
+				B27A0B631C10F645003B5692 /* bernie.jpg in Resources */,
+				B27A0B451C10F638003B5692 /* johnbanner.jpg in Resources */,
+				B27A0B471C10F638003B5692 /* marcobanner.jpg in Resources */,
 				DBC0BE091BD9A535000CBF3E /* Chris_Christie_April_2015_(cropped).jpg in Resources */,
-				DB5D33A71BEC867E008486D3 /* MarcoBanner.png in Resources */,
-				DB5D33A01BEC867E008486D3 /* DonaldBanner.jpg in Resources */,
+				B27A0B481C10F638003B5692 /* martinbanner.jpg in Resources */,
+				B27A0B3E1C10F638003B5692 /* chrisbanner.jpg in Resources */,
 				DBC0BE0B1BD9A535000CBF3E /* Governor_of_Florida_Jeb_Bush_2015_in_NH_by_Michael_Vadon_(cropped).jpg in Resources */,
-				DB5D33AB1BEC867E008486D3 /* RickBanner.png in Resources */,
+				B27A0B641C10F645003B5692 /* bobby.jpg in Resources */,
+				B27A0B621C10F645003B5692 /* ben.jpg in Resources */,
 				DBE3AEDA1BD46AB10055FE19 /* Governor_O'Malley_Portrait_(cropped).jpg in Resources */,
 				DBC0BE221BD9A75B000CBF3E /* Rand_Paul,_official_portrait,_112th_Congress.jpg in Resources */,
-				DB5D33A61BEC867E008486D3 /* LindseyBanner.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

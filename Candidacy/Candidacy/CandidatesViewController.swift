@@ -101,9 +101,10 @@ class CandidatesViewController: UIViewController, UICollectionViewDataSource, UI
         let tempCandidate:Candidate = self.candidates[index]//data.getCandidate(index: index)
         
         cell.candidateNameLabel.text = tempCandidate.name
-    
+        let imageName = tempCandidate.firstName + ".jpg"
+        
         //cell.candidatePhoto.image = cropToBounds(tempCandidate.getPic())
-        cell.candidatePhotoButton.setImage(tempCandidate.getPic(), forState: .Normal)
+        cell.candidatePhotoButton.setImage(UIImage(named: imageName), forState: .Normal)
         cell.candidatePhotoButton.layer.cornerRadius = 0.5 * cell.candidatePhotoButton.bounds.size.width
         cell.candidatePhotoButton.clipsToBounds = true
         

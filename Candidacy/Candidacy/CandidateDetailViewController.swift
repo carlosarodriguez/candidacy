@@ -44,18 +44,16 @@ class CandidateDetailViewController: UIViewController, UIScrollViewDelegate, UIT
         profileImage.layer.cornerRadius = 0.5 * profileImage.bounds.size.width
         profileWhiteBackground.layer.cornerRadius = 0.5 * profileWhiteBackground.bounds.size.width
         profileImage.clipsToBounds = true
-        
         self.navigationController?.navigationBarHidden = true
-        
         retrieveProfileInfo()
     }
     
     override func viewDidAppear(animated: Bool) {
         
         // Header - Image
-        
+        let headerImageName = (candidate?.firstName)! + "banner.jpg"
         headerImageView = UIImageView(frame: header.bounds)
-        headerImageView?.image = candidate?.getBanner()
+        headerImageView?.image = UIImage(named: headerImageName)//candidate?.getBanner()
         headerImageView?.contentMode = UIViewContentMode.ScaleAspectFill
         header.insertSubview(headerImageView, aboveSubview: tableView)
         
