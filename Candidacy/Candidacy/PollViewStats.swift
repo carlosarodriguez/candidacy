@@ -40,6 +40,7 @@ class PollViewStats: UIViewController {
                     self.thirdPlaceName.text = "\(object["firstName"]) \(object["lastName"])"
                     self.thirdPlaceVotes.text = String(object["voteCount"])
                 }
+                i += 1
             }
         }
     }
