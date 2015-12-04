@@ -98,7 +98,6 @@ class PollViewController: UIViewController, UIPickerViewDelegate, UITextFieldDel
     }
     
     func pickerView(pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
-        
         if pickerView.tag == 0 {
             return ageGroups[row]
         } else if pickerView.tag == 1 {
@@ -112,7 +111,6 @@ class PollViewController: UIViewController, UIPickerViewDelegate, UITextFieldDel
     }
     
     func pickerView(pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int)  {
-        
         if pickerView.tag == 0 {
             self.ageGroupField.text = ageGroups[row]
             self.age = ageGroups[row]
@@ -129,10 +127,7 @@ class PollViewController: UIViewController, UIPickerViewDelegate, UITextFieldDel
     }
     
     
-    //On button click show results from polls from parse
-    @IBAction func showResults(sender: AnyObject) {
-        
-    }
+   
     
     //on confirm button click submit results to parse
     @IBAction func confirmPollSubmission(sender: AnyObject) {

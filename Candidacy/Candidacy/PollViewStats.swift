@@ -22,7 +22,7 @@ class PollViewStats: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        var query = PFQuery(className: "Candidate")
+        let query = PFQuery(className: "Candidate")
         query.orderByDescending("voteCount")
         query.limit = 3
         

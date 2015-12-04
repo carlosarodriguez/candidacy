@@ -35,10 +35,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         // Parse application ID and client ID
         Parse.setApplicationId("nDqHc4Iv70AgWRP0cyatqlVKN1PNjkYNIUKPvm99", clientKey:"oPda5aM2kPZXWbppTE3NpydOxbIdaPCPV1X8nBdL")
-        
         appearance.shadowImage = UIImage()
-        
-       
         let qualityOfServiceClass = QOS_CLASS_BACKGROUND
         let backgroundQueue = dispatch_get_global_queue(qualityOfServiceClass, 0)
         dispatch_async(backgroundQueue, {

@@ -15,18 +15,14 @@ class BioViewController: UIViewController {
     @IBOutlet weak var scrollView: UIScrollView!
     @IBOutlet weak var bioTextView: UITextView!
     
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        
-        //ageLbl.text = String(delegate?.personalDetails["age"])
-        //hometownLbl.text = delegate?.personalDetails["hometown"] as? String
+
         scrollView.layer.borderWidth = 2
         scrollView.layer.borderColor = UIColor.blackColor().CGColor
         view.backgroundColor = UIColor.clearColor()
         bioTextView.font = UIFont(name: "avenir-medium", size: 16)
-        //view.opaque = false
     }
     
     @IBAction func dismissBio(sender: AnyObject) {

@@ -20,8 +20,6 @@ class QuotesViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
-        //ageLbl.text = String(delegate?.personalDetails["age"])
-        //hometownLbl.text = delegate?.personalDetails["hometown"] as? String
         scrollView.layer.borderWidth = 2
         scrollView.layer.borderColor = UIColor.blackColor().CGColor
         view.backgroundColor = UIColor.clearColor()

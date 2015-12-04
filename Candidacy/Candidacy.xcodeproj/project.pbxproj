@@ -80,32 +80,31 @@
 		DB6FE9FE1BCB046700E6C38C /* CandidacyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB6FE9FD1BCB046700E6C38C /* CandidacyTests.swift */; };
 		DB6FEA091BCB046700E6C38C /* CandidacyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB6FEA081BCB046700E6C38C /* CandidacyUITests.swift */; };
 		DB9FF0921BDA07AA0016FA63 /* CandidateDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB9FF0911BDA07AA0016FA63 /* CandidateDetailViewController.swift */; };
-		DBC0BE081BD9A535000CBF3E /* Carly_Fiorina_August_2015.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DBC0BE031BD9A535000CBF3E /* Carly_Fiorina_August_2015.jpg */; };
-		DBC0BE091BD9A535000CBF3E /* Chris_Christie_April_2015_(cropped).jpg in Resources */ = {isa = PBXBuildFile; fileRef = DBC0BE041BD9A535000CBF3E /* Chris_Christie_April_2015_(cropped).jpg */; };
-		DBC0BE0A1BD9A535000CBF3E /* Dr._Ben_Carson_in_New_Hampshire_on_August_13th,_2015_1_by_Michael_Vadon_17_(cropped).jpg in Resources */ = {isa = PBXBuildFile; fileRef = DBC0BE051BD9A535000CBF3E /* Dr._Ben_Carson_in_New_Hampshire_on_August_13th,_2015_1_by_Michael_Vadon_17_(cropped).jpg */; };
-		DBC0BE0B1BD9A535000CBF3E /* Governor_of_Florida_Jeb_Bush_2015_in_NH_by_Michael_Vadon_(cropped).jpg in Resources */ = {isa = PBXBuildFile; fileRef = DBC0BE061BD9A535000CBF3E /* Governor_of_Florida_Jeb_Bush_2015_in_NH_by_Michael_Vadon_(cropped).jpg */; };
-		DBC0BE0C1BD9A535000CBF3E /* Ted_Cruz,_official_portrait,_113th_Congress_(cropped_2).jpg in Resources */ = {isa = PBXBuildFile; fileRef = DBC0BE071BD9A535000CBF3E /* Ted_Cruz,_official_portrait,_113th_Congress_(cropped_2).jpg */; };
-		DBC0BE191BD9A75B000CBF3E /* 100px-Jill_Stein_2012.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DBC0BE0D1BD9A75B000CBF3E /* 100px-Jill_Stein_2012.jpg */; };
-		DBC0BE1A1BD9A75B000CBF3E /* 126px-Marco_Rubio,_Official_Portrait,_112th_Congress.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DBC0BE0E1BD9A75B000CBF3E /* 126px-Marco_Rubio,_Official_Portrait,_112th_Congress.jpg */; };
-		DBC0BE1B1BD9A75B000CBF3E /* Donald_Trump_September_3_2015.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DBC0BE0F1BD9A75B000CBF3E /* Donald_Trump_September_3_2015.jpg */; };
-		DBC0BE1C1BD9A75B000CBF3E /* George_Pataki_August_2015.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DBC0BE101BD9A75B000CBF3E /* George_Pataki_August_2015.jpg */; };
-		DBC0BE1D1BD9A75B000CBF3E /* Governor_John_Kasich.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DBC0BE111BD9A75B000CBF3E /* Governor_John_Kasich.jpg */; };
-		DBC0BE1E1BD9A75B000CBF3E /* Governor_of_Louisiana_Bobby_Jindal_at_New_Hampshire_Education_Summit_The_Seventy-Four_August_19th,_2015_by_Michael_Vadon_132_(cropped).jpg in Resources */ = {isa = PBXBuildFile; fileRef = DBC0BE121BD9A75B000CBF3E /* Governor_of_Louisiana_Bobby_Jindal_at_New_Hampshire_Education_Summit_The_Seventy-Four_August_19th,_2015_by_Michael_Vadon_132_(cropped).jpg */; };
-		DBC0BE1F1BD9A75B000CBF3E /* Jim_Gilmore_2015.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DBC0BE131BD9A75B000CBF3E /* Jim_Gilmore_2015.jpg */; };
-		DBC0BE201BD9A75B000CBF3E /* Lindsey_Graham,_official_Senate_photo_portrait_cropped.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DBC0BE141BD9A75B000CBF3E /* Lindsey_Graham,_official_Senate_photo_portrait_cropped.jpg */; };
-		DBC0BE211BD9A75B000CBF3E /* Mike_Huckabee_at_2014_CPAC_(cropped).jpg in Resources */ = {isa = PBXBuildFile; fileRef = DBC0BE151BD9A75B000CBF3E /* Mike_Huckabee_at_2014_CPAC_(cropped).jpg */; };
-		DBC0BE221BD9A75B000CBF3E /* Rand_Paul,_official_portrait,_112th_Congress.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DBC0BE161BD9A75B000CBF3E /* Rand_Paul,_official_portrait,_112th_Congress.jpg */; };
-		DBC0BE231BD9A75B000CBF3E /* Rick_Santorum_by_Gage_Skidmore_8.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DBC0BE171BD9A75B000CBF3E /* Rick_Santorum_by_Gage_Skidmore_8.jpg */; };
-		DBC0BE241BD9A75B000CBF3E /* Steele_headshot_never_used_before_(afghanistan).jpg in Resources */ = {isa = PBXBuildFile; fileRef = DBC0BE181BD9A75B000CBF3E /* Steele_headshot_never_used_before_(afghanistan).jpg */; };
+		DBC0BE081BD9A535000CBF3E /* fiorina.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DBC0BE031BD9A535000CBF3E /* fiorina.jpg */; };
+		DBC0BE091BD9A535000CBF3E /* christie.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DBC0BE041BD9A535000CBF3E /* christie.jpg */; };
+		DBC0BE0A1BD9A535000CBF3E /* carson.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DBC0BE051BD9A535000CBF3E /* carson.jpg */; };
+		DBC0BE0B1BD9A535000CBF3E /* bush.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DBC0BE061BD9A535000CBF3E /* bush.jpg */; };
+		DBC0BE0C1BD9A535000CBF3E /* cruz.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DBC0BE071BD9A535000CBF3E /* cruz.jpg */; };
+		DBC0BE191BD9A75B000CBF3E /* stein.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DBC0BE0D1BD9A75B000CBF3E /* stein.jpg */; };
+		DBC0BE1A1BD9A75B000CBF3E /* rubio.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DBC0BE0E1BD9A75B000CBF3E /* rubio.jpg */; };
+		DBC0BE1B1BD9A75B000CBF3E /* trump.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DBC0BE0F1BD9A75B000CBF3E /* trump.jpg */; };
+		DBC0BE1C1BD9A75B000CBF3E /* pataki.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DBC0BE101BD9A75B000CBF3E /* pataki.jpg */; };
+		DBC0BE1D1BD9A75B000CBF3E /* kasich.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DBC0BE111BD9A75B000CBF3E /* kasich.jpg */; };
+		DBC0BE1E1BD9A75B000CBF3E /* jindal.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DBC0BE121BD9A75B000CBF3E /* jindal.jpg */; };
+		DBC0BE1F1BD9A75B000CBF3E /* gilmore.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DBC0BE131BD9A75B000CBF3E /* gilmore.jpg */; };
+		DBC0BE201BD9A75B000CBF3E /* graham.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DBC0BE141BD9A75B000CBF3E /* graham.jpg */; };
+		DBC0BE211BD9A75B000CBF3E /* huckabee.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DBC0BE151BD9A75B000CBF3E /* huckabee.jpg */; };
+		DBC0BE221BD9A75B000CBF3E /* paul.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DBC0BE161BD9A75B000CBF3E /* paul.jpg */; };
+		DBC0BE231BD9A75B000CBF3E /* santorum.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DBC0BE171BD9A75B000CBF3E /* santorum.jpg */; };
+		DBC0BE241BD9A75B000CBF3E /* steele.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DBC0BE181BD9A75B000CBF3E /* steele.jpg */; };
 		DBC8E2A31BEEB7A3001CD578 /* NewsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBC8E2A21BEEB7A3001CD578 /* NewsCell.swift */; };
 		DBC8E2A51BEEC5A5001CD578 /* NewsArticle.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBC8E2A41BEEC5A5001CD578 /* NewsArticle.swift */; };
 		DBC8E2A71BEECFAD001CD578 /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBC8E2A61BEECFAD001CD578 /* SwiftyJSON.swift */; };
 		DBE0289E1C029CB6004E086E /* PollViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBE0289D1C029CB6004E086E /* PollViewController.swift */; };
-		DBE3AEBF1BD460E10055FE19 /* CandidatesDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBE3AEBE1BD460E10055FE19 /* CandidatesDataModel.swift */; };
 		DBE3AEC11BD461500055FE19 /* Candidate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBE3AEC01BD461500055FE19 /* Candidate.swift */; };
-		DBE3AED91BD46AB10055FE19 /* Bernie_Sanders_New_Orleans_rally_crop.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DBE3AED31BD46AB10055FE19 /* Bernie_Sanders_New_Orleans_rally_crop.jpg */; };
-		DBE3AEDA1BD46AB10055FE19 /* Governor_O'Malley_Portrait_(cropped).jpg in Resources */ = {isa = PBXBuildFile; fileRef = DBE3AED41BD46AB10055FE19 /* Governor_O'Malley_Portrait_(cropped).jpg */; };
-		DBE3AEDB1BD46AB10055FE19 /* HRC_in_Iowa_APR_2015.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DBE3AED51BD46AB10055FE19 /* HRC_in_Iowa_APR_2015.jpg */; };
+		DBE3AED91BD46AB10055FE19 /* sanders.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DBE3AED31BD46AB10055FE19 /* sanders.jpg */; };
+		DBE3AEDA1BD46AB10055FE19 /* o'malley.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DBE3AED41BD46AB10055FE19 /* o'malley.jpg */; };
+		DBE3AEDB1BD46AB10055FE19 /* clinton.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DBE3AED51BD46AB10055FE19 /* clinton.jpg */; };
 		DBE3AEE01BD470DC0055FE19 /* CandidatePhotoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBE3AEDF1BD470DC0055FE19 /* CandidatePhotoCell.swift */; };
 		FEBCBBC9361072E7FA561AE0 /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 576CE8A8F4496B41F2CA199D /* Pods.framework */; };
 /* End PBXBuildFile section */
@@ -211,32 +210,31 @@
 		DB6FEA081BCB046700E6C38C /* CandidacyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CandidacyUITests.swift; sourceTree = "<group>"; };
 		DB6FEA0A1BCB046700E6C38C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DB9FF0911BDA07AA0016FA63 /* CandidateDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CandidateDetailViewController.swift; sourceTree = "<group>"; };
-		DBC0BE031BD9A535000CBF3E /* Carly_Fiorina_August_2015.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Carly_Fiorina_August_2015.jpg; sourceTree = "<group>"; };
-		DBC0BE041BD9A535000CBF3E /* Chris_Christie_April_2015_(cropped).jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Chris_Christie_April_2015_(cropped).jpg"; sourceTree = "<group>"; };
-		DBC0BE051BD9A535000CBF3E /* Dr._Ben_Carson_in_New_Hampshire_on_August_13th,_2015_1_by_Michael_Vadon_17_(cropped).jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Dr._Ben_Carson_in_New_Hampshire_on_August_13th,_2015_1_by_Michael_Vadon_17_(cropped).jpg"; sourceTree = "<group>"; };
-		DBC0BE061BD9A535000CBF3E /* Governor_of_Florida_Jeb_Bush_2015_in_NH_by_Michael_Vadon_(cropped).jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Governor_of_Florida_Jeb_Bush_2015_in_NH_by_Michael_Vadon_(cropped).jpg"; sourceTree = "<group>"; };
-		DBC0BE071BD9A535000CBF3E /* Ted_Cruz,_official_portrait,_113th_Congress_(cropped_2).jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Ted_Cruz,_official_portrait,_113th_Congress_(cropped_2).jpg"; sourceTree = "<group>"; };
-		DBC0BE0D1BD9A75B000CBF3E /* 100px-Jill_Stein_2012.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "100px-Jill_Stein_2012.jpg"; sourceTree = "<group>"; };
-		DBC0BE0E1BD9A75B000CBF3E /* 126px-Marco_Rubio,_Official_Portrait,_112th_Congress.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "126px-Marco_Rubio,_Official_Portrait,_112th_Congress.jpg"; sourceTree = "<group>"; };
-		DBC0BE0F1BD9A75B000CBF3E /* Donald_Trump_September_3_2015.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Donald_Trump_September_3_2015.jpg; sourceTree = "<group>"; };
-		DBC0BE101BD9A75B000CBF3E /* George_Pataki_August_2015.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = George_Pataki_August_2015.jpg; sourceTree = "<group>"; };
-		DBC0BE111BD9A75B000CBF3E /* Governor_John_Kasich.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Governor_John_Kasich.jpg; sourceTree = "<group>"; };
-		DBC0BE121BD9A75B000CBF3E /* Governor_of_Louisiana_Bobby_Jindal_at_New_Hampshire_Education_Summit_The_Seventy-Four_August_19th,_2015_by_Michael_Vadon_132_(cropped).jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Governor_of_Louisiana_Bobby_Jindal_at_New_Hampshire_Education_Summit_The_Seventy-Four_August_19th,_2015_by_Michael_Vadon_132_(cropped).jpg"; sourceTree = "<group>"; };
-		DBC0BE131BD9A75B000CBF3E /* Jim_Gilmore_2015.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Jim_Gilmore_2015.jpg; sourceTree = "<group>"; };
-		DBC0BE141BD9A75B000CBF3E /* Lindsey_Graham,_official_Senate_photo_portrait_cropped.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Lindsey_Graham,_official_Senate_photo_portrait_cropped.jpg"; sourceTree = "<group>"; };
-		DBC0BE151BD9A75B000CBF3E /* Mike_Huckabee_at_2014_CPAC_(cropped).jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Mike_Huckabee_at_2014_CPAC_(cropped).jpg"; sourceTree = "<group>"; };
-		DBC0BE161BD9A75B000CBF3E /* Rand_Paul,_official_portrait,_112th_Congress.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Rand_Paul,_official_portrait,_112th_Congress.jpg"; sourceTree = "<group>"; };
-		DBC0BE171BD9A75B000CBF3E /* Rick_Santorum_by_Gage_Skidmore_8.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Rick_Santorum_by_Gage_Skidmore_8.jpg; sourceTree = "<group>"; };
-		DBC0BE181BD9A75B000CBF3E /* Steele_headshot_never_used_before_(afghanistan).jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Steele_headshot_never_used_before_(afghanistan).jpg"; sourceTree = "<group>"; };
+		DBC0BE031BD9A535000CBF3E /* fiorina.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = fiorina.jpg; sourceTree = "<group>"; };
+		DBC0BE041BD9A535000CBF3E /* christie.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = christie.jpg; sourceTree = "<group>"; };
+		DBC0BE051BD9A535000CBF3E /* carson.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = carson.jpg; sourceTree = "<group>"; };
+		DBC0BE061BD9A535000CBF3E /* bush.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = bush.jpg; sourceTree = "<group>"; };
+		DBC0BE071BD9A535000CBF3E /* cruz.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = cruz.jpg; sourceTree = "<group>"; };
+		DBC0BE0D1BD9A75B000CBF3E /* stein.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = stein.jpg; sourceTree = "<group>"; };
+		DBC0BE0E1BD9A75B000CBF3E /* rubio.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = rubio.jpg; sourceTree = "<group>"; };
+		DBC0BE0F1BD9A75B000CBF3E /* trump.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = trump.jpg; sourceTree = "<group>"; };
+		DBC0BE101BD9A75B000CBF3E /* pataki.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = pataki.jpg; sourceTree = "<group>"; };
+		DBC0BE111BD9A75B000CBF3E /* kasich.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = kasich.jpg; sourceTree = "<group>"; };
+		DBC0BE121BD9A75B000CBF3E /* jindal.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = jindal.jpg; sourceTree = "<group>"; };
+		DBC0BE131BD9A75B000CBF3E /* gilmore.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = gilmore.jpg; sourceTree = "<group>"; };
+		DBC0BE141BD9A75B000CBF3E /* graham.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = graham.jpg; sourceTree = "<group>"; };
+		DBC0BE151BD9A75B000CBF3E /* huckabee.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = huckabee.jpg; sourceTree = "<group>"; };
+		DBC0BE161BD9A75B000CBF3E /* paul.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = paul.jpg; sourceTree = "<group>"; };
+		DBC0BE171BD9A75B000CBF3E /* santorum.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = santorum.jpg; sourceTree = "<group>"; };
+		DBC0BE181BD9A75B000CBF3E /* steele.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = steele.jpg; sourceTree = "<group>"; };
 		DBC8E2A21BEEB7A3001CD578 /* NewsCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewsCell.swift; sourceTree = "<group>"; };
 		DBC8E2A41BEEC5A5001CD578 /* NewsArticle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewsArticle.swift; sourceTree = "<group>"; };
 		DBC8E2A61BEECFAD001CD578 /* SwiftyJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftyJSON.swift; sourceTree = "<group>"; };
 		DBE0289D1C029CB6004E086E /* PollViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PollViewController.swift; sourceTree = "<group>"; };
-		DBE3AEBE1BD460E10055FE19 /* CandidatesDataModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CandidatesDataModel.swift; sourceTree = "<group>"; };
 		DBE3AEC01BD461500055FE19 /* Candidate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Candidate.swift; sourceTree = "<group>"; };
-		DBE3AED31BD46AB10055FE19 /* Bernie_Sanders_New_Orleans_rally_crop.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Bernie_Sanders_New_Orleans_rally_crop.jpg; sourceTree = "<group>"; };
-		DBE3AED41BD46AB10055FE19 /* Governor_O'Malley_Portrait_(cropped).jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Governor_O'Malley_Portrait_(cropped).jpg"; sourceTree = "<group>"; };
-		DBE3AED51BD46AB10055FE19 /* HRC_in_Iowa_APR_2015.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = HRC_in_Iowa_APR_2015.jpg; sourceTree = "<group>"; };
+		DBE3AED31BD46AB10055FE19 /* sanders.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = sanders.jpg; sourceTree = "<group>"; };
+		DBE3AED41BD46AB10055FE19 /* o'malley.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "o'malley.jpg"; sourceTree = "<group>"; };
+		DBE3AED51BD46AB10055FE19 /* clinton.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = clinton.jpg; sourceTree = "<group>"; };
 		DBE3AEDF1BD470DC0055FE19 /* CandidatePhotoCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CandidatePhotoCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -384,7 +382,6 @@
 				DB9FF0911BDA07AA0016FA63 /* CandidateDetailViewController.swift */,
 				DBE3AEDF1BD470DC0055FE19 /* CandidatePhotoCell.swift */,
 				DB39570C1BD2F113005CA3FC /* CandidatesViewController.swift */,
-				DBE3AEBE1BD460E10055FE19 /* CandidatesDataModel.swift */,
 				B22939201C0EC733002263D8 /* CandidateParseProtocol.swift */,
 				DBE3AEC01BD461500055FE19 /* Candidate.swift */,
 				DB0469471BD0BAF300F0A53F /* MenuViewController.swift */,
@@ -422,26 +419,26 @@
 		DBE3AED21BD46AB10055FE19 /* Candidate Images */ = {
 			isa = PBXGroup;
 			children = (
-				DBC0BE0D1BD9A75B000CBF3E /* 100px-Jill_Stein_2012.jpg */,
-				DBC0BE0E1BD9A75B000CBF3E /* 126px-Marco_Rubio,_Official_Portrait,_112th_Congress.jpg */,
-				DBC0BE0F1BD9A75B000CBF3E /* Donald_Trump_September_3_2015.jpg */,
-				DBC0BE101BD9A75B000CBF3E /* George_Pataki_August_2015.jpg */,
-				DBC0BE111BD9A75B000CBF3E /* Governor_John_Kasich.jpg */,
-				DBC0BE121BD9A75B000CBF3E /* Governor_of_Louisiana_Bobby_Jindal_at_New_Hampshire_Education_Summit_The_Seventy-Four_August_19th,_2015_by_Michael_Vadon_132_(cropped).jpg */,
-				DBC0BE131BD9A75B000CBF3E /* Jim_Gilmore_2015.jpg */,
-				DBC0BE141BD9A75B000CBF3E /* Lindsey_Graham,_official_Senate_photo_portrait_cropped.jpg */,
-				DBC0BE151BD9A75B000CBF3E /* Mike_Huckabee_at_2014_CPAC_(cropped).jpg */,
-				DBC0BE161BD9A75B000CBF3E /* Rand_Paul,_official_portrait,_112th_Congress.jpg */,
-				DBC0BE171BD9A75B000CBF3E /* Rick_Santorum_by_Gage_Skidmore_8.jpg */,
-				DBC0BE181BD9A75B000CBF3E /* Steele_headshot_never_used_before_(afghanistan).jpg */,
-				DBC0BE031BD9A535000CBF3E /* Carly_Fiorina_August_2015.jpg */,
-				DBC0BE041BD9A535000CBF3E /* Chris_Christie_April_2015_(cropped).jpg */,
-				DBC0BE051BD9A535000CBF3E /* Dr._Ben_Carson_in_New_Hampshire_on_August_13th,_2015_1_by_Michael_Vadon_17_(cropped).jpg */,
-				DBC0BE061BD9A535000CBF3E /* Governor_of_Florida_Jeb_Bush_2015_in_NH_by_Michael_Vadon_(cropped).jpg */,
-				DBC0BE071BD9A535000CBF3E /* Ted_Cruz,_official_portrait,_113th_Congress_(cropped_2).jpg */,
-				DBE3AED31BD46AB10055FE19 /* Bernie_Sanders_New_Orleans_rally_crop.jpg */,
-				DBE3AED41BD46AB10055FE19 /* Governor_O'Malley_Portrait_(cropped).jpg */,
-				DBE3AED51BD46AB10055FE19 /* HRC_in_Iowa_APR_2015.jpg */,
+				DBC0BE0D1BD9A75B000CBF3E /* stein.jpg */,
+				DBC0BE0E1BD9A75B000CBF3E /* rubio.jpg */,
+				DBC0BE0F1BD9A75B000CBF3E /* trump.jpg */,
+				DBC0BE101BD9A75B000CBF3E /* pataki.jpg */,
+				DBC0BE111BD9A75B000CBF3E /* kasich.jpg */,
+				DBC0BE121BD9A75B000CBF3E /* jindal.jpg */,
+				DBC0BE131BD9A75B000CBF3E /* gilmore.jpg */,
+				DBC0BE141BD9A75B000CBF3E /* graham.jpg */,
+				DBC0BE151BD9A75B000CBF3E /* huckabee.jpg */,
+				DBC0BE161BD9A75B000CBF3E /* paul.jpg */,
+				DBC0BE171BD9A75B000CBF3E /* santorum.jpg */,
+				DBC0BE181BD9A75B000CBF3E /* steele.jpg */,
+				DBC0BE031BD9A535000CBF3E /* fiorina.jpg */,
+				DBC0BE041BD9A535000CBF3E /* christie.jpg */,
+				DBC0BE051BD9A535000CBF3E /* carson.jpg */,
+				DBC0BE061BD9A535000CBF3E /* bush.jpg */,
+				DBC0BE071BD9A535000CBF3E /* cruz.jpg */,
+				DBE3AED31BD46AB10055FE19 /* sanders.jpg */,
+				DBE3AED41BD46AB10055FE19 /* o'malley.jpg */,
+				DBE3AED51BD46AB10055FE19 /* clinton.jpg */,
 			);
 			path = "Candidate Images";
 			sourceTree = "<group>";
@@ -575,39 +572,39 @@
 				B27A0B461C10F638003B5692 /* lindseybanner.jpg in Resources */,
 				B27A0B711C10F645003B5692 /* mike.jpg in Resources */,
 				B27A0B3B1C10F638003B5692 /* berniebanner.jpg in Resources */,
-				DBC0BE211BD9A75B000CBF3E /* Mike_Huckabee_at_2014_CPAC_(cropped).jpg in Resources */,
+				DBC0BE211BD9A75B000CBF3E /* huckabee.jpg in Resources */,
 				B27A0B681C10F645003B5692 /* george.jpg in Resources */,
-				DBC0BE0A1BD9A535000CBF3E /* Dr._Ben_Carson_in_New_Hampshire_on_August_13th,_2015_1_by_Michael_Vadon_17_(cropped).jpg in Resources */,
-				DBC0BE1C1BD9A75B000CBF3E /* George_Pataki_August_2015.jpg in Resources */,
-				DBC0BE1A1BD9A75B000CBF3E /* 126px-Marco_Rubio,_Official_Portrait,_112th_Congress.jpg in Resources */,
+				DBC0BE0A1BD9A535000CBF3E /* carson.jpg in Resources */,
+				DBC0BE1C1BD9A75B000CBF3E /* pataki.jpg in Resources */,
+				DBC0BE1A1BD9A75B000CBF3E /* rubio.jpg in Resources */,
 				B27A0B691C10F645003B5692 /* hillary.jpg in Resources */,
 				B27A0B721C10F645003B5692 /* rand.jpg in Resources */,
 				B27A0B6A1C10F645003B5692 /* jeb.jpg in Resources */,
 				B27A0B6E1C10F645003B5692 /* lindsey.jpg in Resources */,
-				DBC0BE1B1BD9A75B000CBF3E /* Donald_Trump_September_3_2015.jpg in Resources */,
+				DBC0BE1B1BD9A75B000CBF3E /* trump.jpg in Resources */,
 				B27A0B431C10F638003B5692 /* jillbanner.jpg in Resources */,
-				DBC0BE1F1BD9A75B000CBF3E /* Jim_Gilmore_2015.jpg in Resources */,
-				DBC0BE201BD9A75B000CBF3E /* Lindsey_Graham,_official_Senate_photo_portrait_cropped.jpg in Resources */,
+				DBC0BE1F1BD9A75B000CBF3E /* gilmore.jpg in Resources */,
+				DBC0BE201BD9A75B000CBF3E /* graham.jpg in Resources */,
 				B27A0B701C10F645003B5692 /* martin.jpg in Resources */,
 				B27A0B3C1C10F638003B5692 /* bobbybanner.jpg in Resources */,
 				B27A0B6D1C10F645003B5692 /* john.jpg in Resources */,
-				DBC0BE241BD9A75B000CBF3E /* Steele_headshot_never_used_before_(afghanistan).jpg in Resources */,
+				DBC0BE241BD9A75B000CBF3E /* steele.jpg in Resources */,
 				DB6FE9F31BCB046700E6C38C /* LaunchScreen.storyboard in Resources */,
 				B27A0B411C10F638003B5692 /* hillarybanner.jpg in Resources */,
 				B27A0B421C10F638003B5692 /* jebbanner.jpg in Resources */,
 				B27A0B4D1C10F638003B5692 /* tedbanner.jpg in Resources */,
-				DBC0BE1E1BD9A75B000CBF3E /* Governor_of_Louisiana_Bobby_Jindal_at_New_Hampshire_Education_Summit_The_Seventy-Four_August_19th,_2015_by_Michael_Vadon_132_(cropped).jpg in Resources */,
-				DBC0BE0C1BD9A535000CBF3E /* Ted_Cruz,_official_portrait,_113th_Congress_(cropped_2).jpg in Resources */,
+				DBC0BE1E1BD9A75B000CBF3E /* jindal.jpg in Resources */,
+				DBC0BE0C1BD9A535000CBF3E /* cruz.jpg in Resources */,
 				B27A0B491C10F638003B5692 /* mikebanner.jpg in Resources */,
 				B27A0B6B1C10F645003B5692 /* jill.jpg in Resources */,
 				B27A0B651C10F645003B5692 /* carly.jpg in Resources */,
 				B27A0B401C10F638003B5692 /* georgebanner.jpg in Resources */,
 				DB6FE9F01BCB046700E6C38C /* Assets.xcassets in Resources */,
-				DBC0BE231BD9A75B000CBF3E /* Rick_Santorum_by_Gage_Skidmore_8.jpg in Resources */,
+				DBC0BE231BD9A75B000CBF3E /* santorum.jpg in Resources */,
 				B27A0B3F1C10F638003B5692 /* donaldbanner.jpg in Resources */,
 				B27A0B3D1C10F638003B5692 /* carlybanner.jpg in Resources */,
 				B27A0B4A1C10F638003B5692 /* randbanner.jpg in Resources */,
-				DBE3AEDB1BD46AB10055FE19 /* HRC_in_Iowa_APR_2015.jpg in Resources */,
+				DBE3AEDB1BD46AB10055FE19 /* clinton.jpg in Resources */,
 				B27A0B3A1C10F638003B5692 /* benbanner.jpg in Resources */,
 				B27A0B6F1C10F645003B5692 /* marco.jpg in Resources */,
 				B27A0B731C10F645003B5692 /* rick.jpg in Resources */,
@@ -615,27 +612,27 @@
 				B27A0B6C1C10F645003B5692 /* jim.jpg in Resources */,
 				B27A0B741C10F645003B5692 /* robert david.jpg in Resources */,
 				B27A0B671C10F645003B5692 /* donald.jpg in Resources */,
-				DBE3AED91BD46AB10055FE19 /* Bernie_Sanders_New_Orleans_rally_crop.jpg in Resources */,
-				DBC0BE1D1BD9A75B000CBF3E /* Governor_John_Kasich.jpg in Resources */,
+				DBE3AED91BD46AB10055FE19 /* sanders.jpg in Resources */,
+				DBC0BE1D1BD9A75B000CBF3E /* kasich.jpg in Resources */,
 				DB6FE9EE1BCB046700E6C38C /* Main.storyboard in Resources */,
-				DBC0BE081BD9A535000CBF3E /* Carly_Fiorina_August_2015.jpg in Resources */,
+				DBC0BE081BD9A535000CBF3E /* fiorina.jpg in Resources */,
 				B27A0B441C10F638003B5692 /* jimbanner.jpg in Resources */,
 				B22338061BCDF79000119944 /* iTunesArtwork@2x.png in Resources */,
 				B27A0B661C10F645003B5692 /* chris.jpg in Resources */,
 				B27A0B4C1C10F638003B5692 /* robert davidbanner.jpg in Resources */,
 				B27A0B751C10F645003B5692 /* ted.jpg in Resources */,
-				DBC0BE191BD9A75B000CBF3E /* 100px-Jill_Stein_2012.jpg in Resources */,
+				DBC0BE191BD9A75B000CBF3E /* stein.jpg in Resources */,
 				B27A0B631C10F645003B5692 /* bernie.jpg in Resources */,
 				B27A0B451C10F638003B5692 /* johnbanner.jpg in Resources */,
 				B27A0B471C10F638003B5692 /* marcobanner.jpg in Resources */,
-				DBC0BE091BD9A535000CBF3E /* Chris_Christie_April_2015_(cropped).jpg in Resources */,
+				DBC0BE091BD9A535000CBF3E /* christie.jpg in Resources */,
 				B27A0B481C10F638003B5692 /* martinbanner.jpg in Resources */,
 				B27A0B3E1C10F638003B5692 /* chrisbanner.jpg in Resources */,
-				DBC0BE0B1BD9A535000CBF3E /* Governor_of_Florida_Jeb_Bush_2015_in_NH_by_Michael_Vadon_(cropped).jpg in Resources */,
+				DBC0BE0B1BD9A535000CBF3E /* bush.jpg in Resources */,
 				B27A0B641C10F645003B5692 /* bobby.jpg in Resources */,
 				B27A0B621C10F645003B5692 /* ben.jpg in Resources */,
-				DBE3AEDA1BD46AB10055FE19 /* Governor_O'Malley_Portrait_(cropped).jpg in Resources */,
-				DBC0BE221BD9A75B000CBF3E /* Rand_Paul,_official_portrait,_112th_Congress.jpg in Resources */,
+				DBE3AEDA1BD46AB10055FE19 /* o'malley.jpg in Resources */,
+				DBC0BE221BD9A75B000CBF3E /* paul.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -709,7 +706,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				DBE0289E1C029CB6004E086E /* PollViewController.swift in Sources */,
-				DBE3AEBF1BD460E10055FE19 /* CandidatesDataModel.swift in Sources */,
 				789A54261BD75FF700645E67 /* GoVoteTableViewController.swift in Sources */,
 				DB6FE9EB1BCB046700E6C38C /* NewsViewController.swift in Sources */,
 				DBE3AEE01BD470DC0055FE19 /* CandidatePhotoCell.swift in Sources */,

@@ -9,12 +9,12 @@
 import UIKit
 
 class GoVoteTableViewController: UITableViewController {
+    
     var questions = ["How Do I Register to Vote?", "Am I Eligible to Vote?", "What is Absentee Voting?", "How Do I Vote Early?", "How Do I Find My Polling Place?", "How Do I Replace My Voter Registration Card?"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        //self.tableView.separatorStyle = UITableViewCellSeparatorStyle.None
     }
     
     override func didReceiveMemoryWarning() {

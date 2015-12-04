@@ -24,8 +24,6 @@ class PersonalDetailsViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
-        //ageLbl.text = String(delegate?.personalDetails["age"])
-        //hometownLbl.text = delegate?.personalDetails["hometown"] as? String
         scrollView.layer.borderWidth = 2
         scrollView.layer.borderColor = UIColor.blackColor().CGColor
         view.backgroundColor = UIColor.clearColor()
@@ -35,7 +33,6 @@ class PersonalDetailsViewController: UIViewController {
         spouseLabel.font = UIFont(name: "avenir-medium", size: 16)
         almamaterLabel.font = UIFont(name: "avenir-medium", size: 16)
         religionLabel.font = UIFont(name: "avenir-medium", size: 16)
-        //view.opaque = false
     }
     
 

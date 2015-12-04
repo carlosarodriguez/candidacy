@@ -27,7 +27,6 @@ class NewsViewController: UIViewController, UITableViewDelegate, UITableViewData
             self.tableView.dataSource = self
             self.tableView.reloadData()
         }
-        
     }
 
     override func didReceiveMemoryWarning() {
@@ -62,7 +61,6 @@ class NewsViewController: UIViewController, UITableViewDelegate, UITableViewData
 
     
     func getArticles() {
-        //self.articles = [NewsArticle]()
         var pageNum = 0
         while (pageNum < 5) {
             let urlPath = "http://api.nytimes.com/svc/search/v2/articlesearch.json?q=2016+presidential+election&sort=newest&page=" + String(pageNum) + "&api-key=2c1bfd3f625c27d8a34f2a444bee93cd:5:70064203"
@@ -82,18 +80,14 @@ class NewsViewController: UIViewController, UITableViewDelegate, UITableViewData
                             let multimedia = article["multimedia"].array!
                             if multimedia.count > 0 {
                                 let thumbnail_url = multimedia[0]["url"]
-                                //print(thumbnail_url)
                             }
-                            //print("-------------------")
+    
                             self.articles.append(NewsArticle(headline: String(headline), snippet: String(snippet), url: String(url), pub_date: String(pub_date)))
                         }
                         dispatch_async(dispatch_get_main_queue()) {
                             self.tableView.reloadData()
                         }
                     }
-//                    for (var i = 0; i < self.articles.count; ++i) {
-//                        print(self.articles[i].pub_date)
-//                    }
             }
             pageNum++
         }

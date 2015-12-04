@@ -9,6 +9,7 @@
 import UIKit
 
 class QuestionTableViewCell: UITableViewCell {
+    
     @IBOutlet weak var titleLabel: UILabel!
     
     override func awakeFromNib() {

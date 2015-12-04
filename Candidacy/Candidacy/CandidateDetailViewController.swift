@@ -79,9 +79,7 @@ class CandidateDetailViewController: UIViewController, UIScrollViewDelegate, UIT
                         self.personalDetails["spouse"] = object["spouse"] as! String
                         self.personalDetails["almamater"] = object["almamater"] as! [String]
                         self.personalDetails["religion"] = object["religion"] as! String
-                        
                         self.bio = object["biography"] as! String
-                        
                         self.politicalPositions["abortion"] = object["abortion"] as! [String]
                         self.politicalPositions["drugs"] = object["drugs"] as! [String]
                         self.politicalPositions["education"] = object["education"] as! [String]
