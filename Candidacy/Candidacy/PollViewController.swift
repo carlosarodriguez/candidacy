@@ -177,6 +177,38 @@ class PollViewController: UIViewController, UIPickerViewDelegate, UITextFieldDel
                 // There was a problem, check error.description
             }
         }
+        
+        // increment votes for Candidate
+        let nameArray = self.candidateSelected.componentsSeparatedByString(" ")
+        
+        var query = PFQuery(className: "Candidate")
+        query.whereKey("firstName", equalTo: nameArray[0])
+        query.whereKey("lastName", equalTo: nameArray[1])
+        
+        query.getFirstObjectInBackgroundWithBlock {
+            (object: PFObject?, error: NSError?) -> Void in
+            
+            if error == nil && object != nil {
+                // The find succeeded.
+                print("Successfully retrieved first object.")
+                
+                // Do something with the found object
+                object!.incrementKey("voteCount")
+                object!.saveInBackgroundWithBlock {
+                    (success: Bool, error: NSError?) -> Void in
+                    if (success) {
+                        // The score key has been incremented
+                        print("vote incremented for \(self.candidateSelected)")
+                    } else {
+                        // There was a problem, check error.description
+                        print("there was an error")
+                    }
+                }
+            } else {
+                // Log details of the failure
+                print("Error: \(error!) \(error!.userInfo)")
+            }
+        }
     }
     
     func maskRoundedImage(image: UIImage, radius: Float) -> UIImage {
