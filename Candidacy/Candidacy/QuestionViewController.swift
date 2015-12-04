@@ -11,7 +11,7 @@ import UIKit
 
 class QuestionViewController: UIViewController {
     @IBOutlet weak var questionLabel: UILabel!
-    @IBOutlet weak var answerLabel: UILabel!
+    @IBOutlet weak var answerLabel: UITextView!
     var question:String = ""
     var answer:String = ""
     
